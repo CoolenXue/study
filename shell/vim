@@ -1,0 +1,15 @@
+(n)H/L/M/cur,   ngg, F/B
+0, ^, $, f/F/t/T, w/b
+c/d/y/v m
+reg, marks,
+
+: % ! command     : w! command  : r! command
+@q
+: range le i,   ., n., zf, zo
+
+vim[grep],  make[makeprj],  :^f, netrw, gF
+cl, cw, cc, cn, cp
+
+res[N], vertical res[N], 
+[N]gt, gT, tabnew,  tabs, 
+

@@ -1,0 +1,97 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC	= gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS	= -ansi -Wall -Dsun -D__STDC__=0$/;"	m
+CONTROLLEN	loop.c	32;"	d	file:
+DIR_MODE	ourhdr.h	29;"	d
+FILE_MODE	ourhdr.h	27;"	d
+INADDR_NONE	sock.h	63;"	d
+INET_NTOA	sock.h	71;"	d
+INET_NTOA	sock.h	73;"	d
+LIBS	Makefile	/^LIBS	= \/usr\/ucblib\/libucb.a -lsocket -lnsl$/;"	m
+MAXLINE	ourhdr.h	25;"	d
+OBJS	Makefile	/^OBJS = buffers.o cliopen.o crlf.o error.o loop.o main.o \\$/;"	m
+PROGS	Makefile	/^PROGS =	sock$/;"	m
+SIG_ERR	ourhdr.h	36;"	d
+Sigfunc	ourhdr.h	/^typedef	void	Sigfunc(int);	\/* for signal handlers *\/$/;"	t
+TELL_CHILD	tellwait.c	/^TELL_CHILD(pid_t pid)$/;"	f
+TELL_PARENT	tellwait.c	/^TELL_PARENT(pid_t pid)$/;"	f
+TELL_WAIT	tellwait.c	/^TELL_WAIT()$/;"	f
+WAIT_CHILD	tellwait.c	/^WAIT_CHILD(void)$/;"	f
+WAIT_PARENT	tellwait.c	/^WAIT_PARENT(void)$/;"	f
+__ourhdr_h	ourhdr.h	4;"	d
+bindport	main.c	/^int		bindport;			\/* 0 or TCP or UDP port number to bind *\/$/;"	v
+broadcast	main.c	/^int		broadcast;			\/* SO_BROADCAST *\/$/;"	v
+buffers	buffers.c	/^buffers(int sockfd)$/;"	f
+cbreak	main.c	/^int		cbreak;				\/* set terminal to cbreak mode *\/$/;"	v
+client	main.c	/^int		client = 1;			\/* acting as client is the default *\/$/;"	v
+cliopen	cliopen.c	/^cliopen(char *host, char *port)$/;"	f
+crlf	main.c	/^int		crlf;				\/* convert newline to CR\/LF & vice versa *\/$/;"	v
+crlf_add	crlf.c	/^crlf_add(char *dst, int dstsize, const char *src, int lenin)$/;"	f
+crlf_strip	crlf.c	/^crlf_strip(char *dst, int dstsize, const char *src, int lenin)$/;"	f
+debug	main.c	/^int		debug;				\/* SO_DEBUG *\/$/;"	v
+dofork	main.c	/^int		dofork;				\/* concurrent server, do a fork() *\/$/;"	v
+err_doit	error.c	/^err_doit(int errnoflag, const char *fmt, va_list ap)$/;"	f	file:
+err_dump	error.c	/^err_dump(const char *fmt, ...)$/;"	f
+err_msg	error.c	/^err_msg(const char *fmt, ...)$/;"	f
+err_quit	error.c	/^err_quit(const char *fmt, ...)$/;"	f
+err_ret	error.c	/^err_ret(const char *fmt, ...)$/;"	f
+err_sys	error.c	/^err_sys(const char *fmt, ...)$/;"	f
+foreignip	main.c	/^char	foreignip[32];		\/* foreign IP address, dotted-decimal string *\/$/;"	v
+foreignport	main.c	/^int		foreignport;		\/* foreign port number *\/$/;"	v
+halfclose	main.c	/^int		halfclose;			\/* TCP half close option *\/$/;"	v
+host	main.c	/^char	*host;$/;"	v
+is_readlock	ourhdr.h	98;"	d
+is_writelock	ourhdr.h	100;"	d
+keepalive	main.c	/^int		keepalive;			\/* SO_KEEPALIVE *\/$/;"	v
+linger	main.c	/^long	linger = -1;		\/* 0 or positive turns on option *\/$/;"	v
+listenq	main.c	/^int		listenq = 5;		\/* listen queue for TCP Server *\/$/;"	v
+loop	loop.c	/^loop(int sockfd)$/;"	f
+main	main.c	/^main(int argc, char *argv[])$/;"	f
+max	ourhdr.h	40;"	d
+min	ourhdr.h	39;"	d
+nbuf	main.c	/^int		nbuf = 1024;		\/* number of buffers to write (sink mode) *\/$/;"	v
+newmask	tellwait.c	/^static sigset_t			newmask, oldmask, zeromask;$/;"	v	file:
+nodelay	main.c	/^int		nodelay;			\/* TCP_NODELAY (Nagle algorithm) *\/$/;"	v
+oldmask	tellwait.c	/^static sigset_t			newmask, oldmask, zeromask;$/;"	v	file:
+pattern	sourcesink.c	/^pattern(char *ptr, int len)$/;"	f
+pauseclose	main.c	/^int		pauseclose;			\/* seconds to sleep after recv FIN, before close *\/$/;"	v
+pauseinit	main.c	/^int		pauseinit;			\/* seconds to sleep before first read *\/$/;"	v
+pauselisten	main.c	/^int		pauselisten;		\/* seconds to sleep after listen() *\/$/;"	v
+pauserw	main.c	/^int		pauserw;			\/* seconds to sleep before each read or write *\/$/;"	v
+pname	error.c	/^char	*pname = NULL;		\/* caller can set this from argv[0] *\/$/;"	v
+port	main.c	/^char	*port;$/;"	v
+rbuf	main.c	/^char   *rbuf;				\/* pointer that is malloc'ed *\/$/;"	v
+rcvbuflen	main.c	/^int		rcvbuflen;			\/* size for SO_RCVBUF *\/$/;"	v
+read_lock	ourhdr.h	84;"	d
+readlen	main.c	/^int		readlen = 1024;		\/* default read length for socket *\/$/;"	v
+readw_lock	ourhdr.h	86;"	d
+recvdstaddr	main.c	/^int		recvdstaddr;		\/* IP_RECVDSTADDR option *\/$/;"	v
+reuseaddr	main.c	/^int		reuseaddr;			\/* SO_REUSEADDR *\/$/;"	v
+send	ourhdr.h	22;"	d
+server	main.c	/^int		server;				\/* to act as server requires -s option *\/$/;"	v
+servopen	servopen.c	/^servopen(char *host, char *port)$/;"	f
+sig_catch	loop.c	/^sig_catch(int signo)$/;"	f
+sig_usr	tellwait.c	/^sig_usr(int signo)	\/* one signal handler for SIGUSR1 and SIGUSR2 *\/$/;"	f	file:
+sigflag	tellwait.c	/^static volatile sig_atomic_t	sigflag;$/;"	v	file:
+sink	sourcesink.c	/^sink(int sockfd)$/;"	f
+sndbuflen	main.c	/^int		sndbuflen;			\/* size for SO_SNDBUF *\/$/;"	v
+sockopts	sockopts.c	/^sockopts(int sockfd, int doall)$/;"	f
+sourcesink	main.c	/^int		sourcesink;			\/* source\/sink mode *\/$/;"	v
+ssize_t	ourhdr.h	/^typedef	int	ssize_t;$/;"	t
+strerror	strerror.c	/^strerror(int error)$/;"	f
+udp	main.c	/^int		udp;				\/* use UDP instead of TCP *\/$/;"	v
+un_lock	ourhdr.h	92;"	d
+urgwrite	main.c	/^int		urgwrite;			\/* write urgent byte after this write *\/$/;"	v
+usage	main.c	/^usage(const char *msg)$/;"	f	file:
+verbose	main.c	/^int		verbose;$/;"	v
+wbuf	main.c	/^char   *wbuf;				\/* pointer that is malloc'ed *\/$/;"	v
+write_lock	ourhdr.h	88;"	d
+writelen	main.c	/^int		writelen = 1024;	\/* default write length for socket *\/$/;"	v
+writen	writen.c	/^writen(int fd, const void *vptr, size_t n)$/;"	f
+writew_lock	ourhdr.h	90;"	d
+zeromask	tellwait.c	/^static sigset_t			newmask, oldmask, zeromask;$/;"	v	file:

@@ -1,0 +1,78 @@
+" An example for a vimrc file.
+"
+" Last change:	2008 Dec 17
+"
+" To use it, copy it to
+"     for Unix and OS/2:  ~/.vimrc
+"	      for Amiga:  s:.vimrc
+"  for MS-DOS and Win32:  $VIM\_vimrc
+"	    for OpenVMS:  sys$login:.vimrc
+
+if v:progname =~? "evim"
+  finish
+endif
+
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+" add by <coolen>
+set nu
+set shiftwidth=4
+colorscheme desert
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+if has("vms")
+  set nobackup		" do not keep a backup file, use versions instead
+elseif 1
+  set backup		" keep a backup file
+endif
+set history=50		" keep 50 lines of command line history
+set ruler		" show the cursor position all the time
+set showcmd		" display incomplete commands
+set incsearch		" do incremental searching
+set hlsearch
+
+syntax on
+
+" Only do this part when compiled with support for autocommands.
+if has("autocmd")
+
+  " Enable file type detection.
+  " Use the default filetype settings, so that mail gets 'tw' set to 72,
+  " 'cindent' is on in C files, etc.
+  " Also load indent files, to automatically do language-dependent indenting.
+  filetype plugin indent on
+
+else
+
+  set autoindent		" always set autoindenting on
+
+endif " has("autocmd")
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made.
+" Only define it when not defined already.
+if !exists(":DiffOrig")
+  command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+		  \ | wincmd p | diffthis
+endif
+
+"""""""""""""""""""""CSCOPE"""""""""""""""""""""""""""
+if has("cscope")
+		set csprg=/usr/bin/cscope
+		set csto=0
+		set cst
+		set nocsverb
+		if filereadable("cscope.out")
+				cs add cscope.out
+		elseif $CSCOPE_DB !=""
+				cs add $CSCOPE_DB
+		endif
+		set csverb
+endif
+
+""""""""""""""""""""""""CTAGS"""""""""""""""""""""""""""""
+set tags=tags
+set ts=4

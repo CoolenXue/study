@@ -1,0 +1,9 @@
+convert
+xclip
+ctrl-r
+ls | vim -
+alias
+realpath
+du -sh
+sleep
+$RANDOM
