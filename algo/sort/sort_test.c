@@ -24,6 +24,14 @@ static void (*_sort_list[])(int *, int) = {
 	merge_sort
 };
 
+static char * sort_method[] = {
+	"insert", 
+	"select", 
+	"bubble", 
+	"quick", 
+	"merge",
+};
+
 static int (*_search)(int *, int, int) = binary_search;
 
 #define SEARCH_TARGET 44
@@ -36,7 +44,7 @@ int main(void)
     int index = _search(_array, length, SEARCH_TARGET);
 
 	// sort
-	printf("sort result:\n");
+	printf("%s sort result:\n", sort_method[CONFIG_SORT_TYPE]);
 	printf("[%d]: %d\n", 0, _array[0]);
 
 	int i;
