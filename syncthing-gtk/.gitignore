@@ -1,0 +1,6 @@
+*.pyc
+syncthing.exe
+*~
+*.exe
+*.zip
+*.nupkg
