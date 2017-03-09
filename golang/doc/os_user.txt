@@ -1,0 +1,45 @@
+PACKAGE DOCUMENTATION
+
+package user
+    import "."
+
+    Package user allows user account lookups by name or id.
+
+TYPES
+
+type UnknownUserError string
+    UnknownUserError is returned by Lookup when a user cannot be found.
+
+func (e UnknownUserError) Error() string
+
+type UnknownUserIdError int
+    UnknownUserIdError is returned by LookupId when a user cannot be found.
+
+func (e UnknownUserIdError) Error() string
+
+type User struct {
+    Uid      string // user id
+    Gid      string // primary group id
+    Username string
+    Name     string
+    HomeDir  string
+}
+    User represents a user account.
+
+    On posix systems Uid and Gid contain a decimal number representing uid
+    and gid. On windows Uid and Gid contain security identifier (SID) in a
+    string format. On Plan 9, Uid, Gid, Username, and Name will be the
+    contents of /dev/user.
+
+func Current() (*User, error)
+    Current returns the current user.
+
+func Lookup(username string) (*User, error)
+    Lookup looks up a user by username. If the user cannot be found, the
+    returned error is of type UnknownUserError.
+
+func LookupId(uid string) (*User, error)
+    LookupId looks up a user by userid. If the user cannot be found, the
+    returned error is of type UnknownUserIdError.
+
+
