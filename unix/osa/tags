@@ -1,0 +1,320 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Bool	osa.h	/^typedef int Bool;                 \/\/\/< Boolean type$/;"	t
+FALSE	osa.h	26;"	d
+FALSE	pause.h	25;"	d
+FIFOUTIL_FAILURE	fifoutil.h	45;"	d
+FIFOUTIL_SUCCESS	fifoutil.h	40;"	d
+FifoUtil_Handle	fifoutil.h	/^typedef FifoUtil_Obj *FifoUtil_Handle;$/;"	t
+FifoUtil_Obj	fifoutil.h	/^typedef struct FifoUtil_Obj {$/;"	s
+FifoUtil_Obj	fifoutil.h	/^} FifoUtil_Obj;$/;"	t	typeref:struct:FifoUtil_Obj
+FifoUtil_close	fifoutil.h	/^static inline int FifoUtil_close(FifoUtil_Handle hFifo)$/;"	f
+FifoUtil_get	fifoutil.h	/^static inline int FifoUtil_get(FifoUtil_Handle hFifo, void *buffer)$/;"	f
+FifoUtil_open	fifoutil.h	/^static inline int FifoUtil_open(FifoUtil_Handle hFifo, size_t size)$/;"	f
+FifoUtil_put	fifoutil.h	/^static inline int FifoUtil_put(FifoUtil_Handle hFifo, void *buffer)$/;"	f
+HextoDec	osa.c	/^static int HextoDec(char *hex, int l)$/;"	f	file:
+Int16	osa.h	/^typedef short Int16;                   \/\/\/< Signed 16-bit integer$/;"	t
+Int32	osa.h	/^typedef int Int32;                     \/\/\/< Signed 32-bit integer$/;"	t
+Int64	osa.h	/^typedef long long Int64;               \/\/\/< Signed 64-bit integer$/;"	t
+Int8	osa.h	/^typedef char Int8;                     \/\/\/< Signed  8-bit integer$/;"	t
+KB	osa.h	45;"	d
+MB	osa.h	49;"	d
+OSA_BUF_ID_INVALID	osa_buf.h	11;"	d
+OSA_BUF_NUM_MAX	osa_buf.h	9;"	d
+OSA_BufCreate	osa_buf.h	/^} OSA_BufCreate;$/;"	t	typeref:struct:__anon10
+OSA_BufHndl	osa_buf.h	/^} OSA_BufHndl;$/;"	t	typeref:struct:__anon9
+OSA_BufInfo	osa_buf.h	/^} OSA_BufInfo;$/;"	t	typeref:struct:__anon8
+OSA_DEBUG	osa_debug.h	32;"	d
+OSA_DEBUG	osa_debug.h	48;"	d
+OSA_DEBUGFILE_ENABLE	osa.h	12;"	d
+OSA_DEBUGMODE_ENABLE	osa.h	11;"	d
+OSA_DEBUG_WAIT	osa_debug.h	36;"	d
+OSA_DEBUG_WAIT	osa_debug.h	49;"	d
+OSA_ERROR	osa.h	16;"	d
+OSA_FLG_MODE_AND	osa_flg.h	17;"	d
+OSA_FLG_MODE_AND_CLR	osa_flg.h	21;"	d
+OSA_FLG_MODE_CLR	osa_flg.h	19;"	d
+OSA_FLG_MODE_OR	osa_flg.h	18;"	d
+OSA_FLG_MODE_OR_CLR	osa_flg.h	22;"	d
+OSA_FlgHndl	osa_flg.h	/^} OSA_FlgHndl;$/;"	t	typeref:struct:__anon1
+OSA_IPC_FLAG_CREATE	osa_ipc.h	9;"	d
+OSA_IPC_FLAG_OPEN	osa_ipc.h	8;"	d
+OSA_IPC_KEY_INVALID	osa_ipc.h	11;"	d
+OSA_IPC_MBX_MSG_SIZE_MAX	osa_ipc.h	13;"	d
+OSA_IPC_MBX_MSG_TYPE_ID	osa_ipc.c	8;"	d	file:
+OSA_IPC_SEM_MEMBERS_MAX	osa_ipc.c	9;"	d	file:
+OSA_IpcMbxHndl	osa_ipc.h	/^} OSA_IpcMbxHndl;$/;"	t	typeref:struct:__anon5
+OSA_IpcMsgData	osa_ipc.h	/^} OSA_IpcMsgData;$/;"	t	typeref:struct:__anon7
+OSA_IpcSemHndl	osa_ipc.h	/^} OSA_IpcSemHndl;$/;"	t	typeref:struct:__anon6
+OSA_IpcShmHndl	osa_ipc.h	/^} OSA_IpcShmHndl;$/;"	t	typeref:struct:__anon4
+OSA_MBX_BROADCAST_MAX	osa_mbx.h	11;"	d
+OSA_MBX_FREE_PRM	osa_mbx.h	9;"	d
+OSA_MBX_WAIT_ACK	osa_mbx.h	8;"	d
+OSA_MSGQ_LEN_MAX	osa_msgq.h	8;"	d
+OSA_MbxHndl	osa_mbx.h	/^} OSA_MbxHndl;$/;"	t	typeref:struct:__anon16
+OSA_MsgHndl	osa_msgq.h	/^typedef struct OSA_MsgHndl {$/;"	s
+OSA_MsgHndl	osa_msgq.h	/^} OSA_MsgHndl;$/;"	t	typeref:struct:OSA_MsgHndl
+OSA_MsgqHndl	osa_msgq.h	/^} OSA_MsgqHndl;$/;"	t	typeref:struct:__anon3
+OSA_MutexHndl	osa_mutex.h	/^} OSA_MutexHndl;$/;"	t	typeref:struct:__anon12
+OSA_NOWAIT	osa.h	52;"	d
+OSA_OK	osa.h	15;"	d
+OSA_PRF_PRINT_ALL	osa_prf.h	10;"	d
+OSA_PRF_PRINT_COUNT	osa_prf.h	15;"	d
+OSA_PRF_PRINT_DEFAULT	osa_prf.h	8;"	d
+OSA_PRF_PRINT_MIN_MAX	osa_prf.h	14;"	d
+OSA_PRF_PRINT_TIME	osa_prf.h	12;"	d
+OSA_PRF_PRINT_VALUE	osa_prf.h	13;"	d
+OSA_PROFILE_ENABLE	osa.h	13;"	d
+OSA_PrfHndl	osa_prf.h	/^} OSA_PrfHndl;$/;"	t	typeref:struct:__anon13
+OSA_PrfHndl	osa_prf.h	/^} OSA_PrfHndl;$/;"	t	typeref:struct:__anon14
+OSA_QueHndl	osa_que.h	/^} OSA_QueHndl;$/;"	t	typeref:struct:__anon11
+OSA_SemHndl	osa_sem.h	/^} OSA_SemHndl;$/;"	t	typeref:struct:__anon15
+OSA_THR_PRI_DEFAULT	osa_thr.h	11;"	d
+OSA_THR_PRI_MAX	osa_thr.h	8;"	d
+OSA_THR_PRI_MIN	osa_thr.h	9;"	d
+OSA_THR_STACK_SIZE_DEFAULT	osa_thr.h	13;"	d
+OSA_ThrEntryFunc	osa_thr.h	/^typedef void * (*OSA_ThrEntryFunc)(void *);$/;"	t
+OSA_ThrHndl	osa_thr.h	/^} OSA_ThrHndl;$/;"	t	typeref:struct:__anon2
+OSA_TskFncMain	osa_tsk.h	/^typedef int (*OSA_TskFncMain)(struct OSA_TskHndl *pTsk, OSA_MsgHndl *pMsg, Uint32 curState );$/;"	t
+OSA_TskHndl	osa_tsk.h	/^typedef struct OSA_TskHndl {$/;"	s
+OSA_TskHndl	osa_tsk.h	/^} OSA_TskHndl;$/;"	t	typeref:struct:OSA_TskHndl
+OSA_WAIT	osa.h	53;"	d
+OSA_align	osa.h	61;"	d
+OSA_assert	osa_debug.h	20;"	d
+OSA_assert	osa_debug.h	44;"	d
+OSA_assertSuccess	osa_debug.h	27;"	d
+OSA_assertSuccess	osa_debug.h	45;"	d
+OSA_attachSignalHandler	osa.c	/^int OSA_attachSignalHandler(int sigId, void (*handler)(int ) )$/;"	f
+OSA_bufCreate	osa_buf.c	/^int OSA_bufCreate(OSA_BufHndl *hndl, OSA_BufCreate *bufInit)$/;"	f
+OSA_bufDelete	osa_buf.c	/^int OSA_bufDelete(OSA_BufHndl *hndl)$/;"	f
+OSA_bufGetBufInfo	osa_buf.c	/^OSA_BufInfo *OSA_bufGetBufInfo(OSA_BufHndl *hndl, int bufId)$/;"	f
+OSA_bufGetEmpty	osa_buf.c	/^int OSA_bufGetEmpty(OSA_BufHndl *hndl, int *bufId, Uint32 timeout)$/;"	f
+OSA_bufGetFull	osa_buf.c	/^int OSA_bufGetFull(OSA_BufHndl *hndl, int *bufId, Uint32 timeout)$/;"	f
+OSA_bufPutEmpty	osa_buf.c	/^int OSA_bufPutEmpty(OSA_BufHndl *hndl, int bufId)$/;"	f
+OSA_bufPutFull	osa_buf.c	/^int OSA_bufPutFull (OSA_BufHndl *hndl, int bufId)$/;"	f
+OSA_bufSwitchEmpty	osa_buf.c	/^int OSA_bufSwitchEmpty(OSA_BufHndl *hndl, int *bufId)$/;"	f
+OSA_bufSwitchFull	osa_buf.c	/^int OSA_bufSwitchFull(OSA_BufHndl *hndl, int *bufId)$/;"	f
+OSA_ceil	osa.h	63;"	d
+OSA_error	osa_debug.h	12;"	d
+OSA_error	osa_debug.h	43;"	d
+OSA_fileRead	osa_file.c	/^int OSA_fileRead(char *fileName, Uint8 *addr, Uint32 readSize, Uint32 *actualReadSize)$/;"	f
+OSA_fileWrite	osa_file.c	/^int OSA_fileWrite(char *fileName, Uint8 *addr, Uint32 size)$/;"	f
+OSA_flgClear	osa_flg.c	/^int  OSA_flgClear(OSA_FlgHndl *hndl, Uint32 pattern)$/;"	f
+OSA_flgCreate	osa_flg.c	/^int  OSA_flgCreate(OSA_FlgHndl *hndl, Uint32 initPattern)$/;"	f
+OSA_flgDelete	osa_flg.c	/^int  OSA_flgDelete(OSA_FlgHndl *hndl)$/;"	f
+OSA_flgIsSet	osa_flg.c	/^Bool OSA_flgIsSet(OSA_FlgHndl *hndl, Uint32 pattern)$/;"	f
+OSA_flgSet	osa_flg.c	/^int  OSA_flgSet(OSA_FlgHndl *hndl, Uint32 pattern)$/;"	f
+OSA_flgWait	osa_flg.c	/^int  OSA_flgWait(OSA_FlgHndl *hndl, Uint32 pattern, Uint32 mode, Uint32 timeout)$/;"	f
+OSA_floor	osa.h	62;"	d
+OSA_getCurTimeInMsec	osa.c	/^Uint32 OSA_getCurTimeInMsec()$/;"	f
+OSA_ipcMakeKey	osa_ipc.c	/^Uint32 OSA_ipcMakeKey(char *path, char id)$/;"	f
+OSA_ipcMbxClose	osa_ipc.c	/^int OSA_ipcMbxClose(OSA_IpcMbxHndl *hndl)$/;"	f
+OSA_ipcMbxOpen	osa_ipc.c	/^int OSA_ipcMbxOpen(OSA_IpcMbxHndl *hndl, Uint32 key, Uint32 flags)$/;"	f
+OSA_ipcMbxRecv	osa_ipc.c	/^int OSA_ipcMbxRecv(OSA_IpcMbxHndl *hndl, OSA_IpcMsgData *msgData, Uint32 msgSize)$/;"	f
+OSA_ipcMbxSend	osa_ipc.c	/^int OSA_ipcMbxSend(OSA_IpcMbxHndl *hndl, OSA_IpcMsgData *msgData, Uint32 msgSize)$/;"	f
+OSA_ipcSemClose	osa_ipc.c	/^int OSA_ipcSemClose(OSA_IpcSemHndl *hndl)$/;"	f
+OSA_ipcSemGetVal	osa_ipc.c	/^int OSA_ipcSemGetVal(OSA_IpcSemHndl *hndl, Uint32 member)$/;"	f
+OSA_ipcSemLock	osa_ipc.c	/^int OSA_ipcSemLock(OSA_IpcSemHndl *hndl, Uint32 member, Uint32 timeout)$/;"	f
+OSA_ipcSemOpen	osa_ipc.c	/^int OSA_ipcSemOpen(OSA_IpcSemHndl *hndl, Uint32 key, Uint32 members, Uint32 initVal, Uint32 maxVal, Uint32 flags)$/;"	f
+OSA_ipcSemUnlock	osa_ipc.c	/^int OSA_ipcSemUnlock(OSA_IpcSemHndl *hndl, Uint32 member, Uint32 timeout)$/;"	f
+OSA_ipcShmClose	osa_ipc.c	/^int   OSA_ipcShmClose(OSA_IpcShmHndl *hndl)$/;"	f
+OSA_ipcShmOpen	osa_ipc.c	/^char *OSA_ipcShmOpen(OSA_IpcShmHndl *hndl, Uint32 key, Uint32 size, Uint32 flags)$/;"	f
+OSA_mbxAckOrFreeMsg	osa_mbx.c	/^int OSA_mbxAckOrFreeMsg(OSA_MsgHndl *pMsg, int ackRetVal)$/;"	f
+OSA_mbxBroadcastMsg	osa_mbx.c	/^int OSA_mbxBroadcastMsg(OSA_MbxHndl *pMbxToList[], OSA_MbxHndl *pMbxFrom, Uint16 cmd, void *pPrm, Uint16 flags)$/;"	f
+OSA_mbxCheckMsg	osa_mbx.c	/^int OSA_mbxCheckMsg(OSA_MbxHndl *pMbxHndl, OSA_MsgHndl **pMsg)$/;"	f
+OSA_mbxCreate	osa_mbx.c	/^int OSA_mbxCreate(OSA_MbxHndl *pMbxHndl)$/;"	f
+OSA_mbxDelete	osa_mbx.c	/^int OSA_mbxDelete(OSA_MbxHndl *pMbxHndl)$/;"	f
+OSA_mbxFlush	osa_mbx.c	/^int OSA_mbxFlush(OSA_MbxHndl *pMbxHndl)$/;"	f
+OSA_mbxFreeMsg	osa_mbx.c	/^int OSA_mbxFreeMsg(OSA_MsgHndl *pMsg)$/;"	f
+OSA_mbxSendMsg	osa_mbx.c	/^int OSA_mbxSendMsg(OSA_MbxHndl *pMbxTo, OSA_MbxHndl *pMbxFrom, Uint16 cmd, void *pPrm, Uint16 flags)$/;"	f
+OSA_mbxWaitCmd	osa_mbx.c	/^int OSA_mbxWaitCmd(OSA_MbxHndl *pMbxHndl, OSA_MsgHndl **pMsg, Uint16 waitCmd)$/;"	f
+OSA_mbxWaitMsg	osa_mbx.c	/^int OSA_mbxWaitMsg(OSA_MbxHndl *pMbxHndl, OSA_MsgHndl **pMsg)$/;"	f
+OSA_memAlloc	osa.h	57;"	d
+OSA_memFree	osa.h	58;"	d
+OSA_msgGetAckStatus	osa_msgq.h	40;"	d
+OSA_msgGetCmd	osa_msgq.h	38;"	d
+OSA_msgGetPrm	osa_msgq.h	39;"	d
+OSA_msgqAllocMsgHndl	osa_msgq.c	/^OSA_MsgHndl *OSA_msgqAllocMsgHndl(OSA_MsgqHndl *to, OSA_MsgqHndl *from, Uint16 cmd, void *prm, Uint16 msgFlags)$/;"	f
+OSA_msgqCreate	osa_msgq.c	/^int OSA_msgqCreate(OSA_MsgqHndl *hndl)$/;"	f
+OSA_msgqDelete	osa_msgq.c	/^int OSA_msgqDelete(OSA_MsgqHndl *hndl)$/;"	f
+OSA_msgqFreeMsgHndl	osa_msgq.c	/^int OSA_msgqFreeMsgHndl(OSA_MsgHndl *msg)$/;"	f
+OSA_msgqRecvMsg	osa_msgq.c	/^int OSA_msgqRecvMsg(OSA_MsgqHndl *hndl, OSA_MsgHndl **msg, Uint32 timeout)$/;"	f
+OSA_msgqSend	osa_msgq.c	/^int OSA_msgqSend(OSA_MsgqHndl *hndl, OSA_MsgHndl *msg, Uint32 timeout)$/;"	f
+OSA_msgqSendAck	osa_msgq.c	/^int OSA_msgqSendAck(OSA_MsgHndl *msg, int ackRetVal)$/;"	f
+OSA_msgqSendMsg	osa_msgq.c	/^int OSA_msgqSendMsg(OSA_MsgqHndl *to, OSA_MsgqHndl *from, Uint16 cmd, void *prm, Uint16 msgFlags, OSA_MsgHndl **msg)$/;"	f
+OSA_mutexCreate	osa_mutex.c	/^int OSA_mutexCreate(OSA_MutexHndl *hndl)$/;"	f
+OSA_mutexDelete	osa_mutex.c	/^int OSA_mutexDelete(OSA_MutexHndl *hndl)$/;"	f
+OSA_mutexLock	osa_mutex.c	/^int OSA_mutexLock(OSA_MutexHndl *hndl)$/;"	f
+OSA_mutexUnlock	osa_mutex.c	/^int OSA_mutexUnlock(OSA_MutexHndl *hndl)$/;"	f
+OSA_prfBegin	osa_prf.c	/^int OSA_prfBegin(OSA_PrfHndl *hndl)$/;"	f
+OSA_prfBegin	osa_prf.h	61;"	d
+OSA_prfEnd	osa_prf.c	/^int OSA_prfEnd(OSA_PrfHndl *hndl, Uint32 value)$/;"	f
+OSA_prfEnd	osa_prf.h	62;"	d
+OSA_prfPrint	osa_prf.c	/^int OSA_prfPrint(OSA_PrfHndl *hndl, char *name, Uint32 flags)$/;"	f
+OSA_prfPrint	osa_prf.h	64;"	d
+OSA_prfReset	osa_prf.c	/^int OSA_prfReset(OSA_PrfHndl *hndl)$/;"	f
+OSA_prfReset	osa_prf.h	63;"	d
+OSA_printf	osa_debug.h	10;"	d
+OSA_printf	osa_debug.h	42;"	d
+OSA_queCreate	osa_que.c	/^int OSA_queCreate(OSA_QueHndl *hndl, Uint32 maxLen)$/;"	f
+OSA_queDelete	osa_que.c	/^int OSA_queDelete(OSA_QueHndl *hndl)$/;"	f
+OSA_queGet	osa_que.c	/^int OSA_queGet(OSA_QueHndl *hndl, Int32 *value, Uint32 timeout)$/;"	f
+OSA_quePut	osa_que.c	/^int OSA_quePut(OSA_QueHndl *hndl, Int32 value, Uint32 timeout)$/;"	f
+OSA_semCreate	osa_sem.c	/^int OSA_semCreate(OSA_SemHndl *hndl, Uint32 maxCount, Uint32 initVal)$/;"	f
+OSA_semDelete	osa_sem.c	/^int OSA_semDelete(OSA_SemHndl *hndl)$/;"	f
+OSA_semSignal	osa_sem.c	/^int OSA_semSignal(OSA_SemHndl *hndl)$/;"	f
+OSA_semWait	osa_sem.c	/^int OSA_semWait(OSA_SemHndl *hndl, Uint32 timeout)$/;"	f
+OSA_thrChangePri	osa_thr.c	/^int OSA_thrChangePri(OSA_ThrHndl *hndl, Uint32 pri)$/;"	f
+OSA_thrCreate	osa_thr.c	/^int OSA_thrCreate(OSA_ThrHndl *hndl, OSA_ThrEntryFunc entryFunc, Uint32 pri, Uint32 stackSize, void *prm)$/;"	f
+OSA_thrDelete	osa_thr.c	/^int OSA_thrDelete(OSA_ThrHndl *hndl)$/;"	f
+OSA_thrExit	osa_thr.c	/^int OSA_thrExit(void *returnVal)$/;"	f
+OSA_thrJoin	osa_thr.c	/^int OSA_thrJoin(OSA_ThrHndl *hndl)$/;"	f
+OSA_tskAckOrFreeMsg	osa_tsk.c	/^int OSA_tskAckOrFreeMsg(OSA_MsgHndl *pMsg, int ackRetVal)$/;"	f
+OSA_tskBroadcastMsg	osa_tsk.c	/^int OSA_tskBroadcastMsg(OSA_TskHndl *pPrcToList[], OSA_TskHndl *pPrcFrom, Uint16 cmd, void *pPrm, Uint16 flags)$/;"	f
+OSA_tskCheckMsg	osa_tsk.c	/^int OSA_tskCheckMsg(OSA_TskHndl *pPrc, OSA_MsgHndl **pMsg)$/;"	f
+OSA_tskCreate	osa_tsk.c	/^int OSA_tskCreate(OSA_TskHndl *pPrc, OSA_TskFncMain fncMain, Uint32 tskPri, Uint32 tskStackSize, Uint32 initState)$/;"	f
+OSA_tskDelete	osa_tsk.c	/^int OSA_tskDelete(OSA_TskHndl *pPrc)$/;"	f
+OSA_tskFlushMsg	osa_tsk.c	/^int OSA_tskFlushMsg(OSA_TskHndl *pPrc)$/;"	f
+OSA_tskGetState	osa_tsk.c	/^Uint32 OSA_tskGetState(OSA_TskHndl *pPrc)$/;"	f
+OSA_tskSendMsg	osa_tsk.c	/^int OSA_tskSendMsg(OSA_TskHndl *pPrcTo, OSA_TskHndl *pPrcFrom, Uint16 cmd, void *pPrm, Uint16 flags)$/;"	f
+OSA_tskSetState	osa_tsk.c	/^int OSA_tskSetState(OSA_TskHndl *pPrc, Uint32 curState)$/;"	f
+OSA_tskThrMain	osa_tsk.c	/^void *OSA_tskThrMain(void *pPrm)$/;"	f
+OSA_tskWaitCmd	osa_tsk.c	/^int OSA_tskWaitCmd(OSA_TskHndl *pPrc, OSA_MsgHndl **pMsg, Uint16 waitCmd)$/;"	f
+OSA_tskWaitMsg	osa_tsk.c	/^int OSA_tskWaitMsg(OSA_TskHndl *pPrc, OSA_MsgHndl **pMsg)$/;"	f
+OSA_waitMsecs	osa.c	/^void   OSA_waitMsecs(Uint32 msecs)$/;"	f
+OSA_xstrToInt	osa.c	/^int OSA_xstrToInt(char *hex)      \/\/ hex string to integer$/;"	f
+PAUSE_FAILURE	pause.h	50;"	d
+PAUSE_SUCCESS	pause.h	45;"	d
+Pause_Handle	pause.h	/^typedef Pause_Obj *Pause_Handle;$/;"	t
+Pause_Obj	pause.h	/^typedef struct Pause_Obj {$/;"	s
+Pause_Obj	pause.h	/^} Pause_Obj;$/;"	t	typeref:struct:Pause_Obj
+Pause_close	pause.h	/^static inline void Pause_close(Pause_Handle hPause)$/;"	f
+Pause_off	pause.h	/^static inline void Pause_off(Pause_Handle hPause)$/;"	f
+Pause_on	pause.h	/^static inline void Pause_on(Pause_Handle hPause)$/;"	f
+Pause_open	pause.h	/^static inline void Pause_open(Pause_Handle hPause)$/;"	f
+Pause_test	pause.h	/^static inline void Pause_test(Pause_Handle hPause)$/;"	f
+RENDEZVOUS_FAILURE	rendezvous.h	46;"	d
+RENDEZVOUS_SUCCESS	rendezvous.h	41;"	d
+Rendezvous_Handle	rendezvous.h	/^typedef Rendezvous_Obj *Rendezvous_Handle;$/;"	t
+Rendezvous_Obj	rendezvous.h	/^typedef struct Rendezvous_Obj {$/;"	s
+Rendezvous_Obj	rendezvous.h	/^} Rendezvous_Obj;$/;"	t	typeref:struct:Rendezvous_Obj
+Rendezvous_close	rendezvous.h	/^static inline void Rendezvous_close(Rendezvous_Handle hRv)$/;"	f
+Rendezvous_force	rendezvous.h	/^static inline void Rendezvous_force(Rendezvous_Handle hRv)$/;"	f
+Rendezvous_meet	rendezvous.h	/^static inline void Rendezvous_meet(Rendezvous_Handle hRv)$/;"	f
+Rendezvous_open	rendezvous.h	/^static inline void Rendezvous_open(Rendezvous_Handle hRv, int count)$/;"	f
+Rendezvous_reset	rendezvous.h	/^static inline void Rendezvous_reset(Rendezvous_Handle hRv)$/;"	f
+TRUE	osa.h	25;"	d
+TRUE	pause.h	21;"	d
+Uint16	osa.h	/^typedef unsigned short Uint16;          \/\/\/< Unsigned 16-bit integer$/;"	t
+Uint32	osa.h	/^typedef unsigned int Uint32;            \/\/\/< Unsigned 32-bit integer$/;"	t
+Uint64	osa.h	/^typedef unsigned long long Uint64;      \/\/\/< Unsigned 64-bit integer$/;"	t
+Uint8	osa.h	/^typedef unsigned char Uint8;            \/\/\/< Unsigned  8-bit integer$/;"	t
+_FIFOUTIL_H	fifoutil.h	20;"	d
+_OSA_BUF_H_	osa_buf.h	4;"	d
+_OSA_DEBUG_H_	osa_debug.h	3;"	d
+_OSA_FILE_H_	osa_file.h	4;"	d
+_OSA_FLG_H_	osa_flg.h	4;"	d
+_OSA_H_	osa.h	4;"	d
+_OSA_IPC_	osa_ipc.h	3;"	d
+_OSA_MBX_H_	osa_mbx.h	4;"	d
+_OSA_MSGQ_H_	osa_msgq.h	4;"	d
+_OSA_MUTEX_H_	osa_mutex.h	4;"	d
+_OSA_PRF_H_	osa_prf.h	4;"	d
+_OSA_QUE_H_	osa_que.h	4;"	d
+_OSA_SEM_H_	osa_sem.h	4;"	d
+_OSA_THR_H_	osa_thr.h	4;"	d
+_OSA_TSK_H_	osa_tsk.h	4;"	d
+_PAUSE_H	pause.h	16;"	d
+_RENDEZVOUS_H	rendezvous.h	19;"	d
+_TI_STD_TYPES	osa.h	19;"	d
+ackMbx	osa_mbx.h	/^  OSA_MsgqHndl ackMbx;    \/\/\/< ACK mailbox$/;"	m	struct:__anon16
+array	osa_ipc.c	/^  unsigned short  *array;$/;"	m	union:semun	file:
+buf	osa_ipc.c	/^  struct semid_ds *buf;$/;"	m	union:semun	typeref:struct:semun::semid_ds	file:
+bufInfo	osa_buf.h	/^  OSA_BufInfo bufInfo[OSA_BUF_NUM_MAX];$/;"	m	struct:__anon9
+bufPhyAddr	osa_buf.h	/^  void *bufPhyAddr[OSA_BUF_NUM_MAX];$/;"	m	struct:__anon10
+bufVirtAddr	osa_buf.h	/^  void *bufVirtAddr[OSA_BUF_NUM_MAX];  $/;"	m	struct:__anon10
+cmd	osa_msgq.h	/^  Uint16        cmd;$/;"	m	struct:OSA_MsgHndl
+cond	osa_flg.h	/^  pthread_cond_t  cond;$/;"	m	struct:__anon1
+cond	osa_sem.h	/^  pthread_cond_t  cond;$/;"	m	struct:__anon15
+cond	pause.h	/^    pthread_cond_t  cond;$/;"	m	struct:Pause_Obj
+cond	rendezvous.h	/^    pthread_cond_t  cond;$/;"	m	struct:Rendezvous_Obj
+condRd	osa_msgq.h	/^  pthread_cond_t  condRd;$/;"	m	struct:__anon3
+condRd	osa_que.h	/^  pthread_cond_t  condRd;$/;"	m	struct:__anon11
+condWr	osa_msgq.h	/^  pthread_cond_t  condWr;$/;"	m	struct:__anon3
+condWr	osa_que.h	/^  pthread_cond_t  condWr;$/;"	m	struct:__anon11
+count	osa_buf.h	/^  int count;$/;"	m	struct:__anon8
+count	osa_msgq.h	/^  Uint32 count;$/;"	m	struct:__anon3
+count	osa_prf.h	/^  Uint32 count;$/;"	m	struct:__anon13
+count	osa_que.h	/^  Uint32 count;$/;"	m	struct:__anon11
+count	osa_sem.h	/^  Uint32 count;$/;"	m	struct:__anon15
+count	rendezvous.h	/^    int             count;$/;"	m	struct:Rendezvous_Obj
+curRd	osa_msgq.h	/^  Uint32 curRd;$/;"	m	struct:__anon3
+curRd	osa_que.h	/^  Uint32 curRd;$/;"	m	struct:__anon11
+curReaders	osa_buf.h	/^  int curReaders[OSA_BUF_NUM_MAX];$/;"	m	struct:__anon9
+curState	osa_tsk.h	/^  Uint32 curState;          \/\/\/< Task state as defined by user$/;"	m	struct:OSA_TskHndl
+curTime	osa_prf.h	/^  Uint32 curTime;$/;"	m	struct:__anon13
+curValue	osa_prf.h	/^  Uint32 curValue;$/;"	m	struct:__anon13
+curWr	osa_msgq.h	/^  Uint32 curWr;$/;"	m	struct:__anon3
+curWr	osa_que.h	/^  Uint32 curWr;$/;"	m	struct:__anon11
+data	osa_ipc.h	/^  Uint8 data[OSA_IPC_MBX_MSG_SIZE_MAX];$/;"	m	struct:__anon7
+emptyQue	osa_buf.h	/^  OSA_QueHndl emptyQue;$/;"	m	struct:__anon9
+flags	osa_buf.h	/^  int flags;$/;"	m	struct:__anon8
+flags	osa_msgq.h	/^  Uint16        flags;$/;"	m	struct:OSA_MsgHndl
+fncMain	osa_tsk.h	/^  OSA_TskFncMain fncMain;   \/\/\/< Task Main, this function is entered when a message is received by the process$/;"	m	struct:OSA_TskHndl
+fullQue	osa_buf.h	/^  OSA_QueHndl fullQue;$/;"	m	struct:__anon9
+hndl	osa_thr.h	/^  pthread_t      hndl;$/;"	m	struct:__anon2
+id	osa_ipc.h	/^  int id;$/;"	m	struct:__anon4
+id	osa_ipc.h	/^  int id;$/;"	m	struct:__anon5
+id	osa_ipc.h	/^  int id;$/;"	m	struct:__anon6
+len	osa_msgq.h	/^  Uint32 len;$/;"	m	struct:__anon3
+len	osa_que.h	/^  Uint32 len;$/;"	m	struct:__anon11
+lock	osa_flg.h	/^  pthread_mutex_t lock;$/;"	m	struct:__anon1
+lock	osa_msgq.h	/^  pthread_mutex_t lock;$/;"	m	struct:__anon3
+lock	osa_mutex.h	/^  pthread_mutex_t lock;$/;"	m	struct:__anon12
+lock	osa_que.h	/^  pthread_mutex_t lock;$/;"	m	struct:__anon11
+lock	osa_sem.h	/^  pthread_mutex_t lock;$/;"	m	struct:__anon15
+maxCount	osa_sem.h	/^  Uint32 maxCount;$/;"	m	struct:__anon15
+maxTime	osa_prf.h	/^  Uint32 maxTime;$/;"	m	struct:__anon13
+maxVal	osa_ipc.h	/^  int maxVal;$/;"	m	struct:__anon6
+maxValue	osa_prf.h	/^  Uint32 maxValue;$/;"	m	struct:__anon13
+mbxHndl	osa_tsk.h	/^  OSA_MbxHndl mbxHndl;      \/\/\/< Mailbox handle$/;"	m	struct:OSA_TskHndl
+members	osa_ipc.h	/^  int members;$/;"	m	struct:__anon6
+minTime	osa_prf.h	/^  Uint32 minTime;$/;"	m	struct:__anon13
+minValue	osa_prf.h	/^  Uint32 minValue;$/;"	m	struct:__anon13
+mutex	pause.h	/^    pthread_mutex_t mutex;$/;"	m	struct:Pause_Obj
+mutex	rendezvous.h	/^    pthread_mutex_t mutex;$/;"	m	struct:Rendezvous_Obj
+numBuf	osa_buf.h	/^  int numBuf;$/;"	m	struct:__anon10
+numBuf	osa_buf.h	/^  int numBuf;$/;"	m	struct:__anon9
+numReaders	osa_buf.h	/^  int numReaders;$/;"	m	struct:__anon10
+numReaders	osa_buf.h	/^  int numReaders;$/;"	m	struct:__anon9
+orig	rendezvous.h	/^    int             orig;$/;"	m	struct:Rendezvous_Obj
+pFrom	osa_msgq.h	/^  OSA_MsgqHndl *pFrom;  $/;"	m	struct:OSA_MsgHndl
+pPrm	osa_msgq.h	/^  void         *pPrm;$/;"	m	struct:OSA_MsgHndl
+pTo	osa_msgq.h	/^  OSA_MsgqHndl *pTo;$/;"	m	struct:OSA_MsgHndl
+pattern	osa_flg.h	/^  Uint32 pattern;$/;"	m	struct:__anon1
+pause	pause.h	/^    int             pause;$/;"	m	struct:Pause_Obj
+physAddr	osa_buf.h	/^  void *physAddr;$/;"	m	struct:__anon8
+pipes	fifoutil.h	/^    int pipes[2];$/;"	m	struct:FifoUtil_Obj
+ptr	osa_ipc.h	/^  char *ptr;$/;"	m	struct:__anon4
+queue	osa_msgq.h	/^  struct OSA_MsgHndl *queue[OSA_MSGQ_LEN_MAX];$/;"	m	struct:__anon3	typeref:struct:__anon3::OSA_MsgHndl
+queue	osa_que.h	/^  Int32 *queue;$/;"	m	struct:__anon11
+rcvMbx	osa_mbx.h	/^  OSA_MsgqHndl rcvMbx;    \/\/\/< Receive mailbox$/;"	m	struct:__anon16
+readerLock	osa_buf.h	/^  OSA_MutexHndl readerLock;$/;"	m	struct:__anon9
+rsv	osa_prf.h	/^  int rsv;$/;"	m	struct:__anon14
+sem_arg	osa_ipc.c	/^} sem_arg;$/;"	v	typeref:union:semun
+semun	osa_ipc.c	/^union semun {$/;"	u	file:
+size	fifoutil.h	/^    size_t size;$/;"	m	struct:FifoUtil_Obj
+size	osa_buf.h	/^  int size;$/;"	m	struct:__anon8
+status	osa_msgq.h	/^  int           status;$/;"	m	struct:OSA_MsgHndl
+thrHndl	osa_tsk.h	/^  OSA_ThrHndl thrHndl;      \/\/\/< OS thread handle$/;"	m	struct:OSA_TskHndl
+timestamp	osa_buf.h	/^  int timestamp;$/;"	m	struct:__anon8
+totalTime	osa_prf.h	/^  Uint32 totalTime;$/;"	m	struct:__anon13
+totalValue	osa_prf.h	/^  Uint32 totalValue;$/;"	m	struct:__anon13
+type	osa_ipc.h	/^  long  type;$/;"	m	struct:__anon7
+val	osa_ipc.c	/^  int val;$/;"	m	union:semun	file:
+virtAddr	osa_buf.h	/^  void *virtAddr;$/;"	m	struct:__anon8
+xtod	osa.c	/^static char xtod(char c) {$/;"	f	file:
