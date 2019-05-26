@@ -1,0 +1,4 @@
+robjs/injector.o robjs/injector.dep robjs/injector.chk: injector.c \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/error.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/injector.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/error.h

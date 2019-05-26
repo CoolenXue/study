@@ -1,0 +1,2 @@
+robjs/save.o robjs/save.dep: save.S \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/arch/x86/simulator/inc/offset.h

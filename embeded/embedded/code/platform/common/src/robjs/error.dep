@@ -1,0 +1,17 @@
+robjs/error.o robjs/error.dep robjs/error.chk: error.c \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/primitive.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/error.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/module.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/error.h \
+ errstr.def \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/timer/common/inc/errtmr.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/memory/common/inc/errmpool.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/memory/common/inc/errheap.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/driver/ctrlc/inc/errctrlc.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/arch/x86/simulator/inc/errcon.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/arch/x86/simulator/inc/errclock.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/device/inc/errdev.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/sync/common/inc/errsync.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/task/common/inc/errtask.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/errmod.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/module.h

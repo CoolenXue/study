@@ -1,0 +1,114 @@
+#******************************************************************************
+#*                                                                            *
+#* This program is distributed in the hope that it will be useful, but        *
+#* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY *
+#* or FITNESS FOR A PARTICULAR PURPOSE. This file and program are licensed    *
+#* under the GNU Lesser General Public License Version 3, 29 June 2007.       *
+#* The complete license can be accessed from the following location:          *
+#* http://opensource.org/licenses/lgpl-3.0.html                               *
+#*                                                                            *
+#* Author: Yun Li (yunli.open@gmail.com)                                      *
+#*   Date: 05/22/2010                                                         *
+#*                                                                            *
+#******************************************************************************
+
+#******************************************************************************
+# REVISION HISTORY
+# ================
+# 
+# Date     Version  Name          Description
+# -------- -------  ------------  --------------------------------------------
+#
+# -------- -------  ------------  --------------------------------------------
+#
+#******************************************************************************
+ 
+MKDIR = mkdir
+RM = rm
+AR = ar
+CXX = g++
+
+RMFLAGS = -fr
+ARFLAGS = crs
+CXXFLAGS += -Wall -Weffc++ -Woverloaded-virtual
+
+ROOT := $(abspath $(ROOT))
+BUILD := $(abspath $(BUILD))
+
+ifeq ("$(MAKECMDGOALS)", "")
+MAKECMDGOALS = release
+endif
+
+ifeq ("$(MAKECMDGOALS)", "release")
+DIR_OBJS = robjs
+CXXFLAGS += -gdwarf-2 -g3 -O2
+endif
+
+ifeq ("$(MAKECMDGOALS)", "debug")
+DIR_OBJS = dobjs
+CXXFLAGS += -gdwarf-2 -g3
+endif
+
+DIR_TARGET = $(BUILD)/$(MAKECMDGOALS)
+DIRS = $(DIR_OBJS) $(DIR_TARGET)
+
+SRCS = $(wildcard *.cpp)
+OBJS := $(addprefix $(DIR_OBJS)/, $(SRCS:.cpp=.o))
+DEPS := $(addprefix $(DIR_OBJS)/, $(SRCS:.cpp=.dep))
+RMS = robjs dobjs uobjs
+
+ifneq ("$(EXE)", "")
+EXE := $(addprefix $(DIR_TARGET)/, $(EXE))
+RMS += $(EXE)
+endif
+ifneq ("$(LIB)", "")
+LIB := $(addprefix $(DIR_TARGET)/, $(LIB))
+RMS += $(LIB)
+endif
+
+ifeq ("$(wildcard $(DIR_OBJS))", "")
+DEP_DIR_OBJS := $(DIR_OBJS)
+endif
+ifeq ("$(wildcard $(DIR_TARGET))", "")
+DEP_DIR_TARGET := $(DIR_TARGET)
+endif
+
+ifneq ("$(INCLUDE_DIRS)", "")
+INCLUDE_DIRS := $(addprefix -I, $(INCLUDE_DIRS))
+INCLUDE_DIRS := $(strip $(INCLUDE_DIRS))
+endif
+
+ifneq ("$(LINK_LIBS)", "")
+LINK_LIBS := $(strip $(LINK_LIBS))
+LIB_ALL := $(notdir $(wildcard $(DIR_TARGET)/*))
+LIB_FILTERED := $(addsuffix %, $(addprefix lib, $(LINK_LIBS)))
+$(eval DEP_LIBS = $(filter $(LIB_FILTERED), $(LIB_ALL)))
+DEP_LIBS := $(addprefix $(DIR_TARGET)/, $(DEP_LIBS))
+LINK_LIBS := $(addprefix -l, $(LINK_LIBS))
+endif
+
+.PHONY: release debug clean
+release debug: $(EXE) $(UTS) $(LIB)
+clean:
+	-$(RM) $(RMFLAGS) $(RMS)
+
+ifneq ("$(MAKECMDGOALS)", "clean")
+include $(DEPS)
+endif
+
+$(DIRS):
+	$(MKDIR) $@
+$(EXE): $(DEP_DIR_TARGET) $(OBJS) $(DEP_LIBS)
+	$(CXX) -L$(DIR_TARGET) -o $@ $(filter %.o, $^) $(LINK_LIBS)
+$(LIB): $(DEP_DIR_TARGET) $(OBJS)
+	$(AR) $(ARFLAGS) $@ $(filter %.o, $^)
+
+$(DIR_OBJS)/%.o: $(DEP_DIR_OBJS) %.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDE_DIRS) -o $@ -c $(filter %.cpp, $^)
+$(DIR_OBJS)/%.dep: $(DEP_DIR_OBJS) %.cpp
+	@echo "Creating $@ ..."
+	@set -e ; \
+	$(RM) $(RMFLAGS) $@.tmp ; \
+	$(CXX) $(INCLUDE_DIRS) -E -MM $(filter %.cpp, $^) > $@.tmp ; \
+	sed 's,\(.*\)\.o[ :]*,$(DIR_OBJS)/\1.o $@: ,g' < $@.tmp > $@ ; \
+	$(RM) $(RMFLAGS) $@.tmp

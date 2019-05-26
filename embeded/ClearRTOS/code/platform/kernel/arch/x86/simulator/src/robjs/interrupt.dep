@@ -1,0 +1,8 @@
+robjs/interrupt.o robjs/interrupt.dep robjs/interrupt.chk: interrupt.c \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/primitive.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/arch/x86/simulator/inc/interrupt.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/error.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/module.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/error.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/clib.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/primitive.h

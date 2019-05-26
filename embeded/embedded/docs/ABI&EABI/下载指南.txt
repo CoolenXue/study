@@ -1,0 +1,7 @@
+由于版权的问题，本来计划放在光盘中的ABI文档需要读者自行从网上下载。下面是相关文档的下载链接：
+1) System V Application Binary Interface
+    http://www.sco.com/developers/devspecs/gabi41.pdf
+2) System V Application Binary Interface Intel386 Architecture Processor Supplement (注：这就是x86的ABI)
+    http://www.sco.com/developers/devspecs/abi386-4.pdf
+3) System V Application Binary Interface MIPC RISC Processor Supplement
+    http://www.sco.com/developers/devspecs/mipsabi.pdf

@@ -1,0 +1,2 @@
+robjs/restore.o robjs/restore.dep: restore.S \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/arch/x86/simulator/inc/offset.h

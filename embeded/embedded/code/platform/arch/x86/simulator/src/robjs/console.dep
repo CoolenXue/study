@@ -1,0 +1,12 @@
+robjs/console.o robjs/console.dep robjs/console.chk: console.c \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/arch/x86/simulator/inc/console.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/module.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/error.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/device/inc/device.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/primitive.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/dll.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/primitive.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/error.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/arch/x86/simulator/inc/errcon.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/clib.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/arch/x86/simulator/inc/interrupt.h

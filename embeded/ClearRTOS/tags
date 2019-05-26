@@ -1,0 +1,1153 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+-leak-check	build/Makefile	/^	valgrind --leak-check=full --track-origins=yes --read-var-info=yes --malloc-fill=0xFF --log-file=$@.mem.log .\/$@$/;"	m
+-tool	build/Makefile	/^	valgrind --tool=exp-ptrcheck --enable-sg-checks=yes --log-file=$@.ptr.log .\/$@$/;"	m
+-tool	build/Makefile	/^	valgrind -q --tool=callgrind --collect-jumps=yes --callgrind-out-file=$(basename $@).prof .\/$@$/;"	m
+ADDR_MARK	code/platform/kernel/core/src/heap.c	/^static const address_t ADDR_MARK = 0x24891513;$/;"	v	file:
+ALIGN	code/platform/common/inc/alignment.h	35;"	d
+APPLICATION_LEVEL0	code/platform/common/inc/module.h	/^    APPLICATION_LEVEL0,$/;"	e	enum:__anon50
+APPLICATION_LEVEL1	code/platform/common/inc/module.h	/^    APPLICATION_LEVEL1,$/;"	e	enum:__anon50
+APPLICATION_LEVEL2	code/platform/common/inc/module.h	/^    APPLICATION_LEVEL2,$/;"	e	enum:__anon50
+APPLICATION_LEVEL3	code/platform/common/inc/module.h	/^    APPLICATION_LEVEL3,$/;"	e	enum:__anon50
+APPLICATION_LEVEL4	code/platform/common/inc/module.h	/^    APPLICATION_LEVEL4,$/;"	e	enum:__anon50
+APPLICATION_LEVEL5	code/platform/common/inc/module.h	/^    APPLICATION_LEVEL5,$/;"	e	enum:__anon50
+APPLICATION_LEVEL6	code/platform/common/inc/module.h	/^    APPLICATION_LEVEL6,$/;"	e	enum:__anon50
+APPLICATION_LEVEL7	code/platform/common/inc/module.h	/^    APPLICATION_LEVEL7,$/;"	e	enum:__anon50
+ARCH	build/Makefile	/^ARCH = x86$/;"	m
+BITS_SUPPORTED	code/platform/kernel/core/inc/bitmap.h	32;"	d
+BOARD	build/Makefile	/^BOARD = simulator$/;"	m
+BOTTOM_MAGIC_NUMBER	code/platform/kernel/arch/x86/simulator/src/context.c	32;"	d	file:
+BUCKET_LAST_INDEX	code/platform/kernel/core/src/timer.c	38;"	d	file:
+BUILD	build/Makefile	/^BUILD = $(realpath .)$/;"	m
+CMP_LT_OR_GT	code/platform/common/src/clib.c	33;"	d	file:
+CMP_LT_OR_GT	code/platform/common/src/clib.c	35;"	d	file:
+COMMON_DIRS	build/Makefile	/^COMMON_DIRS = \\$/;"	m
+CONFIG_IDLE_TASK_STACK_SIZE	code/platform/kernel/core/inc/config.h	48;"	d
+CONFIG_INTERRUPT_FLASH_FREQUENCY	code/platform/kernel/core/inc/config.h	76;"	d
+CONFIG_MAX_BITMAP_ROW	code/platform/kernel/core/inc/config.h	40;"	d
+CONFIG_MAX_BIT_PER_ROW	code/platform/kernel/core/inc/config.h	41;"	d
+CONFIG_MAX_BUCKET	code/platform/kernel/core/inc/config.h	71;"	d
+CONFIG_MAX_DRIVER	code/platform/kernel/core/inc/config.h	67;"	d
+CONFIG_MAX_ELEMENT	code/application/queue/main.c	31;"	d	file:
+CONFIG_MAX_INTERRUPT	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	38;"	d
+CONFIG_MAX_MPOOL	code/platform/kernel/core/inc/config.h	64;"	d
+CONFIG_MAX_MUTEX	code/platform/kernel/core/inc/config.h	60;"	d
+CONFIG_MAX_QUEUE	code/platform/kernel/core/inc/config.h	59;"	d
+CONFIG_MAX_SEMAPHORE	code/platform/kernel/core/inc/config.h	61;"	d
+CONFIG_MAX_TASK_CREATE_HOOK	code/platform/kernel/core/inc/config.h	54;"	d
+CONFIG_MAX_TASK_DELETE_HOOK	code/platform/kernel/core/inc/config.h	56;"	d
+CONFIG_MAX_TASK_SWITCH_HOOK	code/platform/kernel/core/inc/config.h	55;"	d
+CONFIG_MAX_TASK_VARIABLE	code/platform/kernel/core/inc/config.h	51;"	d
+CONFIG_MAX_TIMER	code/platform/kernel/core/inc/config.h	72;"	d
+CONFIG_TICK_DURATION_IN_MSEC	code/platform/kernel/core/inc/config.h	70;"	d
+CONFIG_TIMER_QUEUE_SIZE	code/platform/kernel/core/inc/config.h	75;"	d
+CONFIG_TIMER_TASK_PRIORITY	code/platform/kernel/core/inc/config.h	74;"	d
+CONFIG_TIMER_TASK_STACK_SIZE	code/platform/kernel/core/inc/config.h	73;"	d
+CONTEXT_OFFSET_EBP	code/platform/kernel/arch/x86/simulator/inc/offset.h	38;"	d
+CONTEXT_OFFSET_EBX	code/platform/kernel/arch/x86/simulator/inc/offset.h	35;"	d
+CONTEXT_OFFSET_EDI	code/platform/kernel/arch/x86/simulator/inc/offset.h	37;"	d
+CONTEXT_OFFSET_EIP	code/platform/kernel/arch/x86/simulator/inc/offset.h	40;"	d
+CONTEXT_OFFSET_ESI	code/platform/kernel/arch/x86/simulator/inc/offset.h	36;"	d
+CONTEXT_OFFSET_ESP	code/platform/kernel/arch/x86/simulator/inc/offset.h	39;"	d
+CPU	build/Makefile	/^CPU = simulator$/;"	m
+CPU_LEVEL	code/platform/common/inc/module.h	/^    CPU_LEVEL = LEVEL_FIRST,$/;"	e	enum:__anon50
+CPU_STACK_ALIGNMENT	code/platform/kernel/arch/x86/simulator/src/context.c	31;"	d	file:
+DIR_COVERAGE	build/Makefile	/^DIR_COVERAGE = coverage$/;"	m
+DIR_PROFILE	build/Makefile	/^DIR_PROFILE = profile$/;"	m
+DIR_UNITEST	build/Makefile	/^DIR_UNITEST = unitest$/;"	m
+DO_NOT_CARE	code/platform/common/inc/primitive.h	67;"	d
+DRIVER_LAST_INDEX	code/platform/kernel/core/src/device.c	32;"	d	file:
+DRIVER_LEVEL	code/platform/common/inc/module.h	/^    DRIVER_LEVEL,$/;"	e	enum:__anon50
+ERROR_BEGIN	code/platform/common/inc/error.h	44;"	d
+ERROR_BITS	code/platform/common/inc/error.h	38;"	d
+ERROR_CLOCK_CONTROL_INVOPT	code/platform/kernel/arch/x86/simulator/inc/errclock.h	/^    ERROR_CLOCK_CONTROL_INVOPT$/;"	e	enum:__anon7
+ERROR_CLOCK_OPEN_OPENED	code/platform/kernel/arch/x86/simulator/inc/errclock.h	/^    ERROR_CLOCK_OPEN_OPENED = ERROR_BEGIN (MODULE_CLOCK),$/;"	e	enum:__anon7
+ERROR_CONSOLE_OPEN_OPENED	code/platform/kernel/arch/x86/simulator/inc/errcon.h	/^    ERROR_CONSOLE_OPEN_OPENED = ERROR_BEGIN (MODULE_CONSOLE)$/;"	e	enum:__anon6
+ERROR_CTRLC_OPEN_OPENED	code/platform/kernel/driver/ctrlc/inc/errctrlc.h	/^    ERROR_CTRLC_OPEN_OPENED = ERROR_BEGIN (MODULE_CTRLC)$/;"	e	enum:__anon43
+ERROR_DEVICE_CLOSE_INVHANDLE	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_CLOSE_INVHANDLE,$/;"	e	enum:__anon27
+ERROR_DEVICE_CONTROL_INVHANDLE	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_CONTROL_INVHANDLE,$/;"	e	enum:__anon27
+ERROR_DEVICE_CONTROL_NOTSUPPORT	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_CONTROL_NOTSUPPORT$/;"	e	enum:__anon27
+ERROR_DEVICE_OPEN_INVNAME	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_OPEN_INVNAME,$/;"	e	enum:__anon27
+ERROR_DEVICE_OPEN_INVSTATE	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_OPEN_INVSTATE,$/;"	e	enum:__anon27
+ERROR_DEVICE_OPEN_NODEV	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_OPEN_NODEV,$/;"	e	enum:__anon27
+ERROR_DEVICE_OPEN_NODRV	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_OPEN_NODRV,$/;"	e	enum:__anon27
+ERROR_DEVICE_READ_INVHANDLE	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_READ_INVHANDLE,$/;"	e	enum:__anon27
+ERROR_DEVICE_READ_NOTSUPPORT	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_READ_NOTSUPPORT,$/;"	e	enum:__anon27
+ERROR_DEVICE_REGISTER_INVHANDLE	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_REGISTER_INVHANDLE,$/;"	e	enum:__anon27
+ERROR_DEVICE_REGISTER_INVNAME	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_REGISTER_INVNAME,$/;"	e	enum:__anon27
+ERROR_DEVICE_REGISTER_NODRV	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_REGISTER_NODRV,$/;"	e	enum:__anon27
+ERROR_DEVICE_WRITE_INVHANDLE	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_WRITE_INVHANDLE,$/;"	e	enum:__anon27
+ERROR_DEVICE_WRITE_NOTSUPPORT	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DEVICE_WRITE_NOTSUPPORT,$/;"	e	enum:__anon27
+ERROR_DRIVER_INSTALLED	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DRIVER_INSTALLED,$/;"	e	enum:__anon27
+ERROR_DRIVER_INVNAME	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DRIVER_INVNAME,$/;"	e	enum:__anon27
+ERROR_DRIVER_INVOPT	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DRIVER_INVOPT,$/;"	e	enum:__anon27
+ERROR_DRIVER_INVSTATE	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DRIVER_INVSTATE,$/;"	e	enum:__anon27
+ERROR_DRIVER_NODRV	code/platform/kernel/core/inc/errdev.h	/^    ERROR_DRIVER_NODRV = ERROR_BEGIN (MODULE_DEVICE),$/;"	e	enum:__anon27
+ERROR_EVENT_CLEAR_INVCONTEXT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_EVENT_CLEAR_INVCONTEXT,$/;"	e	enum:__anon40
+ERROR_EVENT_RECV_INVCONTEXT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_EVENT_RECV_INVCONTEXT,$/;"	e	enum:__anon40
+ERROR_EVENT_RECV_INVOPT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_EVENT_RECV_INVOPT,$/;"	e	enum:__anon40
+ERROR_EVENT_RECV_INVPTR	code/platform/kernel/core/inc/errsync.h	/^    ERROR_EVENT_RECV_INVPTR,$/;"	e	enum:__anon40
+ERROR_EVENT_RECV_INVRECEIVER	code/platform/kernel/core/inc/errsync.h	/^    ERROR_EVENT_RECV_INVRECEIVER,$/;"	e	enum:__anon40
+ERROR_EVENT_RECV_TIMEOUT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_EVENT_RECV_TIMEOUT,$/;"	e	enum:__anon40
+ERROR_FILES	code/platform/common/src/Makefile	/^ERROR_FILES = \\$/;"	m
+ERROR_HEAP_ALLOC_INVCONTEXT	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_ALLOC_INVCONTEXT,$/;"	e	enum:__anon33
+ERROR_HEAP_ALLOC_INVLOC	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_ALLOC_INVLOC,$/;"	e	enum:__anon33
+ERROR_HEAP_ALLOC_INVSIZE	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_ALLOC_INVSIZE,$/;"	e	enum:__anon33
+ERROR_HEAP_ALLOC_NOMEM1	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_ALLOC_NOMEM1,$/;"	e	enum:__anon33
+ERROR_HEAP_ALLOC_NOMEM2	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_ALLOC_NOMEM2,$/;"	e	enum:__anon33
+ERROR_HEAP_ALLOC_NOTINIT	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_ALLOC_NOTINIT,$/;"	e	enum:__anon33
+ERROR_HEAP_FREE_INVBUF	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_FREE_INVBUF,$/;"	e	enum:__anon33
+ERROR_HEAP_FREE_INVMBLOCK1	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_FREE_INVMBLOCK1,$/;"	e	enum:__anon33
+ERROR_HEAP_FREE_INVMBLOCK2	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_FREE_INVMBLOCK2,$/;"	e	enum:__anon33
+ERROR_HEAP_FREE_INVMBLOCK3	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_FREE_INVMBLOCK3,$/;"	e	enum:__anon33
+ERROR_HEAP_FREE_INVMHEAD	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_FREE_INVMHEAD,$/;"	e	enum:__anon33
+ERROR_HEAP_FREE_INVMTAIL	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_FREE_INVMTAIL$/;"	e	enum:__anon33
+ERROR_HEAP_FREE_INVSIZE	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_FREE_INVSIZE,$/;"	e	enum:__anon33
+ERROR_HEAP_FREE_NOTINIT	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_FREE_NOTINIT,$/;"	e	enum:__anon33
+ERROR_HEAP_INIT_INVADDR	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_INIT_INVADDR = ERROR_BEGIN (MODULE_HEAP),$/;"	e	enum:__anon33
+ERROR_HEAP_INIT_INVALIGN	code/platform/kernel/core/inc/errheap.h	/^    ERROR_HEAP_INIT_INVALIGN,$/;"	e	enum:__anon33
+ERROR_MARK	code/platform/common/inc/error.h	42;"	d
+ERROR_MODULE_DOWN_FAILURE	code/platform/common/inc/errmod.h	/^    ERROR_MODULE_DOWN_FAILURE$/;"	e	enum:__anon53
+ERROR_MODULE_INIT_FAILURE	code/platform/common/inc/errmod.h	/^    ERROR_MODULE_INIT_FAILURE,$/;"	e	enum:__anon53
+ERROR_MODULE_REGISTERED	code/platform/common/inc/errmod.h	/^    ERROR_MODULE_REGISTERED,$/;"	e	enum:__anon53
+ERROR_MODULE_REG_INVCB	code/platform/common/inc/errmod.h	/^    ERROR_MODULE_REG_INVCB,$/;"	e	enum:__anon53
+ERROR_MODULE_REG_INVLEVEL	code/platform/common/inc/errmod.h	/^    ERROR_MODULE_REG_INVLEVEL,$/;"	e	enum:__anon53
+ERROR_MODULE_REG_INVMODULE	code/platform/common/inc/errmod.h	/^    ERROR_MODULE_REG_INVMODULE = ERROR_BEGIN (MODULE_MODULE),$/;"	e	enum:__anon53
+ERROR_MODULE_UP_FAILURE	code/platform/common/inc/errmod.h	/^    ERROR_MODULE_UP_FAILURE,$/;"	e	enum:__anon53
+ERROR_MPOOL_ALLOC_INVHANDLE	code/platform/kernel/core/inc/errmpool.h	/^    ERROR_MPOOL_ALLOC_INVHANDLE,$/;"	e	enum:__anon32
+ERROR_MPOOL_CREATE_INVCONTEXT	code/platform/kernel/core/inc/errmpool.h	/^    ERROR_MPOOL_CREATE_INVCONTEXT = ERROR_BEGIN (MODULE_MPOOL),$/;"	e	enum:__anon32
+ERROR_MPOOL_CREATE_INVPTR	code/platform/kernel/core/inc/errmpool.h	/^    ERROR_MPOOL_CREATE_INVPTR,$/;"	e	enum:__anon32
+ERROR_MPOOL_CREATE_NOPOOL	code/platform/kernel/core/inc/errmpool.h	/^    ERROR_MPOOL_CREATE_NOPOOL,$/;"	e	enum:__anon32
+ERROR_MPOOL_DELETE_INVHANDLE	code/platform/kernel/core/inc/errmpool.h	/^    ERROR_MPOOL_DELETE_INVHANDLE,$/;"	e	enum:__anon32
+ERROR_MPOOL_FREE_INVADDR	code/platform/kernel/core/inc/errmpool.h	/^    ERROR_MPOOL_FREE_INVADDR,$/;"	e	enum:__anon32
+ERROR_MPOOL_FREE_INVALIGNMENT	code/platform/kernel/core/inc/errmpool.h	/^    ERROR_MPOOL_FREE_INVALIGNMENT,$/;"	e	enum:__anon32
+ERROR_MPOOL_FREE_INVHANDLE	code/platform/kernel/core/inc/errmpool.h	/^    ERROR_MPOOL_FREE_INVHANDLE,$/;"	e	enum:__anon32
+ERROR_MPOOL_FREE_NOTINUSE	code/platform/kernel/core/inc/errmpool.h	/^    ERROR_MPOOL_FREE_NOTINUSE$/;"	e	enum:__anon32
+ERROR_MPOOL_FREE_OUTOFRANGE	code/platform/kernel/core/inc/errmpool.h	/^    ERROR_MPOOL_FREE_OUTOFRANGE,$/;"	e	enum:__anon32
+ERROR_MUTEX_INVCONTEXT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_MUTEX_INVCONTEXT,$/;"	e	enum:__anon40
+ERROR_MUTEX_NOTOWNER	code/platform/kernel/core/inc/errsync.h	/^    ERROR_MUTEX_NOTOWNER,$/;"	e	enum:__anon40
+ERROR_QUEUE_CREATE_INVCONTEXT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_QUEUE_CREATE_INVCONTEXT,$/;"	e	enum:__anon40
+ERROR_QUEUE_CREATE_NOQUE	code/platform/kernel/core/inc/errsync.h	/^    ERROR_QUEUE_CREATE_NOQUE,$/;"	e	enum:__anon40
+ERROR_QUEUE_DELETE_INVCONTEXT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_QUEUE_DELETE_INVCONTEXT,$/;"	e	enum:__anon40
+ERROR_QUEUE_DELETE_INVHANDLE	code/platform/kernel/core/inc/errsync.h	/^    ERROR_QUEUE_DELETE_INVHANDLE,$/;"	e	enum:__anon40
+ERROR_QUEUE_EMPTY_INVHANDLE	code/platform/kernel/core/inc/errsync.h	/^    ERROR_QUEUE_EMPTY_INVHANDLE,$/;"	e	enum:__anon40
+ERROR_QUEUE_FULL_INVHANDLE	code/platform/kernel/core/inc/errsync.h	/^    ERROR_QUEUE_FULL_INVHANDLE$/;"	e	enum:__anon40
+ERROR_QUEUE_RECV_INVHANDLE	code/platform/kernel/core/inc/errsync.h	/^    ERROR_QUEUE_RECV_INVHANDLE,$/;"	e	enum:__anon40
+ERROR_QUEUE_SEND_FULL	code/platform/kernel/core/inc/errsync.h	/^    ERROR_QUEUE_SEND_FULL,$/;"	e	enum:__anon40
+ERROR_QUEUE_SEND_INVHANDLE	code/platform/kernel/core/inc/errsync.h	/^    ERROR_QUEUE_SEND_INVHANDLE,$/;"	e	enum:__anon40
+ERROR_SYNC_ALLOC_INVCONTEXT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_ALLOC_INVCONTEXT,$/;"	e	enum:__anon40
+ERROR_SYNC_ALLOC_NOOBJ	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_ALLOC_NOOBJ,$/;"	e	enum:__anon40
+ERROR_SYNC_ENTER_INVCONTEXT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_ENTER_INVCONTEXT,$/;"	e	enum:__anon40
+ERROR_SYNC_ENTER_INVHANDLE	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_ENTER_INVHANDLE,$/;"	e	enum:__anon40
+ERROR_SYNC_ENTER_INVTASK	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_ENTER_INVTASK,$/;"	e	enum:__anon40
+ERROR_SYNC_ENTER_TIMEOUT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_ENTER_TIMEOUT,$/;"	e	enum:__anon40
+ERROR_SYNC_ENTER_TRYAGAIN	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_ENTER_TRYAGAIN,$/;"	e	enum:__anon40
+ERROR_SYNC_FREE_DELETED	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_FREE_DELETED,$/;"	e	enum:__anon40
+ERROR_SYNC_FREE_INVCONTEXT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_FREE_INVCONTEXT,$/;"	e	enum:__anon40
+ERROR_SYNC_FREE_INVHANDLE	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_FREE_INVHANDLE,$/;"	e	enum:__anon40
+ERROR_SYNC_INIT_INVCONTEXT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_INIT_INVCONTEXT,$/;"	e	enum:__anon40
+ERROR_SYNC_INIT_INVINIT	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_INIT_INVINIT = ERROR_BEGIN (MODULE_SYNC),$/;"	e	enum:__anon40
+ERROR_SYNC_LEAVE_INVHANDLE	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_LEAVE_INVHANDLE,$/;"	e	enum:__anon40
+ERROR_SYNC_LEAVE_INVTASK	code/platform/kernel/core/inc/errsync.h	/^    ERROR_SYNC_LEAVE_INVTASK,$/;"	e	enum:__anon40
+ERROR_T	code/platform/common/inc/error.h	46;"	d
+ERROR_TASK_CREATE_INVCONTEXT	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_CREATE_INVCONTEXT,$/;"	e	enum:__anon42
+ERROR_TASK_CREATE_INVPRIO	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_CREATE_INVPRIO,$/;"	e	enum:__anon42
+ERROR_TASK_CREATE_PRIOINUSE	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_CREATE_PRIOINUSE = ERROR_BEGIN (MODULE_TASK),$/;"	e	enum:__anon42
+ERROR_TASK_DELETE_INVCONTEXT	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_DELETE_INVCONTEXT,$/;"	e	enum:__anon42
+ERROR_TASK_DELETE_INVHANDLE	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_DELETE_INVHANDLE,$/;"	e	enum:__anon42
+ERROR_TASK_DUMP_INVCONTEXT	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_DUMP_INVCONTEXT,$/;"	e	enum:__anon42
+ERROR_TASK_HOOK_CREATE_NOROOM	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_HOOK_CREATE_NOROOM,$/;"	e	enum:__anon42
+ERROR_TASK_HOOK_CREATE_NOTFOUND	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_HOOK_CREATE_NOTFOUND,$/;"	e	enum:__anon42
+ERROR_TASK_HOOK_DELETE_NOROOM	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_HOOK_DELETE_NOROOM,$/;"	e	enum:__anon42
+ERROR_TASK_HOOK_DELETE_NOTFOUND	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_HOOK_DELETE_NOTFOUND,$/;"	e	enum:__anon42
+ERROR_TASK_HOOK_SWITCH_NOROOM	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_HOOK_SWITCH_NOROOM,$/;"	e	enum:__anon42
+ERROR_TASK_HOOK_SWITCH_NOTFOUND	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_HOOK_SWITCH_NOTFOUND,$/;"	e	enum:__anon42
+ERROR_TASK_RESTART_INVHANDLE	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_RESTART_INVHANDLE,$/;"	e	enum:__anon42
+ERROR_TASK_RESTART_INVOP	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_RESTART_INVOP,$/;"	e	enum:__anon42
+ERROR_TASK_RESUME_INVHANDLE	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_RESUME_INVHANDLE,$/;"	e	enum:__anon42
+ERROR_TASK_RESUME_NOTSUSPENDED	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_RESUME_NOTSUSPENDED,$/;"	e	enum:__anon42
+ERROR_TASK_SLEEP_INVCONTEXT	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_SLEEP_INVCONTEXT,$/;"	e	enum:__anon42
+ERROR_TASK_STACK_INVCONTEXT	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_STACK_INVCONTEXT,$/;"	e	enum:__anon42
+ERROR_TASK_STACK_INVHANDLE	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_STACK_INVHANDLE,$/;"	e	enum:__anon42
+ERROR_TASK_START_INVHANDLE	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_START_INVHANDLE,$/;"	e	enum:__anon42
+ERROR_TASK_START_INVOP	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_START_INVOP,$/;"	e	enum:__anon42
+ERROR_TASK_SUSPEND_INVHANDLE	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_SUSPEND_INVHANDLE,$/;"	e	enum:__anon42
+ERROR_TASK_SUSPEND_NOTSTARTED	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_SUSPEND_NOTSTARTED,$/;"	e	enum:__anon42
+ERROR_TASK_VARIABLE_ADD_INVTASK	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_VARIABLE_ADD_INVTASK,$/;"	e	enum:__anon42
+ERROR_TASK_VARIABLE_ADD_NOVAR	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_VARIABLE_ADD_NOVAR,$/;"	e	enum:__anon42
+ERROR_TASK_VARIABLE_REMOVE_INVTASK	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_VARIABLE_REMOVE_INVTASK,$/;"	e	enum:__anon42
+ERROR_TASK_VARIABLE_REMOVE_NOTFOUND	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_VARIABLE_REMOVE_NOTFOUND$/;"	e	enum:__anon42
+ERROR_TASK_WAIT_TIMEOUT	code/platform/kernel/core/inc/errtask.h	/^    ERROR_TASK_WAIT_TIMEOUT,$/;"	e	enum:__anon42
+ERROR_TIMER_ALLOC_INVCB	code/platform/kernel/core/inc/errtmr.h	/^    ERROR_TIMER_ALLOC_INVCB,$/;"	e	enum:__anon22
+ERROR_TIMER_ALLOC_INVHANDLE	code/platform/kernel/core/inc/errtmr.h	/^    ERROR_TIMER_ALLOC_INVHANDLE = ERROR_BEGIN (MODULE_TIMER),$/;"	e	enum:__anon22
+ERROR_TIMER_ALLOC_NOTIMER	code/platform/kernel/core/inc/errtmr.h	/^    ERROR_TIMER_ALLOC_NOTIMER,$/;"	e	enum:__anon22
+ERROR_TIMER_FREE_INVHANDLE	code/platform/kernel/core/inc/errtmr.h	/^    ERROR_TIMER_FREE_INVHANDLE,$/;"	e	enum:__anon22
+ERROR_TIMER_RESTART_INVHANDLE	code/platform/kernel/core/inc/errtmr.h	/^    ERROR_TIMER_RESTART_INVHANDLE,$/;"	e	enum:__anon22
+ERROR_TIMER_RESTART_INVSTATE	code/platform/kernel/core/inc/errtmr.h	/^    ERROR_TIMER_RESTART_INVSTATE,$/;"	e	enum:__anon22
+ERROR_TIMER_START_INVHANDLE	code/platform/kernel/core/inc/errtmr.h	/^    ERROR_TIMER_START_INVHANDLE,$/;"	e	enum:__anon22
+ERROR_TIMER_START_INVSTATE	code/platform/kernel/core/inc/errtmr.h	/^    ERROR_TIMER_START_INVSTATE,$/;"	e	enum:__anon22
+ERROR_TIMER_STATE_INVSTATE	code/platform/kernel/core/inc/errtmr.h	/^    ERROR_TIMER_STATE_INVSTATE$/;"	e	enum:__anon22
+ERROR_TIMER_STOP_INVHANDLE	code/platform/kernel/core/inc/errtmr.h	/^    ERROR_TIMER_STOP_INVHANDLE,$/;"	e	enum:__anon22
+ERROR_TIMER_STOP_INVSTATE	code/platform/kernel/core/inc/errtmr.h	/^    ERROR_TIMER_STOP_INVSTATE,$/;"	e	enum:__anon22
+EVENT_1	code/application/event/main.c	31;"	d	file:
+EVENT_2	code/application/event/main.c	32;"	d	file:
+EVENT_RETURN_ALL	code/platform/kernel/core/inc/event.h	49;"	d
+EVENT_RETURN_EXPECTED	code/platform/kernel/core/inc/event.h	50;"	d
+EVENT_WAIT_ALL	code/platform/kernel/core/inc/event.h	47;"	d
+EVENT_WAIT_ANY	code/platform/kernel/core/inc/event.h	48;"	d
+EXE	code/application/event/Makefile	/^EXE = event.exe$/;"	m
+EXE	code/application/mutex/Makefile	/^EXE = mutex.exe$/;"	m
+EXE	code/application/queue/Makefile	/^EXE = queue.exe$/;"	m
+EXE	code/application/semaphore/Makefile	/^EXE = semaphore.exe$/;"	m
+EXE	code/application/task/Makefile	/^EXE = task.exe$/;"	m
+EXE	code/platform/common/src/Makefile	/^EXE = $/;"	m
+EXE	code/platform/kernel/arch/x86/share/src/Makefile	/^EXE = $/;"	m
+EXE	code/platform/kernel/arch/x86/simulator/src/Makefile	/^EXE = $/;"	m
+EXE	code/platform/kernel/board/simulator/src/Makefile	/^EXE =$/;"	m
+EXE	code/platform/kernel/core/src/Makefile	/^EXE = $/;"	m
+EXE	code/platform/kernel/driver/ctrlc/src/Makefile	/^EXE = $/;"	m
+EXE	code/tools/err2str/Makefile	/^EXE = err2str.exe$/;"	m
+EXE	tests/platform/common/Makefile	/^EXE = $/;"	m
+EXE	tests/platform/kernel/core/Makefile	/^EXE = $/;"	m
+FIFO_BUFFER_DECLARE	code/platform/common/inc/fifo.h	33;"	d
+FRAMEWORK_LEVEL0	code/platform/common/inc/module.h	/^    FRAMEWORK_LEVEL0,$/;"	e	enum:__anon50
+FRAMEWORK_LEVEL1	code/platform/common/inc/module.h	/^    FRAMEWORK_LEVEL1,$/;"	e	enum:__anon50
+FRAMEWORK_LEVEL2	code/platform/common/inc/module.h	/^    FRAMEWORK_LEVEL2,$/;"	e	enum:__anon50
+FRAMEWORK_LEVEL3	code/platform/common/inc/module.h	/^    FRAMEWORK_LEVEL3,$/;"	e	enum:__anon50
+FRAMEWORK_LEVEL4	code/platform/common/inc/module.h	/^    FRAMEWORK_LEVEL4,$/;"	e	enum:__anon50
+FRAMEWORK_LEVEL5	code/platform/common/inc/module.h	/^    FRAMEWORK_LEVEL5,$/;"	e	enum:__anon50
+FRAMEWORK_LEVEL6	code/platform/common/inc/module.h	/^    FRAMEWORK_LEVEL6,$/;"	e	enum:__anon50
+FRAMEWORK_LEVEL7	code/platform/common/inc/module.h	/^    FRAMEWORK_LEVEL7,$/;"	e	enum:__anon50
+FRAME_OFFSET_PARAM0	code/platform/kernel/arch/x86/simulator/inc/offset.h	31;"	d
+FRAME_OFFSET_PARAM1	code/platform/kernel/arch/x86/simulator/inc/offset.h	32;"	d
+FRAME_OFFSET_PC	code/platform/kernel/arch/x86/simulator/inc/offset.h	30;"	d
+IDLE_TASK_PRIORITY	code/platform/kernel/core/src/task.c	40;"	d	file:
+INCLUDE_DIRS	code/application/event/Makefile	/^INCLUDE_DIRS = \\$/;"	m
+INCLUDE_DIRS	code/application/mutex/Makefile	/^INCLUDE_DIRS = \\$/;"	m
+INCLUDE_DIRS	code/application/queue/Makefile	/^INCLUDE_DIRS = \\$/;"	m
+INCLUDE_DIRS	code/application/semaphore/Makefile	/^INCLUDE_DIRS = \\$/;"	m
+INCLUDE_DIRS	code/application/task/Makefile	/^INCLUDE_DIRS = \\$/;"	m
+INCLUDE_DIRS	code/platform/common/src/Makefile	/^INCLUDE_DIRS = \\$/;"	m
+INCLUDE_DIRS	code/platform/kernel/arch/x86/share/src/Makefile	/^INCLUDE_DIRS = \\$/;"	m
+INCLUDE_DIRS	code/platform/kernel/arch/x86/simulator/src/Makefile	/^INCLUDE_DIRS = \\$/;"	m
+INCLUDE_DIRS	code/platform/kernel/board/simulator/src/Makefile	/^INCLUDE_DIRS = \\$/;"	m
+INCLUDE_DIRS	code/platform/kernel/core/src/Makefile	/^INCLUDE_DIRS = \\$/;"	m
+INCLUDE_DIRS	code/platform/kernel/driver/ctrlc/src/Makefile	/^INCLUDE_DIRS = \\$/;"	m
+INCLUDE_DIRS	code/tools/err2str/Makefile	/^INCLUDE_DIRS =$/;"	m
+INCLUDE_DIRS	tests/platform/common/Makefile	/^INCLUDE_DIRS = $(ROOT)\/code\/platform\/common\/inc$/;"	m
+INCLUDE_DIRS	tests/platform/kernel/core/Makefile	/^INCLUDE_DIRS = \\$/;"	m
+INJECTION_POINT_COUNT	code/platform/common/inc/injector.h	/^    INJECTION_POINT_COUNT,$/;"	e	enum:__anon55
+INJECTION_POINT_LAST	code/platform/common/inc/injector.h	/^    INJECTION_POINT_LAST = (INJECTION_POINT_COUNT - 1)$/;"	e	enum:__anon55
+INJECTION_POINT_TIMER_ALLOC	code/platform/common/inc/injector.h	/^    INJECTION_POINT_TIMER_ALLOC,$/;"	e	enum:__anon55
+INJECTION_POINT_TIMER_FREE	code/platform/common/inc/injector.h	/^    INJECTION_POINT_TIMER_FREE,$/;"	e	enum:__anon55
+INJECTION_POINT_TIMER_START	code/platform/common/inc/injector.h	/^    INJECTION_POINT_TIMER_START,$/;"	e	enum:__anon55
+INTERNAL_USE_ONLY_CASE_SHOW	code/platform/common/inc/unitest.h	39;"	d
+INTERNAL_USE_ONLY_FAILED	code/platform/common/inc/unitest.h	37;"	d
+INTERNAL_USE_ONLY_SUCCEEDED	code/platform/common/inc/unitest.h	35;"	d
+INTERRUPT_DISABLED	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	/^    INTERRUPT_DISABLED$/;"	e	enum:__anon5
+INTERRUPT_ENABLED	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	/^    INTERRUPT_ENABLED,$/;"	e	enum:__anon5
+INTERRUPT_LAST_INDEX	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	39;"	d
+INTERRUPT_NONE	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	40;"	d
+INVALID_BIT	code/platform/kernel/core/inc/bitmap.h	35;"	d
+IS_ALIGNED	code/platform/common/inc/alignment.h	33;"	d
+KEY_HEAD	tests/platform/common/unitest_dll.c	/^static int KEY_HEAD = 3344;$/;"	v	file:
+KEY_MIDDLE	tests/platform/common/unitest_dll.c	/^static int KEY_MIDDLE = 5566;$/;"	v	file:
+KEY_TAIL	tests/platform/common/unitest_dll.c	/^static int KEY_TAIL = 7788;$/;"	v	file:
+LAST_BIT	code/platform/kernel/core/inc/bitmap.h	33;"	d
+LEVEL_COUNT	code/platform/common/inc/module.h	/^    LEVEL_COUNT,$/;"	e	enum:__anon50
+LEVEL_FIRST	code/platform/common/inc/module.h	/^    LEVEL_FIRST,$/;"	e	enum:__anon50
+LEVEL_LAST	code/platform/common/inc/module.h	/^    LEVEL_LAST = (LEVEL_COUNT - 1)$/;"	e	enum:__anon50
+LIB	code/application/event/Makefile	/^LIB = $/;"	m
+LIB	code/application/mutex/Makefile	/^LIB = $/;"	m
+LIB	code/application/queue/Makefile	/^LIB = $/;"	m
+LIB	code/application/semaphore/Makefile	/^LIB = $/;"	m
+LIB	code/application/task/Makefile	/^LIB = $/;"	m
+LIB	code/platform/common/src/Makefile	/^LIB = libcommon.a$/;"	m
+LIB	code/platform/kernel/arch/x86/share/src/Makefile	/^LIB = libarch.a$/;"	m
+LIB	code/platform/kernel/arch/x86/simulator/src/Makefile	/^LIB = libcpu.a$/;"	m
+LIB	code/platform/kernel/board/simulator/src/Makefile	/^LIB = libboard.a $/;"	m
+LIB	code/platform/kernel/core/src/Makefile	/^LIB = libcore.a$/;"	m
+LIB	code/platform/kernel/driver/ctrlc/src/Makefile	/^LIB = libctrlc.a$/;"	m
+LIB	code/tools/err2str/Makefile	/^LIB = $/;"	m
+LIB	tests/platform/common/Makefile	/^LIB = $/;"	m
+LIB	tests/platform/kernel/core/Makefile	/^LIB = $/;"	m
+LINK_LIBS	code/application/event/Makefile	/^LINK_LIBS = core board ctrlc cpu arch common$/;"	m
+LINK_LIBS	code/application/mutex/Makefile	/^LINK_LIBS = core board ctrlc cpu arch common$/;"	m
+LINK_LIBS	code/application/queue/Makefile	/^LINK_LIBS = core board ctrlc cpu arch common$/;"	m
+LINK_LIBS	code/application/semaphore/Makefile	/^LINK_LIBS = core board ctrlc cpu arch common$/;"	m
+LINK_LIBS	code/application/task/Makefile	/^LINK_LIBS = core board ctrlc cpu arch common$/;"	m
+LINK_LIBS	code/platform/common/src/Makefile	/^LINK_LIBS = $/;"	m
+LINK_LIBS	code/platform/kernel/arch/x86/share/src/Makefile	/^LINK_LIBS = $/;"	m
+LINK_LIBS	code/platform/kernel/arch/x86/simulator/src/Makefile	/^LINK_LIBS = $/;"	m
+LINK_LIBS	code/platform/kernel/board/simulator/src/Makefile	/^LINK_LIBS = $/;"	m
+LINK_LIBS	code/platform/kernel/core/src/Makefile	/^LINK_LIBS = $/;"	m
+LINK_LIBS	code/platform/kernel/driver/ctrlc/src/Makefile	/^LINK_LIBS = $/;"	m
+LINK_LIBS	code/tools/err2str/Makefile	/^LINK_LIBS =$/;"	m
+LINK_LIBS	tests/platform/common/Makefile	/^LINK_LIBS = common$/;"	m
+LINK_LIBS	tests/platform/kernel/core/Makefile	/^LINK_LIBS = core board ctrlc cpu arch common$/;"	m
+LOCATION	code/platform/kernel/core/inc/mlocation.h	35;"	d
+LOCATION	code/platform/kernel/core/inc/mlocation.h	40;"	d
+LOCATION	code/platform/kernel/core/src/mlocation.c	28;"	d	file:
+LOCATION	code/platform/kernel/core/src/mlocation.c	30;"	d	file:
+LOCATIONS	code/platform/kernel/core/inc/mlocation.h	/^    LOCATIONS$/;"	e	enum:__anon30
+LOCATIONS	code/platform/kernel/core/inc/mlocation.h	29;"	d
+LOC_MARK	code/platform/kernel/core/src/heap.c	/^static const msize_t LOC_MARK = 0x25791A18;$/;"	v	file:
+MAGIC_NUMBER_CONTAINER	code/platform/kernel/core/src/syncobj.c	34;"	d	file:
+MAGIC_NUMBER_DEVICE	code/platform/kernel/core/src/device.c	34;"	d	file:
+MAGIC_NUMBER_DRIVER	code/platform/kernel/core/src/device.c	33;"	d	file:
+MAGIC_NUMBER_MPOOL	code/platform/kernel/core/src/mpool.c	32;"	d	file:
+MAGIC_NUMBER_QUEUE	code/platform/kernel/core/src/queue.c	35;"	d	file:
+MAGIC_NUMBER_STACK	code/platform/kernel/core/src/task.c	47;"	d	file:
+MAGIC_NUMBER_SYNCOBJ	code/platform/kernel/core/src/syncobj.c	33;"	d	file:
+MAGIC_NUMBER_TASK	code/platform/kernel/core/src/task.c	42;"	d	file:
+MAGIC_NUMBER_TIMER	code/platform/kernel/core/src/timer.c	40;"	d	file:
+MAKECMDGOALS	build/Makefile	/^MAKECMDGOALS = release$/;"	m
+MAKE_DIRS	build/Makefile	/^MAKE_DIRS := $(COMMON_DIRS)$/;"	m
+MERGE	code/platform/common/src/clib.c	27;"	d	file:
+MERGE	code/platform/common/src/clib.c	29;"	d	file:
+MKDIR	build/Makefile	/^MKDIR = mkdir$/;"	m
+MKDIRFLAGS	build/Makefile	/^MKDIRFLAGS = -p$/;"	m
+MLOCATION_END	code/platform/kernel/core/inc/mlocation.h	/^    MLOCATION_END$/;"	e	enum:__anon30
+MODULE_BITS	code/platform/common/inc/error.h	37;"	d
+MODULE_CLOCK	code/platform/common/inc/module.h	/^    MODULE_CLOCK,           \/\/ for clock management$/;"	e	enum:__anon49
+MODULE_CONSOLE	code/platform/common/inc/module.h	/^    MODULE_CONSOLE,         \/\/ for device of console$/;"	e	enum:__anon49
+MODULE_COUNT	code/platform/common/inc/module.h	/^    MODULE_COUNT,$/;"	e	enum:__anon49
+MODULE_CTRLC	code/platform/common/inc/module.h	/^    MODULE_CTRLC,           \/\/ for handling Ctrl+C on Linux\/Cygwin$/;"	e	enum:__anon49
+MODULE_DEVICE	code/platform/common/inc/module.h	/^    MODULE_DEVICE,          \/\/ for device management$/;"	e	enum:__anon49
+MODULE_ERROR	code/platform/common/inc/error.h	48;"	d
+MODULE_FLASH	code/platform/common/inc/module.h	/^    MODULE_FLASH,           \/\/ for device of flash$/;"	e	enum:__anon49
+MODULE_HEAP	code/platform/common/inc/module.h	/^    MODULE_HEAP,            \/\/ for heap management$/;"	e	enum:__anon49
+MODULE_ID	code/platform/common/inc/error.h	49;"	d
+MODULE_INTERRUPT	code/platform/common/inc/module.h	/^    MODULE_INTERRUPT,       \/\/ for interrupt management$/;"	e	enum:__anon49
+MODULE_LAST	code/platform/common/inc/module.h	/^    MODULE_LAST = (MODULE_COUNT - 1)$/;"	e	enum:__anon49
+MODULE_MODULE	code/platform/common/inc/module.h	/^    MODULE_MODULE,          \/\/ for module management$/;"	e	enum:__anon49
+MODULE_MPOOL	code/platform/common/inc/module.h	/^    MODULE_MPOOL,           \/\/ for memory pool management$/;"	e	enum:__anon49
+MODULE_MUTEX	code/platform/common/inc/module.h	/^    MODULE_MUTEX,           \/\/ for mutex management$/;"	e	enum:__anon49
+MODULE_QUEUE	code/platform/common/inc/module.h	/^    MODULE_QUEUE,           \/\/ for queue management$/;"	e	enum:__anon49
+MODULE_SEMAPHORE	code/platform/common/inc/module.h	/^    MODULE_SEMAPHORE,       \/\/ for semaphore management$/;"	e	enum:__anon49
+MODULE_SYNC	code/platform/common/inc/module.h	/^    MODULE_SYNC,            \/\/ for task sync object management$/;"	e	enum:__anon49
+MODULE_TASK	code/platform/common/inc/module.h	/^    MODULE_TASK,            \/\/ for task$/;"	e	enum:__anon49
+MODULE_TESTAPP	code/platform/common/inc/module.h	/^    MODULE_TESTAPP,         \/\/ for Test Application$/;"	e	enum:__anon49
+MODULE_TIMER	code/platform/common/inc/module.h	/^    MODULE_TIMER,           \/\/ for timer management$/;"	e	enum:__anon49
+MPOOL_LAST_INDEX	code/platform/kernel/core/src/mpool.c	33;"	d	file:
+MPOOL_MEMORY_DECLARE	code/platform/kernel/core/inc/mpool.h	36;"	d
+MV	build/Makefile	/^MV = mv$/;"	m
+NAME_MAX_LENGTH	code/platform/common/inc/primitive.h	65;"	d
+NONUT_DIRS	build/Makefile	/^NONUT_DIRS = \\$/;"	m
+OPSIZE	code/platform/common/src/clib.c	22;"	d	file:
+OPSIZE_INBITS	code/platform/common/src/clib.c	23;"	d	file:
+OPTION_TICK_START	code/platform/kernel/arch/x86/simulator/inc/clock.h	33;"	d
+OPTION_TICK_STOP	code/platform/kernel/arch/x86/simulator/inc/clock.h	34;"	d
+OP_T_THRESHOLD	code/platform/common/src/clib.c	24;"	d	file:
+OS_LEVEL	code/platform/common/inc/module.h	/^    OS_LEVEL,$/;"	e	enum:__anon50
+PERIPHERALS_LEVEL	code/platform/common/inc/module.h	/^    PERIPHERALS_LEVEL,$/;"	e	enum:__anon50
+PLATFORM_LEVEL0	code/platform/common/inc/module.h	/^    PLATFORM_LEVEL0,$/;"	e	enum:__anon50
+PLATFORM_LEVEL1	code/platform/common/inc/module.h	/^    PLATFORM_LEVEL1,$/;"	e	enum:__anon50
+PLATFORM_LEVEL2	code/platform/common/inc/module.h	/^    PLATFORM_LEVEL2,$/;"	e	enum:__anon50
+PLATFORM_LEVEL3	code/platform/common/inc/module.h	/^    PLATFORM_LEVEL3,$/;"	e	enum:__anon50
+PLATFORM_LEVEL4	code/platform/common/inc/module.h	/^    PLATFORM_LEVEL4,$/;"	e	enum:__anon50
+PLATFORM_LEVEL5	code/platform/common/inc/module.h	/^    PLATFORM_LEVEL5,$/;"	e	enum:__anon50
+PLATFORM_LEVEL6	code/platform/common/inc/module.h	/^    PLATFORM_LEVEL6,$/;"	e	enum:__anon50
+PLATFORM_LEVEL7	code/platform/common/inc/module.h	/^    PLATFORM_LEVEL7,$/;"	e	enum:__anon50
+PORT_SIZE_BIT16	code/platform/kernel/arch/x86/share/inc/ioport.h	/^    PORT_SIZE_BIT16,$/;"	e	enum:__anon11
+PORT_SIZE_BIT32	code/platform/kernel/arch/x86/share/inc/ioport.h	/^    PORT_SIZE_BIT32$/;"	e	enum:__anon11
+PORT_SIZE_BIT8	code/platform/kernel/arch/x86/share/inc/ioport.h	/^    PORT_SIZE_BIT8,$/;"	e	enum:__anon11
+PORT_TYPE_IO	code/platform/kernel/arch/x86/share/inc/ioport.h	/^    PORT_TYPE_IO,$/;"	e	enum:__anon10
+PORT_TYPE_MEM	code/platform/kernel/arch/x86/share/inc/ioport.h	/^    PORT_TYPE_MEM$/;"	e	enum:__anon10
+QUEUE_BUFFER_DECLARE	code/platform/kernel/core/inc/queue.h	33;"	d
+QUEUE_LAST_INDEX	code/platform/kernel/core/src/queue.c	34;"	d	file:
+REPORT	build/Makefile	/^REPORT = unitest.report$/;"	m
+RM	build/Makefile	/^RM = rm$/;"	m
+RMFLAGS	build/Makefile	/^RMFLAGS = -fr$/;"	m
+RMS	build/Makefile	/^RMS = release debug unitest $(DIR_COVERAGE) scheck $(DIR_PROFILE)$/;"	m
+ROOT	build/Makefile	/^ROOT = $(realpath ..)$/;"	m
+ROUND_DOWN	code/platform/common/inc/alignment.h	32;"	d
+ROUND_UP	code/platform/common/inc/alignment.h	31;"	d
+SEMAPHORE_PREFIX	code/platform/kernel/core/src/queue.c	90;"	d	file:
+SIZE_MARK	code/platform/kernel/core/src/heap.c	/^static const msize_t SIZE_MARK = 0x18132A49;$/;"	v	file:
+STACK_DECLARE	code/platform/kernel/core/inc/task.h	61;"	d
+STACK_WIDTH_IN_BYTES	code/platform/kernel/core/src/task.c	45;"	d	file:
+STACK_WIDTH_SHIFT4BYTE	code/platform/kernel/core/src/task.c	46;"	d	file:
+STATE_DESTROYING	code/platform/common/inc/module.h	/^    STATE_DESTROYING$/;"	e	enum:__anon51
+STATE_DOWN	code/platform/common/inc/module.h	/^    STATE_DOWN,$/;"	e	enum:__anon51
+STATE_INITIALIZING	code/platform/common/inc/module.h	/^    STATE_INITIALIZING,$/;"	e	enum:__anon51
+STATE_UP	code/platform/common/inc/module.h	/^    STATE_UP,$/;"	e	enum:__anon51
+SYSTEM_ALIGNMENT_BITS	code/platform/kernel/board/simulator/src/inventory.c	84;"	d	file:
+SYSTEM_MEM_SIZE	code/platform/kernel/board/simulator/src/inventory.c	83;"	d	file:
+TASK_CREATE_HOOK_LAST_INDEX	code/platform/kernel/core/src/hook.c	30;"	d	file:
+TASK_DELETE_HOOK_LAST_INDEX	code/platform/kernel/core/src/hook.c	32;"	d	file:
+TASK_LAST_INDEX	code/platform/kernel/core/src/task.c	37;"	d	file:
+TASK_LAST_INDEX	tests/platform/kernel/core/unitest_task.c	34;"	d	file:
+TASK_PRIORITY_LEVELS	code/platform/kernel/core/src/task.c	36;"	d	file:
+TASK_PRIORITY_LEVELS	tests/platform/kernel/core/unitest_task.c	33;"	d	file:
+TASK_PRIORITY_LOWEST	code/platform/kernel/core/src/task.c	38;"	d	file:
+TASK_STATE_CREATED	code/platform/kernel/core/inc/task.h	/^    TASK_STATE_CREATED = 0x001,$/;"	e	enum:__anon28
+TASK_STATE_DELETED	code/platform/kernel/core/inc/task.h	/^    TASK_STATE_DELETED = 0x020$/;"	e	enum:__anon28
+TASK_STATE_READY	code/platform/kernel/core/inc/task.h	/^    TASK_STATE_READY = 0x002,$/;"	e	enum:__anon28
+TASK_STATE_RUNNING	code/platform/kernel/core/inc/task.h	/^    TASK_STATE_RUNNING = 0x004,$/;"	e	enum:__anon28
+TASK_STATE_SUSPENDING	code/platform/kernel/core/inc/task.h	/^    TASK_STATE_SUSPENDING = 0x008,$/;"	e	enum:__anon28
+TASK_STATE_WAITING	code/platform/kernel/core/inc/task.h	/^    TASK_STATE_WAITING = 0x010,$/;"	e	enum:__anon28
+TASK_SWITCH_HOOK_LAST_INDEX	code/platform/kernel/core/src/hook.c	31;"	d	file:
+TASK_VARIABLE_LAST_INDEX	code/platform/kernel/core/src/taskvar.c	32;"	d	file:
+TEMP	build/Makefile	/^TEMP = temp.report$/;"	m
+TIMER_CREATED	code/platform/kernel/core/inc/timer.h	/^    TIMER_CREATED,$/;"	e	enum:__anon23
+TIMER_LAST_INDEX	code/platform/kernel/core/src/timer.c	39;"	d	file:
+TIMER_PREFIX	code/platform/kernel/core/src/task.c	118;"	d	file:
+TIMER_STARTED	code/platform/kernel/core/inc/timer.h	/^    TIMER_STARTED,$/;"	e	enum:__anon23
+TIMER_STOPPED	code/platform/kernel/core/inc/timer.h	/^    TIMER_STOPPED$/;"	e	enum:__anon23
+TIMER_TYPE_INTERRUPT	code/platform/kernel/core/inc/timer.h	/^    TIMER_TYPE_INTERRUPT,$/;"	e	enum:__anon24
+TIMER_TYPE_TASK	code/platform/kernel/core/inc/timer.h	/^    TIMER_TYPE_TASK$/;"	e	enum:__anon24
+UNITEST_DIFFERS	code/platform/common/inc/unitest.h	62;"	d
+UNITEST_EQUALS	code/platform/common/inc/unitest.h	48;"	d
+UNITEST_ERROR	code/platform/common/inc/unitest.h	43;"	d
+UNITEST_GREATER_THAN	code/platform/common/inc/unitest.h	104;"	d
+UNITEST_GREATER_THAN_EQUALS	code/platform/common/inc/unitest.h	118;"	d
+UNITEST_LESS_THAN	code/platform/common/inc/unitest.h	76;"	d
+UNITEST_LESS_THAN_EQUALS	code/platform/common/inc/unitest.h	90;"	d
+UNUSED	code/platform/common/inc/primitive.h	61;"	d
+UTS	build/Makefile	/^UTS = $(wildcard $(DIR_UNITEST)\/unitest_*.exe)$/;"	m
+UT_DIRS	build/Makefile	/^UT_DIRS = \\$/;"	m
+WAIT_FOREVER	code/platform/common/inc/primitive.h	66;"	d
+__ALIGNMENT_H	code/platform/common/inc/alignment.h	27;"	d
+__BITMAP_H	code/platform/kernel/core/inc/bitmap.h	27;"	d
+__CLIB_H	code/platform/common/inc/clib.h	27;"	d
+__CLOCK_H	code/platform/kernel/arch/x86/simulator/inc/clock.h	27;"	d
+__CONFIG_H	code/platform/kernel/core/inc/config.h	27;"	d
+__CONSOLE_H	code/platform/kernel/arch/x86/simulator/inc/console.h	27;"	d
+__CPU_H	code/platform/kernel/arch/x86/simulator/inc/context.h	27;"	d
+__CTRLC_H	code/platform/kernel/driver/ctrlc/inc/ctrlc.h	27;"	d
+__DEVICE_H	code/platform/kernel/core/inc/device.h	27;"	d
+__DLLHT_H	code/platform/common/inc/dllht.h	27;"	d
+__DLL_H	code/platform/common/inc/dll.h	27;"	d
+__ERRCLOCK_H	code/platform/kernel/arch/x86/simulator/inc/errclock.h	27;"	d
+__ERRCON_H	code/platform/kernel/arch/x86/simulator/inc/errcon.h	27;"	d
+__ERRCTRLC_H	code/platform/kernel/driver/ctrlc/inc/errctrlc.h	27;"	d
+__ERRDEV_H	code/platform/kernel/core/inc/errdev.h	27;"	d
+__ERRHEAP_H	code/platform/kernel/core/inc/errheap.h	27;"	d
+__ERRMOD_H	code/platform/common/inc/errmod.h	27;"	d
+__ERRMPOOL_H	code/platform/kernel/core/inc/errmpool.h	27;"	d
+__ERROR_H	code/platform/common/inc/error.h	27;"	d
+__ERRSYNC_H	code/platform/kernel/core/inc/errsync.h	27;"	d
+__ERRTASK_H	code/platform/kernel/core/inc/errtask.h	27;"	d
+__ERRTMR_H	code/platform/kernel/core/inc/errtmr.h	27;"	d
+__EVENT_H	code/platform/kernel/core/inc/event.h	27;"	d
+__FIFO_H	code/platform/common/inc/fifo.h	27;"	d
+__HOOK_H	code/platform/kernel/core/inc/hook.h	27;"	d
+__IDLE_H	code/platform/kernel/arch/x86/simulator/inc/idle.h	27;"	d
+__INJECTOR_H	code/platform/common/inc/injector.h	27;"	d
+__INTERRUPT_H	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	27;"	d
+__IOPORT_H	code/platform/kernel/arch/x86/share/inc/ioport.h	27;"	d
+__MAIN_H	code/platform/common/inc/main.h	27;"	d
+__MBLOCK_H	code/platform/kernel/core/inc/heap.h	27;"	d
+__MLOCATION_H	code/platform/kernel/core/inc/mlocation.h	27;"	d
+__MODULE_H	code/platform/common/inc/module.h	27;"	d
+__MPOOL_H	code/platform/kernel/core/inc/mpool.h	27;"	d
+__MUTEX_H	code/platform/kernel/core/inc/mutex.h	27;"	d
+__OFFSET_H	code/platform/kernel/arch/x86/simulator/inc/offset.h	27;"	d
+__PRIMITIVE_H	code/platform/common/inc/primitive.h	27;"	d
+__QUEUE_H	code/platform/kernel/core/inc/queue.h	27;"	d
+__SEMAPHORE_H	code/platform/kernel/core/inc/semaphore.h	27;"	d
+__SYNCOBJ_H	code/platform/kernel/core/inc/syncobj.h	27;"	d
+__TASK_H	code/platform/kernel/core/inc/task.h	27;"	d
+__TIMER_H	code/platform/kernel/core/inc/timer.h	27;"	d
+__UNITEST_H	code/platform/common/inc/unitest.h	27;"	d
+__VARIABLE_H	code/platform/kernel/core/inc/taskvar.h	27;"	d
+__error_t_defined	code/platform/common/inc/error.h	34;"	d
+__event_option_defined__	code/platform/kernel/core/inc/event.h	44;"	d
+__event_option_defined__	code/platform/kernel/core/inc/task.h	55;"	d
+__event_set_defined__	code/platform/kernel/core/inc/event.h	39;"	d
+__event_set_defined__	code/platform/kernel/core/inc/task.h	50;"	d
+__task_handle_defined__	code/platform/kernel/core/inc/event.h	34;"	d
+__task_handle_defined__	code/platform/kernel/core/inc/mutex.h	41;"	d
+__task_handle_defined__	code/platform/kernel/core/inc/task.h	45;"	d
+__task_priority_defined__	code/platform/kernel/core/inc/mutex.h	35;"	d
+__task_priority_defined__	code/platform/kernel/core/inc/task.h	39;"	d
+_context_restore	code/platform/kernel/arch/x86/simulator/src/restore.S	/^_context_restore:$/;"	l
+_context_save	code/platform/kernel/arch/x86/simulator/src/save.S	/^_context_save:$/;"	l
+_weak_alias	code/platform/kernel/arch/x86/simulator/src/context.c	35;"	d	file:
+abnormal_	code/platform/kernel/core/src/timer.c	/^    statistic_t abnormal_;$/;"	m	struct:__anon16	file:
+addr_	code/platform/kernel/core/inc/mpool.h	/^    address_t addr_;$/;"	m	struct:__anon36
+addr_end_	code/platform/kernel/core/inc/mpool.h	/^    address_t addr_end_;$/;"	m	struct:__anon37
+addr_start_	code/platform/kernel/core/inc/mpool.h	/^    address_t addr_start_;$/;"	m	struct:__anon37
+address_	code/platform/kernel/core/inc/taskvar.h	/^    address_t address_;$/;"	m	struct:__anon41
+address_t	code/platform/common/inc/primitive.h	/^typedef u32_t address_t;$/;"	t
+alignment_in_bits_	code/platform/kernel/core/inc/heap.h	/^    msize_t alignment_in_bits_;$/;"	m	struct:__anon19
+apply_shift_	code/platform/kernel/core/inc/mpool.h	/^    bool apply_shift_;$/;"	m	struct:__anon37
+arg_	code/platform/kernel/core/inc/timer.h	/^    void *arg_;$/;"	m	struct:type_timer
+argument_	code/platform/kernel/core/inc/task.h	/^    void *argument_;$/;"	m	struct:type_task
+available_	code/platform/common/src/error.c	/^    int available_;$/;"	m	struct:errstr_t	file:
+bit_t	code/platform/kernel/core/inc/bitmap.h	/^typedef u32_t bit_t;$/;"	t
+bitmap_to_bit	code/platform/kernel/core/src/bitmap.c	/^static inline bit_t bitmap_to_bit (u32_t _bitmap)$/;"	f	file:
+bool	code/platform/common/inc/primitive.h	/^typedef int bool;$/;"	t
+bucket_index_	code/platform/kernel/core/inc/timer.h	/^    usize_t bucket_index_;$/;"	m	struct:type_timer
+bucket_size_	code/platform/common/inc/dllht.h	/^    usize_t bucket_size_;          \/\/ bucket_size = (1 << bucket_size_in_bits)$/;"	m	struct:__anon48
+bucket_size_in_bits_	code/platform/common/inc/dllht.h	/^    usize_t bucket_size_in_bits_;$/;"	m	struct:__anon48
+bucket_t	code/platform/kernel/core/src/timer.c	/^} bucket_t;$/;"	t	typeref:struct:__anon15	file:
+buckets_	code/platform/common/inc/dllht.h	/^    dllht_bucket_t *buckets_;$/;"	m	struct:__anon48
+buf2ptr	code/platform/kernel/core/inc/heap.h	58;"	d
+buffer_	code/platform/kernel/core/inc/bitmap.h	/^    task_bitmap_row_t buffer_ [CONFIG_MAX_BITMAP_ROW];$/;"	m	struct:__anon29
+buffer_addr_end_	code/platform/common/inc/fifo.h	/^    byte_t *buffer_addr_end_;$/;"	m	struct:__anon56
+buffer_addr_start_	code/platform/common/inc/fifo.h	/^    byte_t *buffer_addr_start_;$/;"	m	struct:__anon56
+buffer_count_	code/platform/kernel/core/inc/mpool.h	/^    msize_t buffer_count_;$/;"	m	struct:__anon37
+buffer_size_	code/platform/kernel/core/inc/mpool.h	/^    msize_t buffer_size_;$/;"	m	struct:__anon37
+buffer_size_in_bits_	code/platform/kernel/core/inc/mpool.h	/^    int buffer_size_in_bits_;$/;"	m	struct:__anon37
+byte_t	code/platform/common/inc/primitive.h	/^typedef u8_t byte_t;$/;"	t
+calculate_callback_t	code/platform/common/inc/dllht.h	/^typedef ukey_t (*calculate_callback_t)(const void *_key, usize_t _key_length);$/;"	t
+callback_	code/platform/common/src/module.c	/^    module_callback_t callback_;$/;"	m	struct:__anon45	file:
+callback_	code/platform/kernel/core/inc/timer.h	/^    expiry_callback_t callback_;$/;"	m	struct:type_timer
+capacity_	code/platform/common/inc/fifo.h	/^    usize_t capacity_;$/;"	m	struct:__anon56
+clock_close	code/platform/kernel/arch/x86/simulator/src/clock.c	/^static error_t clock_close (device_handle_t _handle)$/;"	f	file:
+clock_control	code/platform/kernel/arch/x86/simulator/src/clock.c	/^static error_t clock_control (device_handle_t _handle, $/;"	f	file:
+clock_device_register	code/platform/kernel/arch/x86/simulator/src/clock.c	/^error_t clock_device_register (const char _name [], clock_handle_t _handle)$/;"	f
+clock_driver_install	code/platform/kernel/arch/x86/simulator/src/clock.c	/^error_t clock_driver_install (const char _name[])$/;"	f
+clock_handle_t	code/platform/kernel/arch/x86/simulator/inc/clock.h	/^} device_clock_t, *clock_handle_t;$/;"	t	typeref:struct:__anon4
+clock_open	code/platform/kernel/arch/x86/simulator/src/clock.c	/^static error_t clock_open (device_handle_t _handle, open_mode_t _mode)$/;"	f	file:
+close_	code/platform/kernel/core/inc/device.h	/^    error_t (*close_) (device_handle_t _handle);$/;"	m	struct:__anon38
+common_	code/platform/kernel/arch/x86/simulator/inc/clock.h	/^    device_t common_;$/;"	m	struct:__anon4
+common_	code/platform/kernel/arch/x86/simulator/inc/console.h	/^    device_t common_;$/;"	m	struct:__anon3
+common_	code/platform/kernel/driver/ctrlc/inc/ctrlc.h	/^    device_t common_;$/;"	m	struct:__anon44
+compare_func_	code/platform/common/inc/dllht.h	/^    traverse_callback_t compare_func_;$/;"	m	struct:__anon48
+console_close	code/platform/kernel/arch/x86/simulator/src/console.c	/^static error_t console_close (device_handle_t _handle)$/;"	f	file:
+console_device_register	code/platform/kernel/arch/x86/simulator/src/console.c	/^error_t console_device_register (const char _name [], console_handle_t _handle)$/;"	f
+console_driver_install	code/platform/kernel/arch/x86/simulator/src/console.c	/^error_t console_driver_install (const char _name[])$/;"	f
+console_handle_set	code/platform/kernel/arch/x86/simulator/src/console.c	/^void console_handle_set (device_handle_t _handle)$/;"	f
+console_handle_t	code/platform/kernel/arch/x86/simulator/inc/console.h	/^} device_console_t, *console_handle_t;$/;"	t	typeref:struct:__anon3
+console_open	code/platform/kernel/arch/x86/simulator/src/console.c	/^static error_t console_open (device_handle_t _handle, open_mode_t _mode)$/;"	f	file:
+console_print	code/platform/kernel/arch/x86/simulator/src/console.c	/^void console_print (const char* _format, ...)$/;"	f
+console_write	code/platform/kernel/arch/x86/simulator/src/console.c	/^static error_t console_write (device_handle_t _handle, const void *_buf, $/;"	f	file:
+container_	code/platform/kernel/core/inc/syncobj.h	/^    sync_container_handle_t container_;$/;"	m	struct:type_sync_object
+context_	code/platform/kernel/core/inc/task.h	/^    task_context_t context_;$/;"	m	struct:type_task
+context_init	code/platform/kernel/arch/x86/simulator/src/context.c	/^void context_init (task_context_t *_p_context, address_t _stack_base, $/;"	f
+context_restore	code/platform/kernel/arch/x86/simulator/src/restore.S	/^context_restore:$/;"	l
+context_save	code/platform/kernel/arch/x86/simulator/src/save.S	/^context_save:$/;"	l
+context_switch	code/platform/kernel/arch/x86/simulator/src/context.c	/^void context_switch (task_context_t *_p_current, task_context_t *_p_next)$/;"	f
+context_switch_in_interrupt	code/platform/kernel/arch/x86/simulator/src/context.c	/^void context_switch_in_interrupt (task_context_t *_p_current, $/;"	f
+control_	code/platform/kernel/core/inc/device.h	/^    error_t (*control_) (device_handle_t _handle, control_option_t _option,$/;"	m	struct:__anon38
+control_option_t	code/platform/kernel/core/inc/device.h	/^typedef int control_option_t;$/;"	t
+convert_to_shift_bits	code/platform/common/src/alignment.c	/^bool convert_to_shift_bits (const u32_t _value, int *_p_in_bits)$/;"	f
+count_	code/platform/common/inc/dll.h	/^    usize_t count_;$/;"	m	struct:__anon54
+count_	code/platform/common/inc/fifo.h	/^    usize_t count_;$/;"	m	struct:__anon56
+count_	code/platform/kernel/core/inc/semaphore.h	/^    usize_t count_;$/;"	m	struct:__anon34
+count_opened_	code/platform/kernel/core/inc/device.h	/^    int count_opened_;$/;"	m	struct:__anon39
+ctrlc_close	code/platform/kernel/driver/ctrlc/src/ctrlc.c	/^static error_t ctrlc_close (device_handle_t _handle)$/;"	f	file:
+ctrlc_device_register	code/platform/kernel/driver/ctrlc/src/ctrlc.c	/^error_t ctrlc_device_register (const char _name [], ctrlc_handle_t _handle)$/;"	f
+ctrlc_driver_install	code/platform/kernel/driver/ctrlc/src/ctrlc.c	/^error_t ctrlc_driver_install (const char _name[])$/;"	f
+ctrlc_handle_t	code/platform/kernel/driver/ctrlc/inc/ctrlc.h	/^} device_ctrlc_t, *ctrlc_handle_t;$/;"	t	typeref:struct:__anon44
+ctrlc_interrupt_handler	code/platform/kernel/driver/ctrlc/src/ctrlc.c	/^void ctrlc_interrupt_handler (device_handle_t _handle)$/;"	f
+ctrlc_open	code/platform/kernel/driver/ctrlc/src/ctrlc.c	/^static error_t ctrlc_open (device_handle_t _handle, open_mode_t _mode)$/;"	f	file:
+cursor_get_	code/platform/common/inc/fifo.h	/^    byte_t *cursor_get_;$/;"	m	struct:__anon56
+cursor_put_	code/platform/common/inc/fifo.h	/^    byte_t *cursor_put_;$/;"	m	struct:__anon56
+destroy_for_each	code/platform/common/src/module.c	/^static bool destroy_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+device_clock_t	code/platform/kernel/arch/x86/simulator/inc/clock.h	/^} device_clock_t, *clock_handle_t;$/;"	t	typeref:struct:__anon4
+device_close	code/platform/kernel/core/src/device.c	/^error_t device_close (device_handle_t _handle)$/;"	f
+device_console_t	code/platform/kernel/arch/x86/simulator/inc/console.h	/^} device_console_t, *console_handle_t;$/;"	t	typeref:struct:__anon3
+device_control	code/platform/kernel/core/src/device.c	/^error_t device_control (device_handle_t _handle, control_option_t _option,$/;"	f
+device_ctrlc_t	code/platform/kernel/driver/ctrlc/inc/ctrlc.h	/^} device_ctrlc_t, *ctrlc_handle_t;$/;"	t	typeref:struct:__anon44
+device_find	code/platform/kernel/core/src/device.c	/^static bool device_find (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+device_handle_t	code/platform/kernel/core/inc/device.h	/^typedef struct type_device device_t, *device_handle_t;$/;"	t	typeref:struct:
+device_interrupt_handler	code/platform/kernel/core/src/device.c	/^static void device_interrupt_handler (int _vector)$/;"	f	file:
+device_interrupt_handler_install	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^void device_interrupt_handler_install (interrupt_handler_t _handler)$/;"	f
+device_mode_t	code/platform/kernel/core/inc/device.h	/^typedef u32_t device_mode_t;$/;"	t
+device_open	code/platform/kernel/core/src/device.c	/^error_t device_open (device_handle_t *_p_handle, const char _name [], $/;"	f
+device_operation_t	code/platform/kernel/core/inc/device.h	/^} device_operation_t;$/;"	t	typeref:struct:__anon38
+device_read	code/platform/kernel/core/src/device.c	/^error_t device_read (device_handle_t _handle, void *_buf, usize_t _size)$/;"	f
+device_register	code/platform/kernel/core/src/device.c	/^error_t device_register (const char _name [], device_handle_t _handle)$/;"	f
+device_registration_main	code/platform/kernel/board/simulator/src/inventory.c	/^error_t device_registration_main ()$/;"	f
+device_statistics_t	code/platform/kernel/core/src/device.c	/^} device_statistics_t;$/;"	t	typeref:struct:__anon12	file:
+device_t	code/platform/kernel/core/inc/device.h	/^typedef struct type_device device_t, *device_handle_t;$/;"	t	typeref:struct:type_device
+device_write	code/platform/kernel/core/src/device.c	/^error_t device_write (device_handle_t _handle, const void *_buf, usize_t _size)$/;"	f
+devices_	code/platform/kernel/core/inc/device.h	/^    dll_t devices_;$/;"	m	struct:__anon39
+dll_	code/platform/common/inc/dllht.h	/^    dll_t dll_;$/;"	m	struct:__anon47
+dll_	code/platform/kernel/core/src/timer.c	/^    dll_t dll_;$/;"	m	struct:__anon15	file:
+dll_handle_t	code/platform/common/inc/dll.h	/^} dll_t, *dll_handle_t;$/;"	t	typeref:struct:__anon54
+dll_head	code/platform/common/inc/dll.h	/^static inline dll_node_t *dll_head (const dll_t *_p_dll)$/;"	f
+dll_init	code/platform/common/inc/dll.h	/^static inline void dll_init (dll_t *_p_dll)$/;"	f
+dll_insert_after	code/platform/common/src/dll.c	/^void dll_insert_after (dll_t *_p_dll, dll_node_t *_p_ref, dll_node_t *_p_inserted)$/;"	f
+dll_insert_before	code/platform/common/src/dll.c	/^void dll_insert_before (dll_t *_p_dll, dll_node_t *_p_ref, dll_node_t *_p_inserted)$/;"	f
+dll_merge	code/platform/common/src/dll.c	/^void dll_merge (dll_t *_p_to, dll_t *_p_from)$/;"	f
+dll_next	code/platform/common/inc/dll.h	/^static inline dll_node_t *dll_next (const dll_t *_p_dll, const dll_node_t *_p_node)$/;"	f
+dll_node	code/platform/common/inc/dll.h	/^typedef struct dll_node {$/;"	s
+dll_node_handle_t	code/platform/common/inc/dll.h	/^} dll_node_t, *dll_node_handle_t;$/;"	t	typeref:struct:dll_node
+dll_node_init	code/platform/common/inc/dll.h	/^static inline void dll_node_init (dll_node_t *_p_node)$/;"	f
+dll_node_t	code/platform/common/inc/dll.h	/^} dll_node_t, *dll_node_handle_t;$/;"	t	typeref:struct:dll_node
+dll_pop_head	code/platform/common/src/dll.c	/^dll_node_t *dll_pop_head (dll_t *_p_dll)$/;"	f
+dll_pop_tail	code/platform/common/src/dll.c	/^dll_node_t *dll_pop_tail (dll_t *_p_dll)$/;"	f
+dll_prev	code/platform/common/inc/dll.h	/^static inline dll_node_t *dll_prev (const dll_t *_p_dll, const dll_node_t *_p_node)$/;"	f
+dll_push_head	code/platform/common/src/dll.c	/^void dll_push_head (dll_t *_p_dll, dll_node_t *_p_node)$/;"	f
+dll_push_tail	code/platform/common/src/dll.c	/^void dll_push_tail (dll_t *_p_dll, dll_node_t *_p_node)$/;"	f
+dll_remove	code/platform/common/src/dll.c	/^void dll_remove (dll_t *_p_dll, const dll_node_t *_p_node)$/;"	f
+dll_size	code/platform/common/inc/dll.h	/^static inline usize_t dll_size (const dll_t *_p_dll)$/;"	f
+dll_split	code/platform/common/src/dll.c	/^void dll_split (dll_t *_p_orig, dll_t *_p_derived, dll_node_t *_p_breakpoint, $/;"	f
+dll_t	code/platform/common/inc/dll.h	/^} dll_t, *dll_handle_t;$/;"	t	typeref:struct:__anon54
+dll_tail	code/platform/common/inc/dll.h	/^static inline dll_node_t *dll_tail (const dll_t *_p_dll)$/;"	f
+dll_traverse	code/platform/common/src/dll.c	/^dll_node_t *dll_traverse (dll_t *_p_dll, traverse_callback_t _cb, void *_p_arg)$/;"	f
+dll_traverse_reversely	code/platform/common/src/dll.c	/^dll_node_t *dll_traverse_reversely (dll_t *_p_dll, traverse_callback_t _cb, $/;"	f
+dllht_bucket_t	code/platform/common/inc/dllht.h	/^} dllht_bucket_t;$/;"	t	typeref:struct:__anon47
+dllht_dump	code/platform/common/src/dllht.c	/^void dllht_dump (dllht_t *_p_dllht)$/;"	f
+dllht_init	code/platform/common/src/dllht.c	/^void dllht_init (dllht_t *_p_dllht, dllht_bucket_t *_buckets, $/;"	f
+dllht_pop_entry	code/platform/common/src/dllht.c	/^dll_node_t *dllht_pop_entry (const dllht_t *_p_dllht, void *_key, usize_t _key_length)$/;"	f
+dllht_push_entry	code/platform/common/src/dllht.c	/^void dllht_push_entry (const dllht_t *_p_dllht, const void *_key, usize_t _key_length, $/;"	f
+dllht_t	code/platform/common/inc/dllht.h	/^} dllht_t;$/;"	t	typeref:struct:__anon48
+down_for_each	code/platform/common/src/module.c	/^static bool down_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+driver_	code/platform/kernel/core/inc/device.h	/^    driver_handle_t driver_;$/;"	m	struct:type_device
+driver_handle_t	code/platform/kernel/core/inc/device.h	/^} driver_t, *driver_handle_t;$/;"	t	typeref:struct:__anon39
+driver_install	code/platform/kernel/core/src/device.c	/^error_t driver_install (const char _name [], const device_operation_t *_p_operation, $/;"	f
+driver_t	code/platform/kernel/core/inc/device.h	/^} driver_t, *driver_handle_t;$/;"	t	typeref:struct:__anon39
+ebp_	code/platform/kernel/arch/x86/simulator/inc/context.h	/^    register_t ebp_;$/;"	m	struct:__anon8
+ebx_	code/platform/kernel/arch/x86/simulator/inc/context.h	/^    register_t ebx_;$/;"	m	struct:__anon8
+ebx_	code/platform/kernel/arch/x86/simulator/src/context.c	/^    register_t ebx_, esi_, edi_, eip_;$/;"	m	struct:__anon2	file:
+ecode_	code/platform/kernel/core/inc/task.h	/^    error_t ecode_;$/;"	m	struct:type_task
+edi_	code/platform/kernel/arch/x86/simulator/inc/context.h	/^    register_t edi_;$/;"	m	struct:__anon8
+edi_	code/platform/kernel/arch/x86/simulator/src/context.c	/^    register_t ebx_, esi_, edi_, eip_;$/;"	m	struct:__anon2	file:
+eip_	code/platform/kernel/arch/x86/simulator/inc/context.h	/^    register_t eip_;$/;"	m	struct:__anon8
+eip_	code/platform/kernel/arch/x86/simulator/src/context.c	/^    register_t ebx_, esi_, edi_, eip_;$/;"	m	struct:__anon2	file:
+element_size_	code/platform/common/inc/fifo.h	/^    usize_t element_size_;$/;"	m	struct:__anon56
+end_	code/platform/kernel/core/inc/heap.h	/^    address_t end_;$/;"	m	struct:__anon19
+enter_	code/platform/kernel/core/inc/syncobj.h	/^    sync_point_enter_t enter_;$/;"	m	struct:__anon25
+entry_	code/platform/kernel/core/inc/task.h	/^    task_entry_t entry_;$/;"	m	struct:type_task
+error_	code/platform/common/src/injector.c	/^    error_t error_;$/;"	m	struct:__anon46	file:
+error_array_	code/platform/common/src/error.c	/^    const char **error_array_;$/;"	m	struct:errstr_t	file:
+error_inject	code/platform/common/src/injector.c	/^void error_inject (injection_point_t _point, error_t _error, void *_p_data)$/;"	f
+error_t	code/platform/common/inc/error.h	/^typedef int error_t;$/;"	t
+errstr	code/platform/common/src/error.c	/^const char *errstr (error_t _error)$/;"	f
+errstr_t	code/platform/common/src/error.c	/^static struct errstr_t {$/;"	s	file:
+esi_	code/platform/kernel/arch/x86/simulator/inc/context.h	/^    register_t esi_;$/;"	m	struct:__anon8
+esi_	code/platform/kernel/arch/x86/simulator/src/context.c	/^    register_t ebx_, esi_, edi_, eip_;$/;"	m	struct:__anon2	file:
+esp_	code/platform/kernel/arch/x86/simulator/inc/context.h	/^    register_t esp_;$/;"	m	struct:__anon8
+event_clear	code/platform/kernel/core/src/event.c	/^error_t event_clear ()$/;"	f
+event_expected_	code/platform/kernel/core/inc/task.h	/^    event_set_t event_expected_;$/;"	m	struct:type_task
+event_option_	code/platform/kernel/core/inc/task.h	/^    event_option_t event_option_;$/;"	m	struct:type_task
+event_option_t	code/platform/kernel/core/inc/event.h	/^typedef u32_t event_option_t;$/;"	t
+event_option_t	code/platform/kernel/core/inc/task.h	/^typedef enum type_event_option event_option_t;$/;"	t	typeref:enum:type_event_option
+event_receive	code/platform/kernel/core/src/event.c	/^error_t event_receive (event_set_t _expected, event_set_handle_t _received, $/;"	f
+event_received_	code/platform/kernel/core/inc/task.h	/^    event_set_t event_received_;$/;"	m	struct:type_task
+event_send	code/platform/kernel/core/src/event.c	/^error_t event_send (task_handle_t _handle, event_set_t _sent)$/;"	f
+event_set_handle_t	code/platform/kernel/core/inc/event.h	/^typedef u32_t event_set_t, *event_set_handle_t;$/;"	t
+event_set_handle_t	code/platform/kernel/core/inc/task.h	/^typedef u32_t event_set_t, *event_set_handle_t;$/;"	t
+event_set_t	code/platform/kernel/core/inc/event.h	/^typedef u32_t event_set_t, *event_set_handle_t;$/;"	t
+event_set_t	code/platform/kernel/core/inc/task.h	/^typedef u32_t event_set_t, *event_set_handle_t;$/;"	t
+exit_	code/platform/kernel/core/inc/syncobj.h	/^    sync_point_exit_t exit_;$/;"	m	struct:__anon25
+expiry_callback_t	code/platform/kernel/core/inc/timer.h	/^typedef void (*expiry_callback_t)(timer_handle_t _handle, void *_arg);$/;"	t
+false	code/platform/common/inc/primitive.h	/^    false,$/;"	e	enum:__anon52
+fifo_	code/platform/kernel/core/inc/queue.h	/^    fifo_t fifo_;$/;"	m	struct:__anon35
+fifo_capacity	code/platform/common/inc/fifo.h	/^static inline usize_t fifo_capacity (const fifo_handle_t _handle)$/;"	f
+fifo_count	code/platform/common/inc/fifo.h	/^static inline usize_t fifo_count (const fifo_handle_t _handle)$/;"	f
+fifo_element_get	code/platform/common/src/fifo.c	/^void fifo_element_get (fifo_handle_t _handle, void *_p_element)$/;"	f
+fifo_element_put	code/platform/common/src/fifo.c	/^void fifo_element_put (fifo_handle_t _handle, const void *_p_element)$/;"	f
+fifo_element_size	code/platform/common/inc/fifo.h	/^static inline usize_t fifo_element_size (const fifo_handle_t _handle)$/;"	f
+fifo_handle_t	code/platform/common/inc/fifo.h	/^} fifo_t, *fifo_handle_t;$/;"	t	typeref:struct:__anon56
+fifo_init	code/platform/common/src/fifo.c	/^void fifo_init (fifo_handle_t _handle, void *_buffer, $/;"	f
+fifo_is_empty	code/platform/common/inc/fifo.h	/^static inline bool fifo_is_empty (const fifo_handle_t _handle)$/;"	f
+fifo_is_full	code/platform/common/inc/fifo.h	/^static inline bool fifo_is_full (const fifo_handle_t _handle)$/;"	f
+fifo_t	code/platform/common/inc/fifo.h	/^} fifo_t, *fifo_handle_t;$/;"	t	typeref:struct:__anon56
+find_by_key	tests/platform/common/unitest_dll.c	/^static bool find_by_key (dll_t *_p_list, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+free_	code/platform/kernel/core/inc/syncobj.h	/^    dll_t free_;$/;"	m	struct:__anon26
+free_buffer_	code/platform/kernel/core/inc/mpool.h	/^    dll_t free_buffer_;$/;"	m	struct:__anon37
+g_alignment_bytes	code/platform/kernel/core/src/heap.c	/^static msize_t g_alignment_bytes;$/;"	v	file:
+g_alignment_in_bits	code/platform/kernel/core/src/heap.c	/^static msize_t g_alignment_in_bits;$/;"	v	file:
+g_allocated_task	code/platform/kernel/core/src/task.c	/^static dll_t g_allocated_task;$/;"	v	file:
+g_bitmap_table	code/platform/kernel/core/src/bitmap.c	/^static unsigned char g_bitmap_table [] = {$/;"	v	file:
+g_bits_per_row	code/platform/kernel/core/src/bitmap.c	/^static int g_bits_per_row;$/;"	v	file:
+g_bucket_firing	code/platform/kernel/core/src/timer.c	/^static bucket_t *g_bucket_firing;$/;"	v	file:
+g_buckets	code/platform/kernel/core/src/timer.c	/^static bucket_t g_buckets [CONFIG_MAX_BUCKET];$/;"	v	file:
+g_case_failed	code/platform/common/inc/unitest.h	/^static int g_case_failed;$/;"	v
+g_case_succeeded	code/platform/common/inc/unitest.h	/^static int g_case_succeeded;$/;"	v
+g_case_total	code/platform/common/inc/unitest.h	/^static int g_case_total;$/;"	v
+g_console_handle	code/platform/kernel/arch/x86/simulator/src/console.c	/^static device_handle_t g_console_handle;$/;"	v	file:
+g_create_table	code/platform/kernel/core/src/hook.c	/^static task_create_hook_t g_create_table [CONFIG_MAX_TASK_CREATE_HOOK];$/;"	v	file:
+g_ctrlc_handle	code/application/task/main.c	/^static device_handle_t g_ctrlc_handle;$/;"	v	file:
+g_cursor	code/platform/kernel/core/src/timer.c	/^static usize_t g_cursor;$/;"	v	file:
+g_data_array	code/platform/common/src/injector.c	/^static injection_data_t g_data_array [INJECTION_POINT_COUNT];$/;"	v	file:
+g_delete_table	code/platform/kernel/core/src/hook.c	/^static task_delete_hook_t g_delete_table [CONFIG_MAX_TASK_DELETE_HOOK];$/;"	v	file:
+g_device_ctrlc	code/platform/kernel/board/simulator/src/inventory.c	/^static device_ctrlc_t g_device_ctrlc;$/;"	v	file:
+g_device_interrupt_handler	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^static interrupt_handler_t g_device_interrupt_handler;$/;"	v	file:
+g_device_tick	code/platform/kernel/board/simulator/src/inventory.c	/^static device_clock_t g_device_tick;$/;"	v	file:
+g_driver_pool	code/platform/kernel/core/src/device.c	/^static driver_t g_driver_pool [CONFIG_MAX_DRIVER];$/;"	v	file:
+g_errstr_array	code/platform/common/src/error.c	/^} g_errstr_array [MODULE_COUNT];$/;"	v	typeref:struct:errstr_t	file:
+g_free_mpool	code/platform/kernel/core/src/mpool.c	/^static dll_t g_free_mpool;$/;"	v	file:
+g_free_queue	code/platform/kernel/core/src/queue.c	/^static dll_t g_free_queue;$/;"	v	file:
+g_free_timer	code/platform/kernel/core/src/timer.c	/^static dll_t g_free_timer;$/;"	v	file:
+g_handle	tests/platform/kernel/core/unitest_task.c	/^static task_handle_t g_handle [TASK_PRIORITY_LEVELS];$/;"	v	file:
+g_heap_addr_end	code/platform/kernel/core/src/heap.c	/^static address_t g_heap_addr_end;$/;"	v	file:
+g_heap_addr_start	code/platform/kernel/core/src/heap.c	/^static address_t g_heap_addr_start;$/;"	v	file:
+g_heap_size	code/platform/kernel/core/src/heap.c	/^static msize_t g_heap_size;$/;"	v	file:
+g_inactive_timer	code/platform/kernel/core/src/timer.c	/^static dll_t g_inactive_timer;$/;"	v	file:
+g_initialized	code/platform/kernel/core/src/heap.c	/^static bool g_initialized;$/;"	v	file:
+g_interrupt_exit_callback	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^static interrupt_exit_callback_t g_interrupt_exit_callback;$/;"	v	file:
+g_interrupt_map	code/platform/kernel/core/src/device.c	/^static device_handle_t g_interrupt_map [CONFIG_MAX_INTERRUPT];$/;"	v	file:
+g_interrupt_nested_count	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^static int g_interrupt_nested_count;$/;"	v	file:
+g_interrupt_vector	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^static interrupt_handler_t g_interrupt_vector [CONFIG_MAX_INTERRUPT];$/;"	v	file:
+g_levels	code/platform/common/src/module.c	/^static dll_t g_levels [LEVEL_COUNT];$/;"	v	file:
+g_locations	code/platform/kernel/core/src/mlocation.c	/^static const char *g_locations [] = {LOCATIONS};$/;"	v	file:
+g_mblock_free	code/platform/kernel/core/src/heap.c	/^static mblock_t g_mblock_free;$/;"	v	file:
+g_mhead_size	code/platform/kernel/core/src/heap.c	/^static msize_t g_mhead_size;$/;"	v	file:
+g_mlocation_count	code/platform/kernel/core/src/heap.c	/^static msize_t g_mlocation_count [MLOCATION_END];$/;"	v	file:
+g_modules	code/platform/common/src/module.c	/^static module_init_t g_modules [MODULE_COUNT];$/;"	v	file:
+g_mpool_pool	code/platform/kernel/core/src/mpool.c	/^static mpool_t g_mpool_pool [CONFIG_MAX_MPOOL];$/;"	v	file:
+g_mtail_size	code/platform/kernel/core/src/heap.c	/^static msize_t g_mtail_size;$/;"	v	file:
+g_multitasking_started	code/platform/kernel/core/src/task.c	/^static bool g_multitasking_started;$/;"	v	file:
+g_mutex_container	code/platform/kernel/core/src/mutex.c	/^static sync_container_t g_mutex_container;$/;"	v	file:
+g_mutex_pool	code/platform/kernel/core/src/mutex.c	/^static mutex_t g_mutex_pool [CONFIG_MAX_MUTEX];$/;"	v	file:
+g_priority_map	code/platform/kernel/core/src/task.c	/^static task_handle_t g_priority_map [TASK_PRIORITY_LEVELS];$/;"	v	file:
+g_queue	code/application/queue/main.c	/^static queue_handle_t g_queue;$/;"	v	file:
+g_queue_pool	code/platform/kernel/core/src/queue.c	/^static queue_t g_queue_pool [CONFIG_MAX_QUEUE];$/;"	v	file:
+g_ready_bitmap	code/platform/kernel/core/src/task.c	/^task_bitmap_t g_ready_bitmap;$/;"	v
+g_scheduler_locked_count	code/platform/kernel/core/src/task.c	/^static int g_scheduler_locked_count;$/;"	v	file:
+g_semaphore_container	code/platform/kernel/core/src/semaphore.c	/^static sync_container_t g_semaphore_container;$/;"	v	file:
+g_semaphore_pool	code/platform/kernel/core/src/semaphore.c	/^static semaphore_t g_semaphore_pool [CONFIG_MAX_SEMAPHORE];$/;"	v	file:
+g_signal_mask	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^sigset_t g_signal_mask;$/;"	v
+g_signal_mask_empty	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^sigset_t g_signal_mask_empty;$/;"	v
+g_stack	tests/platform/kernel/core/unitest_task.c	/^static stack_unit_t g_stack [TASK_PRIORITY_LEVELS][2048];$/;"	v	file:
+g_start_context	code/platform/kernel/core/src/task.c	/^static task_context_t g_start_context;$/;"	v	file:
+g_state	code/platform/common/src/module.c	/^static system_state_t g_state;$/;"	v	file:
+g_statistics	code/platform/kernel/core/src/device.c	/^static device_statistics_t g_statistics;$/;"	v	file:
+g_statistics	code/platform/kernel/core/src/queue.c	/^queue_statistic_t g_statistics;$/;"	v
+g_statistics	code/platform/kernel/core/src/task.c	/^static task_statistic_t g_statistics;$/;"	v	file:
+g_statistics	code/platform/kernel/core/src/timer.c	/^static timer_statistic_t g_statistics;$/;"	v	file:
+g_switch_table	code/platform/kernel/core/src/hook.c	/^static task_switch_hook_t g_switch_table [CONFIG_MAX_TASK_SWITCH_HOOK];$/;"	v	file:
+g_task0	code/application/task/main.c	/^static task_handle_t g_task0;$/;"	v	file:
+g_task1	code/application/event/main.c	/^task_handle_t g_task1;$/;"	v
+g_task1	code/application/task/main.c	/^static task_handle_t g_task1;$/;"	v	file:
+g_task2	code/application/event/main.c	/^task_handle_t g_task2;$/;"	v
+g_task2	code/application/task/main.c	/^static task_handle_t g_task2;$/;"	v	file:
+g_task3	code/application/event/main.c	/^task_handle_t g_task3;$/;"	v
+g_task_consumer	code/application/queue/main.c	/^static task_handle_t g_task_consumer;$/;"	v	file:
+g_task_idle	code/platform/kernel/core/src/task.c	/^static task_handle_t g_task_idle;$/;"	v	file:
+g_task_pool	code/platform/kernel/core/src/task.c	/^static task_t g_task_pool [TASK_PRIORITY_LEVELS];$/;"	v	file:
+g_task_producer	code/application/queue/main.c	/^static task_handle_t g_task_producer;$/;"	v	file:
+g_task_running	code/platform/kernel/core/src/task.c	/^static task_handle_t g_task_running;$/;"	v	file:
+g_task_running	tests/platform/kernel/core/unitest_task.c	/^static bool g_task_running = false;$/;"	v	file:
+g_tick_delayed	code/platform/kernel/arch/x86/simulator/src/idle.c	/^static statistic_t g_tick_delayed;$/;"	v	file:
+g_tick_handle	code/platform/kernel/core/src/task.c	/^static device_handle_t g_tick_handle;$/;"	v	file:
+g_tick_occurred_count	code/platform/kernel/arch/x86/simulator/src/idle.c	/^static bool g_tick_occurred_count;$/;"	v	file:
+g_timer	code/application/task/main.c	/^static timer_handle_t g_timer;$/;"	v	file:
+g_timer_next	code/platform/kernel/core/src/timer.c	/^static timer_handle_t g_timer_next;$/;"	v	file:
+g_timer_pool	code/platform/kernel/core/src/timer.c	/^static timer_instance_t g_timer_pool [CONFIG_MAX_TIMER];$/;"	v	file:
+g_timer_queue	code/platform/kernel/core/src/timer.c	/^static queue_handle_t g_timer_queue;$/;"	v	file:
+g_used_mpool	code/platform/kernel/core/src/mpool.c	/^static dll_t g_used_mpool;$/;"	v	file:
+g_used_queue	code/platform/kernel/core/src/queue.c	/^static dll_t g_used_queue;$/;"	v	file:
+g_variable_free	code/platform/kernel/core/src/taskvar.c	/^static dll_t g_variable_free;$/;"	v	file:
+g_variable_pool	code/platform/kernel/core/src/taskvar.c	/^static task_variable_node_t g_variable_pool [CONFIG_MAX_TASK_VARIABLE];$/;"	v	file:
+general_purpose_registers_t	code/platform/kernel/arch/x86/simulator/inc/context.h	/^} general_purpose_registers_t;$/;"	t	typeref:struct:__anon8
+global_interrupt_disable	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	/^static inline interrupt_level_t global_interrupt_disable ()$/;"	f
+global_interrupt_enable	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	/^static inline void global_interrupt_enable (interrupt_level_t _level)$/;"	f
+gpr_	code/platform/kernel/arch/x86/simulator/inc/context.h	/^    general_purpose_registers_t gpr_;$/;"	m	struct:__anon9
+handle_	code/platform/kernel/core/src/timer.c	/^    timer_handle_t handle_;$/;"	m	struct:__anon17	file:
+head_	code/platform/common/inc/dll.h	/^    dll_node_t *head_;$/;"	m	struct:__anon54
+heap_alloc	code/platform/kernel/core/src/heap.c	/^void* heap_alloc (msize_t _size, mlocation_t _loc, error_t *_p_error)$/;"	f
+heap_dump	code/platform/kernel/core/src/heap.c	/^void heap_dump ()$/;"	f
+heap_free	code/platform/kernel/core/src/heap.c	/^error_t heap_free (const void* _p_buf)$/;"	f
+heap_info_get	code/platform/kernel/board/simulator/src/inventory.c	/^void heap_info_get (heap_info_t *_p_info)$/;"	f
+heap_info_t	code/platform/kernel/core/inc/heap.h	/^} heap_info_t;$/;"	t	typeref:struct:__anon19
+heap_init	code/platform/kernel/core/src/heap.c	/^error_t heap_init (address_t _start, address_t _end, msize_t _alignment_in_bits)$/;"	f
+hit_	code/platform/kernel/core/src/timer.c	/^    statistic_t hit_;$/;"	m	struct:__anon15	file:
+hook_add	code/platform/kernel/core/src/hook.c	/^static bool hook_add (void *_table [], void *_hook, int _last_index)$/;"	f	file:
+hook_remove	code/platform/kernel/core/src/hook.c	/^static bool hook_remove (void *_table [], void *_hook, int _last_index)$/;"	f	file:
+idle_task_spawn	code/platform/kernel/core/src/task.c	/^void idle_task_spawn ()$/;"	f
+in_use_	code/platform/kernel/core/inc/mpool.h	/^    bool in_use_;$/;"	m	struct:__anon36
+inherited_	code/platform/kernel/core/inc/mutex.h	/^    bool inherited_;$/;"	m	struct:__anon31
+init_for_each	code/platform/common/src/module.c	/^static bool init_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+init_level_t	code/platform/common/inc/module.h	/^} init_level_t;$/;"	t	typeref:enum:__anon50
+injected_error_get	code/platform/common/src/injector.c	/^int injected_error_get (injection_point_t _point, void **_p_data_ptr)$/;"	f
+injection_data_t	code/platform/common/src/injector.c	/^} injection_data_t;$/;"	t	typeref:struct:__anon46	file:
+injection_point_t	code/platform/common/inc/injector.h	/^} injection_point_t;$/;"	t	typeref:enum:__anon55
+interrupt_disable	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^void interrupt_disable (int _vector)$/;"	f
+interrupt_enable	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^void interrupt_enable (int _vector)$/;"	f
+interrupt_enter	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^void interrupt_enter ()$/;"	f
+interrupt_exit	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^void interrupt_exit ()$/;"	f
+interrupt_exit_callback_install	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^void interrupt_exit_callback_install (interrupt_exit_callback_t _handler)$/;"	f
+interrupt_exit_callback_t	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	/^typedef void (*interrupt_exit_callback_t) ();$/;"	t
+interrupt_flash	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	43;"	d
+interrupt_handler	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^static void interrupt_handler (int _vector)$/;"	f	file:
+interrupt_handler_	code/platform/kernel/core/inc/device.h	/^    void (*interrupt_handler_) (device_handle_t _handle);$/;"	m	struct:type_device
+interrupt_handler_install	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^interrupt_handler_t interrupt_handler_install (int _vector, $/;"	f
+interrupt_handler_t	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	/^typedef void (*interrupt_handler_t) (int _vector);$/;"	t
+interrupt_level_get	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	/^static inline interrupt_level_t interrupt_level_get ()$/;"	f
+interrupt_level_t	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	/^} interrupt_level_t;$/;"	t	typeref:enum:__anon5
+interrupt_vector_	code/platform/kernel/core/inc/device.h	/^    int interrupt_vector_;$/;"	m	struct:type_device
+invalid_handle_	code/platform/kernel/core/src/task.c	/^    statistic_t invalid_handle_;$/;"	m	struct:__anon14	file:
+is_in_interrupt	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^bool is_in_interrupt ()$/;"	f
+is_invalid_handle	code/platform/kernel/core/src/device.c	36;"	d	file:
+is_invalid_handle	code/platform/kernel/core/src/mpool.c	35;"	d	file:
+is_invalid_handle	code/platform/kernel/core/src/queue.c	37;"	d	file:
+is_invalid_handle	code/platform/kernel/core/src/syncobj.c	36;"	d	file:
+is_invalid_handle	code/platform/kernel/core/src/task.c	49;"	d	file:
+is_invalid_handle	code/platform/kernel/core/src/timer.c	42;"	d	file:
+is_invalid_task	code/platform/kernel/core/src/task.c	/^bool is_invalid_task (const task_handle_t _handle)$/;"	f
+is_opened_	code/platform/kernel/arch/x86/simulator/inc/clock.h	/^    bool is_opened_;$/;"	m	struct:__anon4
+is_opened_	code/platform/kernel/arch/x86/simulator/inc/console.h	/^    bool is_opened_;$/;"	m	struct:__anon3
+is_opened_	code/platform/kernel/driver/ctrlc/inc/ctrlc.h	/^    bool is_opened_;$/;"	m	struct:__anon44
+is_recursive_	code/platform/kernel/core/inc/mutex.h	/^    bool is_recursive_;$/;"	m	struct:__anon31
+is_registered_	code/platform/common/src/module.c	/^    bool is_registered_;$/;"	m	struct:__anon45	file:
+is_stack_overflowed	code/platform/kernel/core/src/task.c	/^error_t is_stack_overflowed (const task_handle_t _handle, bool *_p_overflowed)$/;"	f
+key_	tests/platform/common/unitest_dll.c	/^    int key_;$/;"	m	struct:__anon1	file:
+key_calc_func_	code/platform/common/inc/dllht.h	/^    calculate_callback_t key_calc_func_;$/;"	m	struct:__anon48
+last_error_	code/platform/common/src/error.c	/^    int last_error_;$/;"	m	struct:errstr_t	file:
+level_	code/platform/kernel/core/src/timer.c	/^    usize_t level_;$/;"	m	struct:__anon15	file:
+loc2str	code/platform/kernel/core/src/mlocation.c	/^const char *loc2str (mlocation_t _loc)$/;"	f
+loc_	code/platform/kernel/core/inc/heap.h	/^    address_t loc_;$/;"	m	struct:__anon21
+loc_not_	code/platform/kernel/core/inc/heap.h	/^    address_t loc_not_;$/;"	m	struct:__anon21
+magic_number_	code/platform/kernel/core/inc/device.h	/^    magic_number_t magic_number_;$/;"	m	struct:__anon39
+magic_number_	code/platform/kernel/core/inc/device.h	/^    magic_number_t magic_number_;$/;"	m	struct:type_device
+magic_number_	code/platform/kernel/core/inc/mpool.h	/^    magic_number_t magic_number_;$/;"	m	struct:__anon37
+magic_number_	code/platform/kernel/core/inc/queue.h	/^    magic_number_t magic_number_;$/;"	m	struct:__anon35
+magic_number_	code/platform/kernel/core/inc/syncobj.h	/^    magic_number_t magic_number_;$/;"	m	struct:__anon26
+magic_number_	code/platform/kernel/core/inc/syncobj.h	/^    magic_number_t magic_number_;$/;"	m	struct:type_sync_object
+magic_number_	code/platform/kernel/core/inc/task.h	/^    magic_number_t magic_number_;$/;"	m	struct:type_task
+magic_number_	code/platform/kernel/core/inc/timer.h	/^    magic_number_t magic_number_;$/;"	m	struct:type_timer
+magic_number_t	code/platform/common/inc/primitive.h	/^typedef u32_t magic_number_t;$/;"	t
+main	code/platform/common/inc/main.h	/^int main (int argc, char *argv [])$/;"	f
+main	code/platform/common/inc/unitest.h	/^int main (int _argc, char *_argv[])$/;"	f
+main	code/tools/err2str/err2str.cpp	/^int main (const int argc, char * const argv[])$/;"	f
+mblock_integrate	code/platform/kernel/core/src/heap.c	/^static inline void mblock_integrate (register mblock_t* _p_mblock)$/;"	f	file:
+mblock_integrity_check	code/platform/kernel/core/src/heap.c	/^static inline bool mblock_integrity_check (register const mblock_t *_p_mblock)$/;"	f	file:
+mblock_t	code/platform/kernel/core/inc/heap.h	/^} mblock_t;$/;"	t	typeref:struct:__anon18
+mem_compare_addr_equal	tests/platform/common/unitest_dllht.c	/^static bool mem_compare_addr_equal (dll_t *_p_dll, dll_node_t *_p_node, void *_p_key)$/;"	f	file:
+mem_hash_key_calc	tests/platform/common/unitest_dllht.c	/^static ukey_t mem_hash_key_calc (const void *_key, msize_t _key_length)$/;"	f	file:
+memcmp	code/platform/common/src/clib.c	/^int memcmp (void *_s1, void *_s2, usize_t _len)$/;"	f
+memcmp_bytes	code/platform/common/src/clib.c	/^static int memcmp_bytes (op_t a, op_t b)$/;"	f	file:
+memcmp_common_alignment	code/platform/common/src/clib.c	/^static int memcmp_common_alignment (op_t srcp1, op_t srcp2, usize_t _len)$/;"	f	file:
+memcmp_not_common_alignment	code/platform/common/src/clib.c	/^static int memcmp_not_common_alignment (op_t srcp1, op_t srcp2, usize_t _len)$/;"	f	file:
+memcpy	code/platform/common/src/clib.c	/^void *memcpy (void *_dstpp, const void *_srcpp, usize_t _len)$/;"	f
+memory_barrier	code/platform/kernel/arch/x86/simulator/inc/interrupt.h	42;"	d
+memset	code/platform/common/src/clib.c	/^void *memset (void *_dstpp, const int _c, usize_t _len)$/;"	f
+message_lost_	code/platform/kernel/core/src/queue.c	/^    statistic_t message_lost_;$/;"	m	struct:__anon13	file:
+mhead_integrate	code/platform/kernel/core/src/heap.c	/^static inline void mhead_integrate (register mhead_t* _p_mhead)$/;"	f	file:
+mhead_integrity_check	code/platform/kernel/core/src/heap.c	/^static inline bool mhead_integrity_check (register const mhead_t* _p_mhead)$/;"	f	file:
+mhead_t	code/platform/kernel/core/inc/heap.h	/^} mhead_t;$/;"	t	typeref:struct:__anon20
+mlocation_t	code/platform/kernel/core/inc/mlocation.h	/^} mlocation_t;$/;"	t	typeref:enum:__anon30
+mode_	code/platform/kernel/core/inc/device.h	/^    device_mode_t mode_;$/;"	m	struct:__anon39
+module_callback_t	code/platform/common/inc/module.h	/^typedef error_t (*module_callback_t)(system_state_t _state);$/;"	t
+module_device	code/platform/kernel/core/src/device.c	/^error_t module_device (system_state_t _state)$/;"	f
+module_heap	code/platform/kernel/core/src/heap.c	/^error_t module_heap (system_state_t _state)$/;"	f
+module_init_t	code/platform/common/src/module.c	/^} module_init_t;$/;"	t	typeref:struct:__anon45	file:
+module_interrupt	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^error_t module_interrupt (system_state_t _state)$/;"	f
+module_mpool	code/platform/kernel/core/src/mpool.c	/^error_t module_mpool (system_state_t _state)$/;"	f
+module_mutex	code/platform/kernel/core/src/mutex.c	/^error_t module_mutex (system_state_t _state)$/;"	f
+module_queue	code/platform/kernel/core/src/queue.c	/^error_t module_queue (system_state_t _state)$/;"	f
+module_register	code/platform/common/src/module.c	/^error_t module_register (const char _name [], module_t _module, $/;"	f
+module_registration_entry	code/application/event/main.c	/^int module_registration_entry (int argc, char *argv [])$/;"	f
+module_registration_entry	code/application/mutex/main.c	/^int module_registration_entry (int argc, char *argv [])$/;"	f
+module_registration_entry	code/application/queue/main.c	/^int module_registration_entry (int argc, char *argv [])$/;"	f
+module_registration_entry	code/application/semaphore/main.c	/^int module_registration_entry (int argc, char *argv [])$/;"	f
+module_registration_entry	code/application/task/main.c	/^int module_registration_entry (int argc, char *argv [])$/;"	f
+module_semaphore	code/platform/kernel/core/src/semaphore.c	/^error_t module_semaphore (system_state_t _state)$/;"	f
+module_t	code/platform/common/inc/module.h	/^} module_t;$/;"	t	typeref:enum:__anon49
+module_task	code/platform/kernel/core/src/task.c	/^error_t module_task (system_state_t _state)$/;"	f
+module_testapp	code/application/event/main.c	/^error_t module_testapp (system_state_t _state)$/;"	f
+module_testapp	code/application/mutex/main.c	/^error_t module_testapp (system_state_t _state)$/;"	f
+module_testapp	code/application/queue/main.c	/^error_t module_testapp (system_state_t _state)$/;"	f
+module_testapp	code/application/semaphore/main.c	/^error_t module_testapp (system_state_t _state)$/;"	f
+module_testapp	code/application/task/main.c	/^error_t module_testapp (system_state_t _state)$/;"	f
+module_timer	code/platform/kernel/core/src/timer.c	/^error_t module_timer (system_state_t _state)$/;"	f
+mpool_buffer_alloc	code/platform/kernel/core/src/mpool.c	/^void* mpool_buffer_alloc (mpool_handle_t _handle)$/;"	f
+mpool_buffer_free	code/platform/kernel/core/src/mpool.c	/^error_t mpool_buffer_free (mpool_handle_t _handle, void* _p_buf)$/;"	f
+mpool_check_for_each	code/platform/kernel/core/src/mpool.c	/^static bool mpool_check_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+mpool_create	code/platform/kernel/core/src/mpool.c	/^error_t mpool_create (const char _name [], mpool_handle_t *_p_handle, $/;"	f
+mpool_delete	code/platform/kernel/core/src/mpool.c	/^error_t mpool_delete (mpool_handle_t _handle)$/;"	f
+mpool_dump	code/platform/kernel/core/src/mpool.c	/^void mpool_dump ()$/;"	f
+mpool_dump_for_each	code/platform/kernel/core/src/mpool.c	/^static bool mpool_dump_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+mpool_handle_t	code/platform/kernel/core/inc/mpool.h	/^} mpool_t, *mpool_handle_t;$/;"	t	typeref:struct:__anon37
+mpool_init	code/platform/kernel/core/src/mpool.c	/^static void mpool_init ()$/;"	f	file:
+mpool_node_t	code/platform/kernel/core/inc/mpool.h	/^} mpool_node_t;$/;"	t	typeref:struct:__anon36
+mpool_t	code/platform/kernel/core/inc/mpool.h	/^} mpool_t, *mpool_handle_t;$/;"	t	typeref:struct:__anon37
+msecond_t	code/platform/common/inc/primitive.h	/^typedef u32_t msecond_t;$/;"	t
+msize_t	code/platform/common/inc/primitive.h	/^typedef address_t msize_t;$/;"	t
+mtail_integrate	code/platform/kernel/core/src/heap.c	/^static inline void mtail_integrate (register mtail_t* _p_mtail)$/;"	f	file:
+mtail_integrity_check	code/platform/kernel/core/src/heap.c	/^static inline bool mtail_integrity_check (register const mtail_t* _p_mtail)$/;"	f	file:
+mtail_t	code/platform/kernel/core/inc/heap.h	/^} mtail_t;$/;"	t	typeref:struct:__anon21
+multitasking_start	code/platform/kernel/core/src/task.c	/^void multitasking_start ()$/;"	f
+multitasking_stop	code/platform/kernel/core/src/task.c	/^void multitasking_stop ()$/;"	f
+mutex_callback_lock	code/platform/kernel/core/src/mutex.c	/^static bool mutex_callback_lock (sync_object_handle_t _handle)$/;"	f	file:
+mutex_callback_unlock	code/platform/kernel/core/src/mutex.c	/^static bool mutex_callback_unlock (sync_object_handle_t _handle,$/;"	f	file:
+mutex_callback_wait	code/platform/kernel/core/src/mutex.c	/^static void mutex_callback_wait (sync_object_handle_t _handle)$/;"	f	file:
+mutex_callback_wake	code/platform/kernel/core/src/mutex.c	/^static void mutex_callback_wake (sync_object_handle_t _handle)$/;"	f	file:
+mutex_check_for_each	code/platform/kernel/core/src/mutex.c	/^static bool mutex_check_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+mutex_create	code/platform/kernel/core/src/mutex.c	/^error_t mutex_create (mutex_handle_t *_p_handle, const char _name [], $/;"	f
+mutex_delete	code/platform/kernel/core/src/mutex.c	/^error_t mutex_delete (mutex_handle_t _handle)$/;"	f
+mutex_dump	code/platform/kernel/core/src/mutex.c	/^void mutex_dump ()$/;"	f
+mutex_dump_for_each	code/platform/kernel/core/src/mutex.c	/^static bool mutex_dump_for_each (dll_t *_p_dll, dll_node_t *_p_node, $/;"	f	file:
+mutex_handle_t	code/platform/kernel/core/inc/mutex.h	/^} mutex_t, *mutex_handle_t;$/;"	t	typeref:struct:__anon31
+mutex_init	code/platform/kernel/core/src/mutex.c	/^static void mutex_init ()$/;"	f	file:
+mutex_lock	code/platform/kernel/core/src/mutex.c	/^error_t mutex_lock (mutex_handle_t _handle, msecond_t _timeout)$/;"	f
+mutex_t	code/platform/kernel/core/inc/mutex.h	/^} mutex_t, *mutex_handle_t;$/;"	t	typeref:struct:__anon31
+mutex_try_to_lock	code/platform/kernel/core/src/mutex.c	/^error_t mutex_try_to_lock (mutex_handle_t _handle)$/;"	f
+mutex_unlock	code/platform/kernel/core/src/mutex.c	/^error_t mutex_unlock (mutex_handle_t _handle)$/;"	f
+name_	code/platform/kernel/core/inc/device.h	/^    char name_ [NAME_MAX_LENGTH + 1];$/;"	m	struct:type_device
+name_	code/platform/kernel/core/inc/device.h	/^    char name_ [NAME_MAX_LENGTH*2 + 1];$/;"	m	struct:__anon39
+name_	code/platform/kernel/core/inc/mpool.h	/^    char name_ [NAME_MAX_LENGTH + 1];$/;"	m	struct:__anon37
+name_	code/platform/kernel/core/inc/queue.h	/^    char name_ [NAME_MAX_LENGTH + 1];$/;"	m	struct:__anon35
+name_	code/platform/kernel/core/inc/syncobj.h	/^    char name_ [NAME_MAX_LENGTH + 1];$/;"	m	struct:type_sync_object
+name_	code/platform/kernel/core/inc/task.h	/^    char name_ [NAME_MAX_LENGTH + 1];$/;"	m	struct:type_task
+name_	code/platform/kernel/core/inc/timer.h	/^    char name_ [NAME_MAX_LENGTH + 1];$/;"	m	struct:type_timer
+next_	code/platform/common/inc/dll.h	/^    struct dll_node *next_;$/;"	m	struct:dll_node	typeref:struct:dll_node::dll_node
+next_	code/platform/kernel/core/inc/heap.h	/^    address_t next_;  \/\/ next start address of memory block$/;"	m	struct:__anon18
+next_not_	code/platform/kernel/core/inc/heap.h	/^    address_t next_not_;$/;"	m	struct:__anon18
+no_queue_	code/platform/kernel/core/src/queue.c	/^    statistic_t no_queue_;$/;"	m	struct:__anon13	file:
+node_	code/platform/common/src/module.c	/^    dll_node_t node_;$/;"	m	struct:__anon45	file:
+node_	code/platform/kernel/core/inc/device.h	/^    dll_node_t node_;$/;"	m	struct:type_device
+node_	code/platform/kernel/core/inc/mpool.h	/^    dll_node_t node_;$/;"	m	struct:__anon36
+node_	code/platform/kernel/core/inc/mpool.h	/^    dll_node_t node_;$/;"	m	struct:__anon37
+node_	code/platform/kernel/core/inc/queue.h	/^    dll_node_t node_;$/;"	m	struct:__anon35
+node_	code/platform/kernel/core/inc/syncobj.h	/^    dll_node_t node_;$/;"	m	struct:type_sync_object
+node_	code/platform/kernel/core/inc/task.h	/^    dll_node_t node_;$/;"	m	struct:type_task
+node_	code/platform/kernel/core/inc/taskvar.h	/^    dll_node_t node_;$/;"	m	struct:__anon41
+node_	code/platform/kernel/core/inc/timer.h	/^    dll_node_t node_;$/;"	m	struct:type_timer
+node_	tests/platform/common/unitest_dll.c	/^    dll_node_t node_;$/;"	m	struct:__anon1	file:
+notimer_	code/platform/kernel/core/src/timer.c	/^    statistic_t notimer_;$/;"	m	struct:__anon16	file:
+null	code/platform/common/inc/primitive.h	63;"	d
+object_	code/platform/kernel/core/inc/mutex.h	/^    sync_object_t object_;$/;"	m	struct:__anon31
+object_	code/platform/kernel/core/inc/semaphore.h	/^    sync_object_t object_;$/;"	m	struct:__anon34
+old_esp_	code/platform/kernel/arch/x86/simulator/src/context.c	/^    register_t old_esp_;$/;"	m	struct:__anon2	file:
+op_t	code/platform/common/src/clib.c	21;"	d	file:
+open_	code/platform/kernel/core/inc/device.h	/^    error_t (*open_) (device_handle_t _handle, open_mode_t _mode);$/;"	m	struct:__anon38
+open_mode_t	code/platform/kernel/core/inc/device.h	/^typedef u32_t open_mode_t;$/;"	t
+operation_	code/platform/kernel/core/inc/device.h	/^    device_operation_t operation_;$/;"	m	struct:__anon39
+opt_	code/platform/kernel/core/inc/syncobj.h	/^    sync_operation_t opt_;$/;"	m	struct:__anon26
+original_	code/platform/kernel/core/inc/mutex.h	/^    task_priority_t original_;$/;"	m	struct:__anon31
+overflowed_	code/platform/kernel/core/src/task.c	/^    statistic_t overflowed_;$/;"	m	struct:__anon14	file:
+owner_	code/platform/kernel/core/inc/mutex.h	/^    task_handle_t owner_;$/;"	m	struct:__anon31
+p_context_	code/platform/kernel/arch/x86/simulator/src/context.c	/^    task_context_t *p_context_;$/;"	m	struct:__anon2	file:
+p_data_	code/platform/common/src/injector.c	/^    void *p_data_;$/;"	m	struct:__anon46	file:
+p_name_	code/platform/common/src/module.c	/^    const char *p_name_;$/;"	m	struct:__anon45	file:
+p_node_	code/platform/kernel/core/inc/mpool.h	/^    mpool_node_t *p_node_;$/;"	m	struct:__anon37
+pending_bitmap_	code/platform/kernel/core/inc/syncobj.h	/^    task_bitmap_t pending_bitmap_;$/;"	m	struct:type_sync_object
+port_read	code/platform/kernel/arch/x86/share/src/ioport.c	/^u32_t port_read (address_t _addr, port_type_t _type, port_size_t _size)$/;"	f
+port_size_t	code/platform/kernel/arch/x86/share/inc/ioport.h	/^} port_size_t;$/;"	t	typeref:enum:__anon11
+port_type_t	code/platform/kernel/arch/x86/share/inc/ioport.h	/^} port_type_t;$/;"	t	typeref:enum:__anon10
+port_write	code/platform/kernel/arch/x86/share/src/ioport.c	/^void port_write (address_t _addr, port_type_t _type, port_size_t _size, $/;"	f
+preschedule_callback_t	code/platform/kernel/core/inc/task.h	/^typedef void (*preschedule_callback_t) (task_handle_t _from, task_handle_t _to);$/;"	t
+prev_	code/platform/common/inc/dll.h	/^    struct dll_node *prev_;$/;"	m	struct:dll_node	typeref:struct:dll_node::dll_node
+priority_	code/platform/kernel/core/inc/task.h	/^    task_priority_t priority_;$/;"	m	struct:type_task
+ptr2buf	code/platform/kernel/core/inc/heap.h	57;"	d
+ptr2mhead	code/platform/kernel/core/inc/heap.h	59;"	d
+ptr2mtail	code/platform/kernel/core/inc/heap.h	60;"	d
+queue_check_for_each	code/platform/kernel/core/src/queue.c	/^static bool queue_check_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+queue_create	code/platform/kernel/core/src/queue.c	/^error_t queue_create (const char _name [], queue_handle_t *_p_handle, $/;"	f
+queue_delete	code/platform/kernel/core/src/queue.c	/^error_t queue_delete (queue_handle_t _handle)$/;"	f
+queue_dump	code/platform/kernel/core/src/queue.c	/^void queue_dump ()$/;"	f
+queue_dump_for_each	code/platform/kernel/core/src/queue.c	/^static bool queue_dump_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+queue_full_	code/platform/kernel/core/src/timer.c	/^    statistic_t queue_full_;$/;"	m	struct:__anon16	file:
+queue_handle_t	code/platform/kernel/core/inc/queue.h	/^} queue_t, *queue_handle_t;$/;"	t	typeref:struct:__anon35
+queue_init	code/platform/kernel/core/src/queue.c	/^static void queue_init ()$/;"	f	file:
+queue_is_empty	code/platform/kernel/core/src/queue.c	/^bool queue_is_empty (const queue_handle_t _handle)$/;"	f
+queue_is_full	code/platform/kernel/core/src/queue.c	/^bool queue_is_full (const queue_handle_t _handle)$/;"	f
+queue_message_receive	code/platform/kernel/core/src/queue.c	/^error_t queue_message_receive (queue_handle_t _handle, msecond_t _timeout, $/;"	f
+queue_message_send	code/platform/kernel/core/src/queue.c	/^error_t queue_message_send (queue_handle_t _handle, const void *_p_element)$/;"	f
+queue_statistic_t	code/platform/kernel/core/src/queue.c	/^} queue_statistic_t;$/;"	t	typeref:struct:__anon13	file:
+queue_t	code/platform/kernel/core/inc/queue.h	/^} queue_t, *queue_handle_t;$/;"	t	typeref:struct:__anon35
+read_	code/platform/kernel/core/inc/device.h	/^    error_t (*read_) (device_handle_t _handle, void *_buf, usize_t _size);$/;"	m	struct:__anon38
+redo_	code/platform/kernel/core/src/timer.c	/^    statistic_t redo_;$/;"	m	struct:__anon15	file:
+reentrance_	code/platform/kernel/core/src/timer.c	/^    usize_t reentrance_;$/;"	m	struct:__anon15	file:
+reference_	code/platform/kernel/core/inc/mutex.h	/^    usize_t reference_;$/;"	m	struct:__anon31
+register_t	code/platform/kernel/arch/x86/simulator/inc/context.h	/^typedef int register_t;$/;"	t
+remained_round_	code/platform/kernel/core/src/timer.c	/^    msecond_t remained_round_;$/;"	m	struct:__anon17	file:
+root_context_init	code/platform/kernel/arch/x86/simulator/src/context.c	/^static void root_context_init (void (*_task_entry)(), task_context_t *_p_context)$/;"	f	file:
+root_frame_init	code/platform/kernel/arch/x86/simulator/src/context.c	/^static void root_frame_init (root_frame_t *_p_frame)$/;"	f	file:
+root_frame_t	code/platform/kernel/arch/x86/simulator/src/context.c	/^} root_frame_t;$/;"	t	typeref:struct:__anon2	file:
+round_	code/platform/kernel/core/inc/timer.h	/^    usize_t round_;$/;"	m	struct:type_timer
+row_bitmap_	code/platform/kernel/core/inc/bitmap.h	/^    task_bitmap_row_t row_bitmap_;$/;"	m	struct:__anon29
+s16_t	code/platform/common/inc/primitive.h	/^typedef signed short s16_t;$/;"	t
+s32_t	code/platform/common/inc/primitive.h	/^typedef signed int s32_t;$/;"	t
+s8_t	code/platform/common/inc/primitive.h	/^typedef signed char s8_t;$/;"	t
+scheduled_	code/platform/kernel/core/src/task.c	/^    statistic_t scheduled_;$/;"	m	struct:__anon14	file:
+scheduler_lock	code/platform/kernel/core/src/task.c	/^void scheduler_lock ()$/;"	f
+scheduler_unlock	code/platform/kernel/core/src/task.c	/^void scheduler_unlock ()$/;"	f
+semaphore_	code/platform/kernel/core/inc/queue.h	/^    semaphore_handle_t semaphore_;$/;"	m	struct:__anon35
+semaphore_callback_give	code/platform/kernel/core/src/semaphore.c	/^static bool semaphore_callback_give (sync_object_handle_t _handle,$/;"	f	file:
+semaphore_callback_take	code/platform/kernel/core/src/semaphore.c	/^static bool semaphore_callback_take (sync_object_handle_t _handle)$/;"	f	file:
+semaphore_callback_wait	code/platform/kernel/core/src/semaphore.c	/^static void semaphore_callback_wait (sync_object_handle_t _handle)$/;"	f	file:
+semaphore_callback_wake	code/platform/kernel/core/src/semaphore.c	/^static void semaphore_callback_wake (sync_object_handle_t _handle)$/;"	f	file:
+semaphore_check_for_each	code/platform/kernel/core/src/semaphore.c	/^static bool semaphore_check_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+semaphore_count_get	code/platform/kernel/core/src/semaphore.c	/^usize_t semaphore_count_get (const semaphore_handle_t _handle)$/;"	f
+semaphore_create	code/platform/kernel/core/src/semaphore.c	/^error_t semaphore_create (semaphore_handle_t *_p_handle, const char _name [], $/;"	f
+semaphore_delete	code/platform/kernel/core/src/semaphore.c	/^error_t semaphore_delete (semaphore_handle_t _handle)$/;"	f
+semaphore_dump	code/platform/kernel/core/src/semaphore.c	/^void semaphore_dump ()$/;"	f
+semaphore_dump_for_each	code/platform/kernel/core/src/semaphore.c	/^static bool semaphore_dump_for_each (dll_t *_p_dll, dll_node_t *_p_node, $/;"	f	file:
+semaphore_give	code/platform/kernel/core/src/semaphore.c	/^error_t semaphore_give (semaphore_handle_t _handle)$/;"	f
+semaphore_handle_t	code/platform/kernel/core/inc/semaphore.h	/^} semaphore_t, *semaphore_handle_t;$/;"	t	typeref:struct:__anon34
+semaphore_init	code/platform/kernel/core/src/semaphore.c	/^static void semaphore_init ()$/;"	f	file:
+semaphore_t	code/platform/kernel/core/inc/semaphore.h	/^} semaphore_t, *semaphore_handle_t;$/;"	t	typeref:struct:__anon34
+semaphore_take	code/platform/kernel/core/src/semaphore.c	/^error_t semaphore_take (semaphore_handle_t _handle, msecond_t _timeout)$/;"	f
+semaphore_try_to_take	code/platform/kernel/core/src/semaphore.c	/^error_t semaphore_try_to_take (semaphore_handle_t _handle)$/;"	f
+signal_handler	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^static void signal_handler (int _signal)$/;"	f	file:
+signal_init	code/platform/kernel/arch/x86/simulator/src/interrupt.c	/^static void signal_init ()$/;"	f	file:
+size_	code/platform/kernel/core/inc/heap.h	/^    msize_t size_;  \/\/ size of attached block in g_alignment_bytes unit$/;"	m	struct:__anon20
+size_	code/platform/kernel/core/inc/heap.h	/^    msize_t size_;  \/\/ size of this block in g_alignment_bytes unit$/;"	m	struct:__anon18
+size_not_	code/platform/kernel/core/inc/heap.h	/^    msize_t size_not_;$/;"	m	struct:__anon18
+size_not_	code/platform/kernel/core/inc/heap.h	/^    msize_t size_not_;$/;"	m	struct:__anon20
+stack_base_	code/platform/kernel/core/inc/task.h	/^    address_t stack_base_;$/;"	m	struct:type_task
+stack_size_	code/platform/kernel/core/inc/task.h	/^    usize_t stack_size_;$/;"	m	struct:type_task
+stack_unit_t	code/platform/kernel/core/inc/config.h	/^typedef unsigned int stack_unit_t;$/;"	t
+stack_used_percentage	code/platform/kernel/core/src/task.c	/^error_t stack_used_percentage (const task_handle_t _handle, int *_p_percentage)$/;"	f
+start_	code/platform/kernel/core/inc/heap.h	/^    address_t start_;$/;"	m	struct:__anon19
+state_	code/platform/kernel/core/inc/task.h	/^    task_state_t state_;$/;"	m	struct:type_task
+state_	code/platform/kernel/core/inc/timer.h	/^    timer_state_t state_;$/;"	m	struct:type_timer
+statistic_t	code/platform/common/inc/primitive.h	/^typedef u32_t statistic_t;$/;"	t
+stats_invalid_binding_	code/platform/kernel/core/src/device.c	/^    statistic_t stats_invalid_binding_;$/;"	m	struct:__anon12	file:
+stats_invalid_index_	code/platform/kernel/core/src/device.c	/^    statistic_t stats_invalid_index_;$/;"	m	struct:__anon12	file:
+stats_nobuf_	code/platform/kernel/core/inc/mpool.h	/^    statistic_t stats_nobuf_;$/;"	m	struct:__anon37
+stats_noobj_	code/platform/kernel/core/inc/syncobj.h	/^    statistic_t stats_noobj_;$/;"	m	struct:__anon26
+stats_scheduled_	code/platform/kernel/core/inc/task.h	/^    statistic_t stats_scheduled_;$/;"	m	struct:type_task
+strcmp	code/platform/common/src/clib.c	/^int strcmp (const char *_p1, const char *_p2)$/;"	f
+strlen	code/platform/common/src/clib.c	/^usize_t strlen (const char *_str)$/;"	f
+strncmp	code/platform/common/src/clib.c	/^int strncmp (const char *_s1, const char *_s2, usize_t _n)$/;"	f
+strncpy	code/platform/common/src/clib.c	/^char *strncpy (char *_s1, const char *_s2, usize_t _n)$/;"	f
+sync_container_handle_t	code/platform/kernel/core/inc/syncobj.h	/^} sync_container_t, *sync_container_handle_t;$/;"	t	typeref:struct:__anon26
+sync_container_init	code/platform/kernel/core/src/syncobj.c	/^error_t sync_container_init (sync_container_handle_t _handle, void *_p_objects, $/;"	f
+sync_container_t	code/platform/kernel/core/inc/syncobj.h	/^} sync_container_t, *sync_container_handle_t;$/;"	t	typeref:struct:__anon26
+sync_object_alloc	code/platform/kernel/core/src/syncobj.c	/^error_t sync_object_alloc (sync_container_handle_t _container, $/;"	f
+sync_object_free	code/platform/kernel/core/src/syncobj.c	/^error_t sync_object_free (sync_object_handle_t _handle)$/;"	f
+sync_object_handle_t	code/platform/kernel/core/inc/syncobj.h	/^typedef struct type_sync_object sync_object_t, *sync_object_handle_t;$/;"	t	typeref:struct:
+sync_object_t	code/platform/kernel/core/inc/syncobj.h	/^typedef struct type_sync_object sync_object_t, *sync_object_handle_t;$/;"	t	typeref:struct:type_sync_object
+sync_operation_handle_t	code/platform/kernel/core/inc/syncobj.h	/^} sync_operation_t, *sync_operation_handle_t;$/;"	t	typeref:struct:__anon25
+sync_operation_t	code/platform/kernel/core/inc/syncobj.h	/^} sync_operation_t, *sync_operation_handle_t;$/;"	t	typeref:struct:__anon25
+sync_point_enter	code/platform/kernel/core/src/syncobj.c	/^error_t sync_point_enter (sync_object_handle_t _handle, msecond_t _timeout)$/;"	f
+sync_point_enter_t	code/platform/kernel/core/inc/syncobj.h	/^typedef bool (*sync_point_enter_t) (sync_object_handle_t _handle);$/;"	t
+sync_point_exit	code/platform/kernel/core/src/syncobj.c	/^error_t sync_point_exit (sync_object_handle_t _handle)$/;"	f
+sync_point_exit_t	code/platform/kernel/core/inc/syncobj.h	/^typedef bool (*sync_point_exit_t) (sync_object_handle_t _handle, error_t *_p_ecode);$/;"	t
+sync_point_try_to_enter	code/platform/kernel/core/src/syncobj.c	/^error_t sync_point_try_to_enter (sync_object_handle_t _handle)$/;"	f
+sync_point_wait_t	code/platform/kernel/core/inc/syncobj.h	/^typedef void (*sync_point_wait_t) (sync_object_handle_t _handle);$/;"	t
+sync_point_wake_t	code/platform/kernel/core/inc/syncobj.h	/^typedef void (*sync_point_wake_t) (sync_object_handle_t _handle);$/;"	t
+system_down	code/platform/common/src/module.c	/^void system_down ()$/;"	f
+system_state	code/platform/common/src/module.c	/^system_state_t system_state ()$/;"	f
+system_state_t	code/platform/common/inc/module.h	/^} system_state_t;$/;"	t	typeref:enum:__anon51
+system_up	code/platform/common/src/module.c	/^error_t system_up ()$/;"	f
+tail_	code/platform/common/inc/dll.h	/^    dll_node_t *tail_;$/;"	m	struct:__anon54
+task_bitmap_bit_clear	code/platform/kernel/core/src/bitmap.c	/^void task_bitmap_bit_clear (task_bitmap_handle_t _handle, bit_t _bit)$/;"	f
+task_bitmap_bit_set	code/platform/kernel/core/src/bitmap.c	/^void task_bitmap_bit_set (task_bitmap_handle_t _handle, bit_t _bit)$/;"	f
+task_bitmap_handle_t	code/platform/kernel/core/inc/bitmap.h	/^} task_bitmap_t, *task_bitmap_handle_t;$/;"	t	typeref:struct:__anon29
+task_bitmap_init	code/platform/kernel/core/src/bitmap.c	/^void task_bitmap_init (task_bitmap_handle_t _handle)$/;"	f
+task_bitmap_is_empty	code/platform/kernel/core/src/bitmap.c	/^bool task_bitmap_is_empty (const task_bitmap_handle_t _handle)$/;"	f
+task_bitmap_lowest_bit_get	code/platform/kernel/core/src/bitmap.c	/^bit_t task_bitmap_lowest_bit_get (const task_bitmap_handle_t _handle)$/;"	f
+task_bitmap_row_t	code/platform/kernel/core/inc/config.h	/^typedef unsigned int task_bitmap_row_t;$/;"	t
+task_bitmap_t	code/platform/kernel/core/inc/bitmap.h	/^} task_bitmap_t, *task_bitmap_handle_t;$/;"	t	typeref:struct:__anon29
+task_check_for_each	code/platform/kernel/core/src/task.c	/^static bool task_check_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+task_consumer	code/application/queue/main.c	/^static void task_consumer (const char _name [], void *_p_arg)$/;"	f	file:
+task_consumer	code/application/semaphore/main.c	/^static void task_consumer (const char _name [], void *_p_arg)$/;"	f	file:
+task_context_t	code/platform/kernel/arch/x86/simulator/inc/context.h	/^} task_context_t;$/;"	t	typeref:struct:__anon9
+task_create	code/platform/kernel/core/src/task.c	/^error_t task_create (task_handle_t *_p_handle, const char _name [], $/;"	f
+task_create_hook_add	code/platform/kernel/core/src/hook.c	/^error_t task_create_hook_add (task_create_hook_t _hook)$/;"	f
+task_create_hook_remove	code/platform/kernel/core/src/hook.c	/^error_t task_create_hook_remove (task_create_hook_t _hook)$/;"	f
+task_create_hook_t	code/platform/kernel/core/inc/hook.h	/^typedef void (*task_create_hook_t) (task_handle_t _handle);$/;"	t
+task_create_hook_traverse	code/platform/kernel/core/src/hook.c	/^void task_create_hook_traverse (task_handle_t _handle)$/;"	f
+task_delete	code/platform/kernel/core/src/task.c	/^error_t task_delete (task_handle_t _handle)$/;"	f
+task_delete_hook_add	code/platform/kernel/core/src/hook.c	/^error_t task_delete_hook_add (task_delete_hook_t _hook)$/;"	f
+task_delete_hook_remove	code/platform/kernel/core/src/hook.c	/^error_t task_delete_hook_remove (task_delete_hook_t _hook)$/;"	f
+task_delete_hook_t	code/platform/kernel/core/inc/hook.h	/^typedef void (*task_delete_hook_t) (task_handle_t _handle);$/;"	t
+task_delete_hook_traverse	code/platform/kernel/core/src/hook.c	/^void task_delete_hook_traverse (task_handle_t _handle)$/;"	f
+task_dump	code/platform/kernel/core/src/task.c	/^void task_dump ()$/;"	f
+task_dump_for_each	code/platform/kernel/core/src/task.c	/^static bool task_dump_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+task_entry	code/application/task/main.c	/^static void task_entry (const char _name [], void *_p_arg)$/;"	f	file:
+task_entry_idle	code/platform/kernel/arch/x86/simulator/src/idle.c	/^void task_entry_idle (const char _name [], void *_p_arg)$/;"	f
+task_entry_overflow	code/application/task/main.c	/^static void task_entry_overflow (const char _name [], void *_p_arg)$/;"	f	file:
+task_entry_t	code/platform/kernel/core/inc/task.h	/^typedef void (*task_entry_t) (const char _name [], void *_p_arg);$/;"	t
+task_from_priority	code/platform/kernel/core/src/task.c	/^task_handle_t task_from_priority (task_priority_t _priority)$/;"	f
+task_handle_t	code/platform/kernel/core/inc/event.h	/^typedef struct type_task task_t, *task_handle_t;$/;"	t	typeref:struct:
+task_handle_t	code/platform/kernel/core/inc/mutex.h	/^typedef struct type_task task_t, *task_handle_t;$/;"	t	typeref:struct:
+task_handle_t	code/platform/kernel/core/inc/task.h	/^typedef struct type_task task_t, *task_handle_t;$/;"	t	typeref:struct:
+task_high	code/application/mutex/main.c	/^static void task_high (const char _name [], void *_p_arg)$/;"	f	file:
+task_low	code/application/mutex/main.c	/^static void task_low (const char _name [], void *_p_arg)$/;"	f	file:
+task_main	code/platform/kernel/core/src/task.c	/^static void task_main ()$/;"	f	file:
+task_priority_change	code/platform/kernel/core/src/task.c	/^void task_priority_change (task_handle_t _handle, task_priority_t _to)$/;"	f
+task_priority_t	code/platform/kernel/core/inc/mutex.h	/^typedef u32_t task_priority_t;$/;"	t
+task_priority_t	code/platform/kernel/core/inc/task.h	/^typedef u32_t task_priority_t;$/;"	t
+task_producer	code/application/queue/main.c	/^static void task_producer (const char _name [], void *_p_arg)$/;"	f	file:
+task_producer	code/application/semaphore/main.c	/^static void task_producer (const char _name [], void *_p_arg)$/;"	f	file:
+task_resume	code/platform/kernel/core/src/task.c	/^error_t task_resume (task_handle_t _handle)$/;"	f
+task_schedule	code/platform/kernel/core/src/task.c	/^void task_schedule (preschedule_callback_t _callback)$/;"	f
+task_schedule_in_interrupt	code/platform/kernel/core/src/task.c	/^void task_schedule_in_interrupt ()$/;"	f
+task_self	code/platform/kernel/core/src/task.c	/^task_handle_t task_self ()$/;"	f
+task_sleep	code/platform/kernel/core/src/task.c	/^error_t task_sleep (msecond_t _duration)$/;"	f
+task_start	code/platform/kernel/core/src/task.c	/^error_t task_start (task_handle_t _handle, task_entry_t _entry, void *_p_arg)$/;"	f
+task_state_change	code/platform/kernel/core/src/task.c	/^error_t task_state_change (task_handle_t _handle, task_state_t _new_state)$/;"	f
+task_state_description	code/platform/kernel/core/src/task.c	/^static const char *task_state_description (const task_handle_t _handle)$/;"	f	file:
+task_state_t	code/platform/kernel/core/inc/task.h	/^} task_state_t;$/;"	t	typeref:enum:__anon28
+task_statistic_t	code/platform/kernel/core/src/task.c	/^} task_statistic_t;$/;"	t	typeref:struct:__anon14	file:
+task_suspend	code/platform/kernel/core/src/task.c	/^error_t task_suspend (task_handle_t _handle)$/;"	f
+task_suspended	tests/platform/kernel/core/unitest_task.c	/^static void task_suspended (const char _name [], void *_p_arg)$/;"	f	file:
+task_suspending	tests/platform/kernel/core/unitest_task.c	/^static void task_suspending (const char _name [], void *_p_arg)$/;"	f	file:
+task_switch_hook_add	code/platform/kernel/core/src/hook.c	/^error_t task_switch_hook_add (task_switch_hook_t _hook)$/;"	f
+task_switch_hook_remove	code/platform/kernel/core/src/hook.c	/^error_t task_switch_hook_remove (task_switch_hook_t _hook)$/;"	f
+task_switch_hook_t	code/platform/kernel/core/inc/hook.h	/^typedef void (*task_switch_hook_t) (task_handle_t _from, task_handle_t _to);$/;"	t
+task_switch_hook_traverse	code/platform/kernel/core/src/hook.c	/^void task_switch_hook_traverse (task_handle_t _from, task_handle_t _to)$/;"	f
+task_t	code/platform/kernel/core/inc/event.h	/^typedef struct type_task task_t, *task_handle_t;$/;"	t	typeref:struct:type_task
+task_t	code/platform/kernel/core/inc/mutex.h	/^typedef struct type_task task_t, *task_handle_t;$/;"	t	typeref:struct:type_task
+task_t	code/platform/kernel/core/inc/task.h	/^typedef struct type_task task_t, *task_handle_t;$/;"	t	typeref:struct:type_task
+task_task1	code/application/event/main.c	/^static void task_task1 (const char _name [], void *_p_arg)$/;"	f	file:
+task_task2	code/application/event/main.c	/^static void task_task2 (const char _name [], void *_p_arg)$/;"	f	file:
+task_task3	code/application/event/main.c	/^static void task_task3 (const char _name [], void *_p_arg)$/;"	f	file:
+task_timer	code/platform/kernel/core/src/timer.c	/^static void task_timer (const char _name [], void *_p_arg)$/;"	f	file:
+task_timer_callback	code/platform/kernel/core/src/task.c	/^static void task_timer_callback (timer_handle_t _handle, void *_arg)$/;"	f	file:
+task_variable_add	code/platform/kernel/core/src/taskvar.c	/^error_t task_variable_add (value_t *_p_value)$/;"	f
+task_variable_find	code/platform/kernel/core/src/taskvar.c	/^static bool task_variable_find (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+task_variable_init	code/platform/kernel/core/src/taskvar.c	/^static error_t task_variable_init ()$/;"	f	file:
+task_variable_node_t	code/platform/kernel/core/inc/taskvar.h	/^} task_variable_node_t;$/;"	t	typeref:struct:__anon41
+task_variable_remove	code/platform/kernel/core/src/taskvar.c	/^error_t task_variable_remove (value_t *_p_value)$/;"	f
+task_variable_restore	code/platform/kernel/core/src/taskvar.c	/^static bool task_variable_restore (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+task_variable_store	code/platform/kernel/core/src/taskvar.c	/^static bool task_variable_store (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+task_variable_switch_hook	code/platform/kernel/core/src/taskvar.c	/^static void task_variable_switch_hook (task_handle_t _from, task_handle_t _to)$/;"	f	file:
+task_yeild_cpu	code/platform/kernel/core/src/task.c	/^static void task_yeild_cpu (task_handle_t _from, task_handle_t _to)$/;"	f	file:
+tick_delayed	code/platform/kernel/arch/x86/simulator/src/idle.c	/^statistic_t tick_delayed ()$/;"	f
+tick_interrupt_handler	code/platform/kernel/arch/x86/simulator/src/clock.c	/^void tick_interrupt_handler (device_handle_t _handle)$/;"	f
+tick_process	code/platform/kernel/arch/x86/simulator/src/idle.c	/^void tick_process ()$/;"	f
+tick_process_	code/platform/kernel/arch/x86/simulator/inc/clock.h	/^    void (*tick_process_) (); $/;"	m	struct:__anon4
+ticks_	code/platform/kernel/core/inc/timer.h	/^    usize_t ticks_;$/;"	m	struct:type_timer
+timeout_	code/platform/kernel/core/inc/task.h	/^    msecond_t timeout_;$/;"	m	struct:type_task
+timer_	code/platform/kernel/core/inc/task.h	/^    timer_handle_t timer_;$/;"	m	struct:type_task
+timer_alloc	code/platform/kernel/core/src/timer.c	/^error_t timer_alloc (timer_handle_t *_p_handle, const char *_name,$/;"	f
+timer_calculate_remained	code/platform/kernel/core/src/timer.c	/^static bool timer_calculate_remained (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+timer_callback	code/application/task/main.c	/^static void timer_callback (timer_handle_t _handle, void *_arg)$/;"	f	file:
+timer_check_for_each	code/platform/kernel/core/src/timer.c	/^static bool timer_check_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+timer_dump	code/platform/kernel/core/src/timer.c	/^void timer_dump ()$/;"	f
+timer_fire	code/platform/kernel/core/src/timer.c	/^void timer_fire ()$/;"	f
+timer_free	code/platform/kernel/core/src/timer.c	/^error_t timer_free (timer_handle_t _handle)$/;"	f
+timer_handle_t	code/platform/kernel/core/inc/timer.h	/^typedef struct type_timer *timer_handle_t;$/;"	t	typeref:struct:type_timer
+timer_init	code/platform/kernel/core/src/timer.c	/^static void timer_init ()$/;"	f	file:
+timer_insert	code/platform/kernel/core/src/timer.c	/^static void timer_insert (timer_handle_t _handle)$/;"	f	file:
+timer_instance_t	code/platform/kernel/core/inc/timer.h	/^} timer_instance_t;$/;"	t	typeref:struct:type_timer
+timer_is_started	code/platform/kernel/core/src/timer.c	/^bool timer_is_started (const timer_handle_t _handle)$/;"	f
+timer_message_send	code/platform/kernel/core/src/timer.c	/^static void timer_message_send (const timer_handle_t _handle)$/;"	f	file:
+timer_remained_t	code/platform/kernel/core/src/timer.c	/^} timer_remained_t;$/;"	t	typeref:struct:__anon17	file:
+timer_restart	code/platform/kernel/core/src/timer.c	/^error_t timer_restart (timer_handle_t _handle)$/;"	f
+timer_start	code/platform/kernel/core/src/timer.c	/^error_t timer_start (timer_handle_t _handle, msecond_t _duration, $/;"	f
+timer_state_t	code/platform/kernel/core/inc/timer.h	/^} timer_state_t;$/;"	t	typeref:enum:__anon23
+timer_statistic_t	code/platform/kernel/core/src/timer.c	/^} timer_statistic_t;$/;"	t	typeref:struct:__anon16	file:
+timer_stop	code/platform/kernel/core/src/timer.c	/^error_t timer_stop (timer_handle_t _handle, msecond_t *_p_remained)$/;"	f
+timer_type_t	code/platform/kernel/core/inc/timer.h	/^} timer_type_t;$/;"	t	typeref:enum:__anon24
+traverse_callback_t	code/platform/common/inc/dll.h	/^typedef bool (*traverse_callback_t)(dll_t *, dll_node_t *, void *);$/;"	t
+traversed_	code/platform/kernel/core/src/timer.c	/^    statistic_t traversed_;$/;"	m	struct:__anon16	file:
+true	code/platform/common/inc/primitive.h	/^    true$/;"	e	enum:__anon52
+type_	code/platform/kernel/core/inc/timer.h	/^    timer_type_t type_;$/;"	m	struct:type_timer
+type_device	code/platform/kernel/core/inc/device.h	/^struct type_device {$/;"	s
+type_sync_object	code/platform/kernel/core/inc/syncobj.h	/^struct type_sync_object {$/;"	s
+type_task	code/platform/kernel/core/inc/task.h	/^struct type_task {$/;"	s
+type_timer	code/platform/kernel/core/inc/timer.h	/^typedef struct type_timer {$/;"	s
+u16_t	code/platform/common/inc/primitive.h	/^typedef unsigned short u16_t;$/;"	t
+u32_t	code/platform/common/inc/primitive.h	/^typedef unsigned int u32_t;$/;"	t
+u8_t	code/platform/common/inc/primitive.h	/^typedef unsigned char u8_t;$/;"	t
+ukey_t	code/platform/common/inc/primitive.h	/^typedef u32_t ukey_t;$/;"	t
+unitest_bar	code/platform/common/inc/unitest.h	/^void unitest_bar ()$/;"	f
+unitest_get_allocated_dll	code/platform/kernel/core/src/task.c	/^dll_t *unitest_get_allocated_dll ()$/;"	f
+unitest_main	tests/platform/common/unitest_clib.c	/^void unitest_main (int argc, char *argv[])$/;"	f
+unitest_main	tests/platform/common/unitest_dll.c	/^void unitest_main (int argc, char *argv[])$/;"	f
+unitest_main	tests/platform/common/unitest_dllht.c	/^void unitest_main (int argc, char *argv[])$/;"	f
+unitest_main	tests/platform/kernel/core/unitest_bitmap.c	/^void unitest_main (int argc, char *argv[])$/;"	f
+unitest_main	tests/platform/kernel/core/unitest_task.c	/^void unitest_main (int argc, char *argv[])$/;"	f
+unitest_report	code/platform/common/inc/unitest.h	/^int unitest_report ()$/;"	f
+up_for_each	code/platform/common/src/module.c	/^static bool up_for_each (dll_t *_p_dll, dll_node_t *_p_node, void *_p_arg)$/;"	f	file:
+usecond_t	code/platform/common/inc/primitive.h	/^typedef u32_t usecond_t;$/;"	t
+used_	code/platform/kernel/core/inc/syncobj.h	/^    dll_t used_;$/;"	m	struct:__anon26
+usize_t	code/platform/common/inc/primitive.h	/^typedef u32_t usize_t;$/;"	t
+ut_node_t	tests/platform/common/unitest_dll.c	/^} ut_node_t;$/;"	t	typeref:struct:__anon1	file:
+value_	code/platform/kernel/core/inc/taskvar.h	/^    value_t value_;$/;"	m	struct:__anon41
+value_t	code/platform/common/inc/primitive.h	/^typedef u32_t value_t;$/;"	t
+variable_	code/platform/kernel/core/inc/task.h	/^    dll_t variable_;$/;"	m	struct:type_task
+wait_	code/platform/kernel/core/inc/syncobj.h	/^    sync_point_wait_t wait_;$/;"	m	struct:__anon25
+wake_	code/platform/kernel/core/inc/syncobj.h	/^    sync_point_wake_t wake_;$/;"	m	struct:__anon25
+weak_alias	code/platform/kernel/arch/x86/simulator/src/context.c	34;"	d	file:
+write_	code/platform/kernel/core/inc/device.h	/^    error_t (*write_) (device_handle_t _handle, const void *_buf, usize_t _size);$/;"	m	struct:__anon38

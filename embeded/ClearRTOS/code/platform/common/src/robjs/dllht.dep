@@ -1,0 +1,4 @@
+robjs/dllht.o robjs/dllht.dep robjs/dllht.chk: dllht.c \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/dllht.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/primitive.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/dll.h

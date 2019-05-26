@@ -1,0 +1,3 @@
+robjs/dll.o robjs/dll.dep robjs/dll.chk: dll.c \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/dll.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/primitive.h

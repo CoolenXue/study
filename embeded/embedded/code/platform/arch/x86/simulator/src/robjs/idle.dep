@@ -1,0 +1,18 @@
+robjs/idle.o robjs/idle.dep robjs/idle.chk: idle.c \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/arch/x86/simulator/inc/console.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/module.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/error.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/device/inc/device.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/primitive.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/dll.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/primitive.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/error.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/task/v3/inc/task.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/arch/x86/simulator/inc/context.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/arch/x86/simulator/inc/interrupt.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/clib.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/task/v3/inc/bitmap.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/timer/v3/inc/timer.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/sync/v3/inc/event.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/sync/v3/inc/syncobj.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/task/v3/inc/bitmap.h

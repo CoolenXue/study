@@ -1,0 +1,4 @@
+robjs/fifo.o robjs/fifo.dep robjs/fifo.chk: fifo.c \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/fifo.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/primitive.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/clib.h

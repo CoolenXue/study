@@ -1,0 +1,3 @@
+robjs/ioport.o robjs/ioport.dep robjs/ioport.chk: ioport.c \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/arch/x86/share/inc/ioport.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/primitive.h

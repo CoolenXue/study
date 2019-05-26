@@ -1,0 +1,3 @@
+robjs/clib.o robjs/clib.dep robjs/clib.chk: clib.c \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/clib.h \
+ /home/coolen/study/professionalEmbeded/embedded/code/platform/common/inc/primitive.h

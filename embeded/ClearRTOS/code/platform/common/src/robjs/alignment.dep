@@ -1,0 +1,3 @@
+robjs/alignment.o robjs/alignment.dep robjs/alignment.chk: alignment.c \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/alignment.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/primitive.h

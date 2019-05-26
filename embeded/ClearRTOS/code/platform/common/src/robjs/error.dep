@@ -1,0 +1,17 @@
+robjs/error.o robjs/error.dep robjs/error.chk: error.c \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/primitive.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/error.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/module.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/error.h \
+ errstr.def \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/driver/ctrlc/inc/errctrlc.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/arch/x86/simulator/inc/errcon.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/arch/x86/simulator/inc/errclock.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/core/inc/errtmr.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/core/inc/errmpool.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/core/inc/errheap.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/core/inc/errdev.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/core/inc/errsync.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/kernel/core/inc/errtask.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/errmod.h \
+ /home/coolen/study/professionalEmbeded/ClearRTOS/code/platform/common/inc/module.h
