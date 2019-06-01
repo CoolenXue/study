@@ -71,6 +71,8 @@ if has("cscope")
 				cs add $CSCOPE_DB
 		endif
 		set csverb
+		set cscopetag
+		set cscopequickfix=s-,g-,c-,d-,i-,t-,e-,f-
 endif
 
 """"""""""""""""""""""""CTAGS"""""""""""""""""""""""""""""
