@@ -1,0 +1,30 @@
+##################################################################
+# Please define following variables and include common.mk in the Makefile for each dir 
+#
+# 	EXE				:Define EXE target name only in the dir to do final link
+#   INCLUDE_DIRS	:The header dirs in format like "-Ipath1 -Ipath2"
+#   EXCLUDE_SRCS    :The srcs files in this dir to be excluded from compiling
+#   EXTRA_SRCS		:The srcs files in other dir to be included for compiling
+#   LD_FLAGS		:Link options
+#   CC_FLAGS		:Compile options
+#   CC_FORCE		:Force to use this compiler for this dir
+#   LD_FORCE		:Force to use this linker for this dir
+#   SUBDIRS			:subdirs to compile
+##################################################################
+
+EXE = smart_alert.out
+
+INCLUDE_DIRS += -I/home/coolen/Tool/opencv/include
+#SUBDIRS = src hogMd
+
+CC_FLAGS += -ffloat-store -std=c++11 -fpermissive -DBUILD_FOR_CPU
+#LD_FLAGS = -lpthread -lm -L/home/coolen/Tool/opencv/lib -lopencv_core2413 -lopencv_highgui2413 -lopencv_imgproc2413 
+#FIXME: don't use opencv currently. (we don't have opencv for 32-bit)
+LD_FLAGS = -lpthread -lm -L/home/coolen/Tool/opencv/lib 
+CC_FORCE = g++ -c
+LD_FORCE = g++
+
+EXCLUDE_SRCS = main.cpp
+
+include $(ROOT)/common.mk
+
