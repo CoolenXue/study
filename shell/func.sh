@@ -14,11 +14,10 @@ PATH=$PATH:/opt/ba-elf-new/bin
 
 cs()
 {
-	find . \( -name "*.h" -or -name "*.c" -or -name "*.S" -or -name "*.cpp" \) -and \( -not -type l \) > cscope.files
+	find $* \( -name "*.h" -or -name "*.c" -or -name "*.S" -or -name "*.s" -or -name "*.cpp" -or -name "Makefile" \) -and \( -not -type l \) > cscope.files
 	cscope -bkq -i cscope.files
-	rm cscope.files -rf
-	#cscope -Rbkq *
-	ctags -R
+	#rm cscope.files -rf
+	ctags -R $*
 }
 
 svn_merge()
