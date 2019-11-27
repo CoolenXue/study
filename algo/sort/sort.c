@@ -3,15 +3,19 @@ void insert_sort(int * array, int length)
 	int i;
 	for(i = 1; i < length; i++){
 		int val = array[i];
-		int j = i;
-		while(array[j-1] > val && j > 0){
-			array[j] = array[j-1];
-			j--;
+		int j;
+		for(j = i ; j > 0; j--){
+			if(array[j - 1] > val){
+				array[j] = array[j-1];
+			}else{
+				break;
+			}
 		}
 
 		array[j] = val;
 	}
 }
+
 
 void select_sort(int * array, int length)
 {
